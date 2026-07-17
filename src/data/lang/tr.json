@@ -1,0 +1,123 @@
+{
+  "lang_name": "Türkçe",
+  "dir": "ltr",
+  "ui": {
+    "makkah_label": "Mekke",
+    "madinah_label": "Medine",
+    "read_more": "Devamını Oku",
+    "close": "Kapat",
+    "loading": "Yükleniyor..."
+  },
+  "places": {
+    "haram": {
+      "title": "Mescid-i Haram",
+      "short": "En kutsal mekan",
+      "full": "Mescid-i Haram, dünyanın en büyük mescidi olup Mekke'nin kalbinde yer alır. Ortasında insanlık için ilk ibadet yeri olarak inşa edilen Kâbe bulunur. Mescid, Hacerü'l-Esved, Makam-ı İbrahim, Zemzem Kuyusu ve Safa ile Merve tepelerini barındırır."
+    },
+    "hira": {
+      "title": "Hira Mağarası",
+      "short": "Vahyin başlangıcı",
+      "full": "Nûr Dağı'nın tepesinde, Mescid-i Haram'ın 4 km doğusunda bir mağara. Hz. Muhammed ﷺ peygamberlikten önce burada ibadet ederdi ve Cebrail (as) ilk Kur'an ayetlerini burada indirdi."
+    },
+    "thawr": {
+      "title": "Tur Mağarası",
+      "short": "Hicret sığınağı",
+      "full": "Mekke'nin güneyindeki Tur Dağı'nın tepesinde bir mağara. Hz. Muhammed ﷺ ve arkadaşı Ebubekir (ra) hicret sırasında üç gün burada sığındılar. Örümceğin mağara girişine ağ örmesiyle kâfirler mağaraya girmekten vazgeçtiler."
+    },
+    "arafat": {
+      "title": "Arafat Ovası",
+      "short": "Haccın durak yeri",
+      "full": "Mekke'nin yaklaşık 20 km doğusunda geniş bir alan. Hacılar Zilhicce'nin dokuzunda burada toplanır. Ortasındaki Arafat Dağı'nda Hz. Muhammed ﷺ Veda Hutbesi'ni okudu."
+    },
+    "mina": {
+      "title": "Mina Toprakları",
+      "short": "Cemre atma yeri",
+      "full": "Mekke'nin yaklaşık 5 km doğusunda, Mekke ile Arafat arasında çöl bölgesi. Haccın rituals'lerinde önemli rolü olan bu地区de hacılar Tşreek günlerini geçirir ve cemreleri taşlar."
+    },
+    "muzdalifah": {
+      "title": "Muzdalife",
+      "short": "Çakıl taşı toplama",
+      "full": "Arafat ile Mina arasında bir alan. Hacılar Zilhicce'nin onuncu gecesini burada geçirir ve Minâ'daki cemreleri taşlamak için çakıl taşı toplarlar."
+    },
+    "namirah": {
+      "title": "Namira Mescidi",
+      "short": "Arafat Mescidi",
+      "full": "Arafat'ta Hz. Muhammed ﷺ'in Arafat Günü namaz kıldığı yerde inşa edilen büyük mescit. İmam burada Zilhicce'nin dokuzuncu günü öğle ve ikindi namazının hutbesini okur."
+    },
+    "khayf": {
+      "title": "Hayf Mescidi",
+      "short": "Peygamberler Mescidi",
+      "full": "Mina'daki bir mescit. Rivayetlere göre yetmiş peygamber burada namaz kılmıştır ve Mekke bölgesinin en eski mescitlerinden biridir."
+    },
+    "birthplace": {
+      "title": "Peygamberin Doğum Yeri",
+      "short": "Mevlid Nebi",
+      "full": "Hz. Muhammed ﷺ'in Mekke'de doğduğu yer. Günümüzde Vakıflar İdaresi'ne bağlı bir kütüphane olarak bilinir."
+    },
+    "jin_mosque": {
+      "title": "Cin Mescidi",
+      "short": "Cinlerin biatı",
+      "full": "Mekke'de Cîrâne olarak bilinen bölgede bir mescit. Cin Suresi burada indirildi ve bir grup cin Hz. Muhammed ﷺ'e biat etti."
+    },
+    "nabawi": {
+      "title": "Mescid-i Nebevi",
+      "short": "Peygamberin mescidi",
+      "full": "İslam'ın en kutsal ikinci mescidi olan Mescid-i Nebevi, Medine'de Hz. Muhammed ﷺ tarafından hicretten sonra inşa edildi. Peygamber ﷺ'in mübarek kabri, Ravza-i Şerife ve minberi burada bulunur. Mescit tarih boyunca genişletilmiş ve II. Abdülhamid döneminde büyük çapta restoration yapılmıştır."
+    },
+    "baqi": {
+      "title": "Baki Mezarlığı",
+      "short": "Halife ve sahabe mezarı",
+      "full": "Medine'nin en önemli mezarlığı olan Baki, Cennetü'l-Baki olarak bilinir. Dört halife-i raşidin (Ebubekir, Ömer, Osman ve Hüseyin), binlerce sahabe, peygamber ﷺ'in eşleri ve ailesininistirahatgahıdır."
+    },
+    "quba": {
+      "title": "Kuba Mescidi",
+      "short": "İslam'daki ilk mescit",
+      "full": "Hz. Muhammed ﷺ'in Medine'ye hicret ettikten sonra ilk gün inşa ettiği ilk mescit. Hadis-i şerife göre burada kılınan namaz bir umre değerindedir."
+    },
+    "uhud": {
+      "title": "Uhud Dağı",
+      "short": "Uhud şehitleri",
+      "full": "Hicretin üçüncü yılında gerçekleşen tarihi Uhud Muharebesi'nin yapıldığı yer ve 70 İslam şehidinin mezarı. Şehitler arasında Hz. Hamza (Hz. Peygamber ﷺ'in amcası) da bulunmaktadır."
+    },
+    "qiblatayn": {
+      "title": "Kıbletein Mescidi",
+      "short": "Kıble dönüşü",
+      "full": "Hicretin ikinci yılında Kudüs'ten Kâbe'ye kıble değişikliği emrinin indirildiği mescit. Kuba Mescidi'nden sonra Medine'de inşa edilen ilk mescittir."
+    },
+    "sabah": {
+      "title": "Yedi Mescit",
+      "short": "Hendek Savaşı mirası",
+      "full": "Medine'de Hendek Savaşı (Ahzab Savaşı) sırasında İslam ordusunun Medine çevresinde konumlandığı yerlerde inşa edilmiş küçük tarihi mescitlerin bir collection'ıdır."
+    },
+    "khandaq": {
+      "title": "Hendek Savaşı",
+      "short": "Sal' Dağı",
+      "full": "Sal' Dağı'nın yakınında, Hendek Savaşı sırasında Salman-ı Farisi'nin önerisiyle Medine'yi savunmak için hendek kazılan alan."
+    },
+    "ghamamah": {
+      "title": "Ghamame Mescidi",
+      "short": "Bulut Mescidi",
+      "full": "Medine'de bulunan tarihi bir mescit. Hz. Muhammed ﷺ'in yağmur duası kıldığı ve bir bulutun üzerine gölge ettiği yer."
+    },
+    "ijabah": {
+      "title": "İcabet Mescidi",
+      "short": "Kabul edilen dua",
+      "full": "Hz. Muhammed ﷺ'in dua ettiği ve Allah'ın (cc) ümmeti için bazı dualarını kabul ettiği Medine'deki mübarek ve özel öneme sahip bir mescit."
+    },
+    "miqat": {
+      "title": "Mikat",
+      "short": "Medine'den ihram",
+      "full": "Hac veya umre için Medine'den gelenlerin ihram giydiği ana mikat."
+    },
+    "jummah": {
+      "title": "Cuma Mescidi",
+      "short": "İlk Cuma namazı",
+      "full": "Hz. Muhammed ﷺ'in Kuba'dan Medine'ye doğru hareket ettikten sonra İslam'daki ilk Cuma namazını kıldığı yer."
+    },
+    "ambariyah": {
+      "title": "Ambariye Mescidi",
+      "short": "Osmanlı mirası",
+      "full": "Medine'de benzersiz Osmanlı mimarisine sahip güzel mescit. Eski Hicaz Tren İstasyonu'nun yakınında bulunur ve Medine'deki Osmanlı mimari mirası considered bir eserdir."
+    }
+  }
+}

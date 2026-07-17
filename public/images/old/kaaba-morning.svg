@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="daySky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3c72"/>
+      <stop offset="30%" stop-color="#2a5298"/>
+      <stop offset="60%" stop-color="#56a3d6"/>
+      <stop offset="100%" stop-color="#87ceeb"/>
+    </linearGradient>
+    <linearGradient id="marble" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f5f5"/>
+      <stop offset="50%" stop-color="#e8e8e8"/>
+      <stop offset="100%" stop-color="#d0d0d0"/>
+    </linearGradient>
+    <linearGradient id="gold3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b8860b"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="600" fill="url(#daySky)"/>
+
+  <!-- Sun rays -->
+  <g fill="#fff" opacity="0.08">
+    <polygon points="200,0 150,300 250,300"/>
+    <polygon points="100,0 80,250 140,250"/>
+    <polygon points="300,0 270,250 340,250"/>
+  </g>
+
+  <!-- Marble courtyard -->
+  <rect x="0" y="350" width="400" height="250" fill="url(#marble)"/>
+  <g fill="#ddd" opacity="0.5">
+    <line x1="0" y1="380" x2="400" y2="380" stroke="#ccc" stroke-width="0.5"/>
+    <line x1="0" y1="420" x2="400" y2="420" stroke="#ccc" stroke-width="0.5"/>
+    <line x1="0" y1="460" x2="400" y2="460" stroke="#ccc" stroke-width="0.5"/>
+    <line x1="0" y1="500" x2="400" y2="500" stroke="#ccc" stroke-width="0.5"/>
+  </g>
+
+  <!-- Mosque structure -->
+  <rect x="30" y="250" width="340" height="100" fill="#e0e0e0"/>
+  <rect x="30" y="245" width="340" height="10" fill="url(#gold3)"/>
+
+  <!-- Arches -->
+  <g fill="#f5f5f5">
+    <rect x="50" y="260" width="40" height="90" rx="20"/>
+    <rect x="110" y="260" width="40" height="90" rx="20"/>
+    <rect x="170" y="260" width="40" height="90" rx="20"/>
+    <rect x="230" y="260" width="40" height="90" rx="20"/>
+    <rect x="290" y="260" width="40" height="90" rx="20"/>
+  </g>
+  <g fill="#2a5298" opacity="0.15">
+    <rect x="52" y="262" width="36" height="85" rx="18"/>
+    <rect x="112" y="262" width="36" height="85" rx="18"/>
+    <rect x="172" y="262" width="36" height="85" rx="18"/>
+    <rect x="232" y="262" width="36" height="85" rx="18"/>
+    <rect x="292" y="262" width="36" height="85" rx="18"/>
+  </g>
+
+  <!-- Dome -->
+  <ellipse cx="200" cy="245" rx="80" ry="45" fill="#e8e8e8"/>
+  <ellipse cx="200" cy="240" rx="70" ry="40" fill="#f0f0f0"/>
+  <circle cx="200" cy="200" r="6" fill="url(#gold3)"/>
+
+  <!-- Minarets -->
+  <rect x="35" y="170" width="12" height="80" fill="#e0e0e0"/>
+  <polygon points="35,170 41,150 47,170" fill="#e0e0e0"/>
+  <circle cx="41" cy="148" r="4" fill="url(#gold3)"/>
+
+  <rect x="353" y="170" width="12" height="80" fill="#e0e0e0"/>
+  <polygon points="353,170 359,150 365,170" fill="#e0e0e0"/>
+  <circle cx="359" cy="148" r="4" fill="url(#gold3)"/>
+
+  <!-- Kaaba -->
+  <rect x="165" y="340" width="70" height="70" fill="#1a1a1a" rx="2"/>
+  <rect x="165" y="360" width="70" height="6" fill="url(#gold3)"/>
+  <rect x="185" y="375" width="30" height="35" fill="url(#gold3)" rx="1"/>
+
+  <!-- Umbrellas -->
+  <g fill="#1e3c72" opacity="0.3">
+    <polygon points="80,380 60,370 100,370"/>
+    <line x1="80" y1="370" x2="80" y2="400" stroke="#666" stroke-width="1"/>
+    <polygon points="320,380 300,370 340,370"/>
+    <line x1="320" y1="370" x2="320" y2="400" stroke="#666" stroke-width="1"/>
+  </g>
+
+  <!-- People -->
+  <g fill="#555" opacity="0.4">
+    <ellipse cx="100" cy="395" rx="8" ry="4"/>
+    <ellipse cx="150" cy="400" rx="7" ry="3"/>
+    <ellipse cx="250" cy="398" rx="8" ry="4"/>
+    <ellipse cx="300" cy="395" rx="7" ry="3"/>
+  </g>
+
+  <!-- Title -->
+  <text x="200" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#1e3c72" font-weight="bold">الحرم في الصباح</text>
+  <text x="200" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Morning at the Haram</text>
+</svg>

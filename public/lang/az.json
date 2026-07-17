@@ -1,0 +1,123 @@
+{
+  "lang_name": "Azərbaycan",
+  "dir": "ltr",
+  "ui": {
+    "makkah_label": "Məkkə",
+    "madinah_label": "Mədinə",
+    "read_more": "Daha çox oxu",
+    "close": "Bağla",
+    "loading": "Yüklənir..."
+  },
+  "places": {
+    "haram": {
+      "title": "Məscidül-Haram",
+      "short": "Dünyanın ən müqəddəs yeri",
+      "full": "Məscidül-Haram dünyanın ən böyük məscidi olub, Məkkənin ürəyində yerləşir. Onun mərkəzində insanlıq üçün ilk ibadət yeri olan Müqəddəs Kəəbə ucalır. Məscid Qara Daşı, İbrahim Məqamı, Zəmzəm quyusunu, Safa və Marva təpələrini əhatə edir."
+    },
+    "hira": {
+      "title": "Hira Mağarası",
+      "short": "Vəhyin başlanğıcı",
+      "full": "Məscidül-Haramdan 4 km şərqdə Nur Dağının zirvəsindəki mağara. Peyğəmbər ﷺ vəhy almadan əvvəl burada ibadət edərdi, Cəbrail (ə) burada Qurani-Kərimin ilk ayələrini endirmişdir."
+    },
+    "thawr": {
+      "title": "Sur Mağarası",
+      "short": "Hicrət sığınağı",
+      "full": "Məkkənin cənubundakı Sur Dağının zirvəsindəki mağara. Peyğəmbər ﷺ və yoldaşı Əbubəkr hicrət zamanı üç gün burada sığınmış, hörümçək mağaranın ağzında tor hörməklə onları qurtarmışdır."
+    },
+    "arafat": {
+      "title": "Arafat Düzlüyü",
+      "short": "Həcc ziyarətçilərinin dayandığı yer",
+      "full": "Məkkədən təxminən 20 km şərqdə geniş ərazi, həcc ziyarətçiləri Zilhiccənin 9-u günündə burada toplanır. Mərkəzində Peyğəmbər ﷺ Vəda xütbəsini oxuduğu Arafat Dağı yerləşir."
+    },
+    "mina": {
+      "title": "Mina Torpağı",
+      "short": "Cəmrə atma yeri",
+      "full": "Məkkədən təxminən 5 km şərqdəki səhra ərazisi, Məkkə və Arafat arasında. Həcc ritualında vacib rolu ilə tanınır, ziyarətçilər Təşrirq günlərini keçirir və cəmrə daşlarını atırlar."
+    },
+    "muzdalifah": {
+      "title": "Müzdelifə",
+      "short": "Daş toplama",
+      "full": "Arafat və Mina arasında ərazi, ziyarətçilər Zilhiccənin 10-u gecəsini burada keçirir və Mina-da cəmrə atmaq üçün daş toplayırlar."
+    },
+    "namirah": {
+      "title": "Nəmira Məscidi",
+      "short": "Arafat Məscidi",
+      "full": "Arafatda böyük məscid, Peyğəmbər ﷺ Arafat günündə namaz qıldığı yerdə tikilmiş, imam Zilhiccənin 9-u günündə Zöhr və Əsr namazlarının xütbəsini oxuyur."
+    },
+    "khayf": {
+      "title": "Xeyf Məscidi",
+      "short": "Minədə Peyğəmbərlər Məscidi",
+      "full": "Minədə məscid, ənənəyə görə yetmiş peyğəmbər burada namaz qılmışdır və Məkkə bölgəsinin ən qədim məscidlərindən biridir."
+    },
+    "birthplace": {
+      "title": "Peyğəmbərin Doğulduğu Yer",
+      "short": "Mövlid-i Nəbi",
+      "full": "Məkkədə Peyğəmbər Mühəmməd ﷺin doğulduğu yer, hazırda Vəqf İdarəsinə bağlı kitabxana kimi tanınır."
+    },
+    "jin_mosque": {
+      "title": "Cin Məscidi",
+      "short": "Cinlərin bəyəti",
+      "full": "Məkkədə Əl-Cirana kimi tanınan ərazidə məscid, Cin Surəsi burada endirilmiş və cin qrupu Peyğəmbər �inə bəyət vermişdir."
+    },
+    "nabawi": {
+      "title": "Peyğəmbər Məscidi ﷺ",
+      "short": "Peyğəmbərin müqəddəs yeri",
+      "full": "İslamın ikinci ən müqəddəs məscidi Mədinədə. Peyğəmbər Mühəmməd ﷺ hicrətdən sonra tikmişdir, məscid onun müqəddəs qəbrini, Rəvzə-i Şərifi və mimbarını ehtiva edir. Məscid tarix boyu genişlənmiş, xüsusilə Sultan II Abdulhəmid dövründə."
+    },
+    "baqi": {
+      "title": "Bəqi Qəbiristanlığı",
+      "short": "İmamların istirahət yeri",
+      "full": "Mədinənin ən vacib qəbiristanlığı, Cənnətül-Bəqi kimi tanınır. Dörd Rəşid Xəlifəsi (Əbubəkr, Ömər, Osman və Hüseyn), minlərlə səhabə, Peyğəmbərin ﷺ arvadları və ailəsinin istirahət yeri."
+    },
+    "quba": {
+      "title": "Quba Məscidi",
+      "short": "İslamda ilk məscid",
+      "full": "Peyğəmbər Mühəmməd ﷺ Mədinəyə hicrətdən sonra ilk gün tikdiyi ilk məscid. Müqəddəs Hədisə görə burada namaz qılmaq bir Umreyə bərabərdir."
+    },
+    "uhud": {
+      "title": "Uhud Dağı",
+      "short": "Uhud Şəhidləri",
+      "full": "Tarixi Uhud Döyüşünün baş verdiyi yer, hicrətin üçüncü ili, 70 İslam şəhidinin qəbri, o cümlədən Həmzə ibn Abdulmüttəlib (Peyğəmbərin əmisi və Allahın Şiri)."
+    },
+    "qiblatayn": {
+      "title": "Qiblətəyn Məscidi",
+      "short": "Qiblə dəyişikliyi",
+      "full": "Məscid, hicrətin ikinci ilində Qiblənin Qüdsdən Müqəddəs Kəəbəyə dəyişdirilməsinə dair ilahi əmrin endirildiyi yer, Quba Məscidindən sonra Mədinədə tikilən ilk məscid."
+    },
+    "sabah": {
+      "title": "Yeddi Məscid",
+      "short": "Xəndək Döyüşünün irsi",
+      "full": "Mədinədə Xəndək Döyüşü (Əhzab Döyüşü) zamanı İslam ordusunun Mədinə ətrafında yerləşdiyi yerlərdə tikilmiş kiçik tarixi məscidlər kolleksiyası."
+    },
+    "khandaq": {
+      "title": "Xəndək Döyüşü",
+      "short": "Sal' Dağı",
+      "full": "Sal' Dağının yaxınlığında ərazi, Salman Əl-Fərisinin təklifi ilə Mədinəni qorumaq üçün xəndək qazılmış yer."
+    },
+    "ghamamah": {
+      "title": "Ğəmamə Məscidi",
+      "short": "Bulud Məscidi",
+      "full": "Mədinədə tarixi məscid, Peyğəmbər ﷺ yağış duası etmiş və bulud ona kölgə salmışdır."
+    },
+    "ijabah": {
+      "title": "İcabə Məscidi",
+      "short": "Qəbul olunmuş dua",
+      "full": "Mədinədə məscid, Peyğəmbər Mühəmməd ﷺ dua etmiş və Allah onun ümməti üçün bəzi dualarını qəbul etmişdir, mübarək və xüsusi mənası olan məscid."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Mədinədən İhram",
+      "full": "Mədinədən Həcc və ya Ümrə üçün gələn ziyarətçilərin əsas miqatı, burada İhram halına girir və İhram geyimlərini geyinirlər."
+    },
+    "jummah": {
+      "title": "Cümə Məscidi",
+      "short": "İlk Cümə namazı",
+      "full": "Peyğəmbər Mühəmməd ﷺ Qubadan Mədinəyə doğru yola çıxandan sonra İslamda ilk Cümə namazını qıldığı yer."
+    },
+    "ambariyah": {
+      "title": "Əmbəriyə Məscidi",
+      "short": "Osmanlı irsi",
+      "full": "Mədinədə unikal Osmanlı memarlığına malik gözəl məscid, qədim Hicaz Dəmiryolu Stansiyasının yaxınında, Mədinədə Osmanlı memarlıq irsinin nümunələrindən biri."
+    }
+  }
+}

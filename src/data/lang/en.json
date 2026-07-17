@@ -1,0 +1,123 @@
+{
+  "lang_name": "English",
+  "dir": "ltr",
+  "ui": {
+    "makkah_label": "Makkah",
+    "madinah_label": "Madinah",
+    "read_more": "Read More",
+    "close": "Close",
+    "loading": "Loading..."
+  },
+  "places": {
+    "haram": {
+      "title": "The Grand Mosque",
+      "short": "Holiest site on Earth",
+      "full": "Al-Masjid al-Haram is the largest mosque in the world, located in the heart of Makkah. At its center stands the Sacred Kaaba, the first house of worship built for humanity. The mosque contains the Black Stone, the Station of Abraham, Zamzam Well, and the hills of Safa and Marwa."
+    },
+    "hira": {
+      "title": "Cave of Hira",
+      "short": "Where revelation began",
+      "full": "A cave atop Mount An-Nour, located 4 km east of the Grand Mosque. The Prophet Muhammad ﷺ used to worship here before receiving revelation. This is where Angel Jibreel first revealed the verses of the Holy Quran."
+    },
+    "thawr": {
+      "title": "Cave of Thawr",
+      "short": "Refuge during Hijra",
+      "full": "A cave atop Mount Thawr in southern Makkah. It is where the Prophet ﷺ and his companion Abu Bakr took shelter for three days during the Hijra to Madinah, saved when a spider wove its web at the cave entrance."
+    },
+    "arafat": {
+      "title": "Plain of Arafat",
+      "short": "Where pilgrims stand",
+      "full": "A vast area approximately 20 km east of Makkah where pilgrims gather on the 9th of Dhul Hijjah. At its center stands Mount Arafat, where the Prophet ﷺ delivered his Farewell Sermon."
+    },
+    "mina": {
+      "title": "Land of Mina",
+      "short": "Stoning the Jamarat",
+      "full": "A desert area approximately 5 km east of Makkah, located between Makkah and Arafat. Known for its essential role in Hajj rituals where pilgrims spend the Days of Tashreeq and perform the stoning of Jamarat."
+    },
+    "muzdalifah": {
+      "title": "Muzdalifah",
+      "short": "Collecting pebbles",
+      "full": "An area between Arafat and Mina where pilgrims spend the night of the 10th of Dhul Hijjah and collect pebbles for stoning the Jamarat in Mina."
+    },
+    "namirah": {
+      "title": "Namirah Mosque",
+      "short": "Arafat Mosque",
+      "full": "A large mosque in Arafat built at the site where the Prophet ﷺ prayed on the Day of Arafah, where the Imam delivers the Khutbah for Dhuhr and Asr prayers on the 9th of Dhul Hijjah."
+    },
+    "khayf": {
+      "title": "Khayf Mosque",
+      "short": "Prophets' mosque in Mina",
+      "full": "A mosque in Mina where seventy prophets prayed according to traditions, and one of the oldest mosques in the Makkah region."
+    },
+    "birthplace": {
+      "title": "Prophet's Birthplace",
+      "short": "Mawlid an-Nabi",
+      "full": "The place in Makkah where Prophet Muhammad ﷺ was born, now known as a library affiliated with the Awqaf administration."
+    },
+    "jin_mosque": {
+      "title": "Mosque of Jinn",
+      "short": "Jinn allegiance",
+      "full": "A mosque in Makkah located in the area known as Al-Ji'ranah, where Surah Al-Jinn was revealed and a group of Jinn pledged allegiance to the Prophet ﷺ."
+    },
+    "nabawi": {
+      "title": "The Prophet's Mosque",
+      "short": "Sanctuary of the Prophet ﷺ",
+      "full": "The second holiest mosque in Islam, located in Madinah. Built by the Prophet ﷺ after the Hijra, it houses his noble grave, the Rawdah ash-Shareefah, and his minbar. The mosque was expanded throughout history, notably during the reign of Sultan Abdul Hamid II."
+    },
+    "baqi": {
+      "title": "Al-Baqi Cemetery",
+      "short": "Resting place of Imams",
+      "full": "The most important cemetery in Madinah, known as Jannat al-Baqi. Final resting place of four Rightly-Guided Caliphs (Abu Bakr, Umar, Uthman, and Husayn), thousands of companions, and the Prophet's ﷺ family and wives."
+    },
+    "quba": {
+      "title": "Quba Mosque",
+      "short": "First mosque in Islam",
+      "full": "The first mosque built by the Prophet ﷺ after his migration to Madinah upon arrival. Praying here is equivalent to performing an entire Umrah according to the Noble Hadith."
+    },
+    "uhud": {
+      "title": "Mount Uhud",
+      "short": "Martyrs of Uhud",
+      "full": "The site of the historic Battle of Uhud which took place in the 3rd year of Hijra, and the grave of 70 martyrs of Islam including Hamza ibn Abdul-Muttalib, the Lion of Allah and uncle of the Prophet ﷺ."
+    },
+    "qiblatayn": {
+      "title": "Mosque of Qiblatayn",
+      "short": "Direction change",
+      "full": "The mosque where the divine command was revealed to change the Qiblah from Jerusalem to the Sacred Kaaba in the 2nd year of Hijra, the first mosque built in Madinah after Quba Mosque."
+    },
+    "sabah": {
+      "title": "Seven Mosques",
+      "short": "Trench War legacy",
+      "full": "A collection of small historical mosques in Madinah built at the sites where the Muslim army was stationed around Madinah during the Battle of the Trench (Al-Ahzab)."
+    },
+    "khandaq": {
+      "title": "Battle of the Trench",
+      "short": "Mount Sal'",
+      "full": "The area near Mount Sal' where Muslims dug a trench to defend Madinah, following the suggestion of Salman al-Farisi during the Battle of the Trench."
+    },
+    "ghamamah": {
+      "title": "Ghamamah Mosque",
+      "short": "Cloud Mosque",
+      "full": "A historical mosque in Madinah where the Prophet ﷺ prayed for rain and was shaded by a cloud."
+    },
+    "ijabah": {
+      "title": "Ijabah Mosque",
+      "short": "Answered prayer",
+      "full": "A mosque in Madinah where the Prophet ﷺ supplicated and Allah answered some of his prayers for his Ummah, a blessed mosque with special significance."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Ihram from Madinah",
+      "full": "The main miqat for pilgrims coming from Madinah for Hajj or Umrah, where they enter the state of Ihram and don the Ihram garments."
+    },
+    "jummah": {
+      "title": "Friday Mosque",
+      "short": "First Friday prayer",
+      "full": "The place where the Prophet ﷺ led the first Friday prayer in Islam after departing from Quba towards Madinah."
+    },
+    "ambariyah": {
+      "title": "Ambariyah Mosque",
+      "short": "Ottoman heritage",
+      "full": "A beautiful mosque in Madinah with unique Ottoman architecture, located near the old Hejaz Railway station, considered one of the Ottoman architectural heritage in Madinah."
+    }
+  }
+}

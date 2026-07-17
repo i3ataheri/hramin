@@ -1,0 +1,124 @@
+{
+  "lang_name": "Soomaali",
+  "dir": "ltr",
+  "ui": {
+    "site_title": "Masaajidyada Quduuska",
+    "site_short": "Makkah & Madinah",
+    "makkah": "Makkah",
+    "madinah": "Madinah",
+    "map": "Khariidad",
+    "info": "Macluumaad"
+  },
+  "places": {
+    "haram": {
+      "title": "Masjidka Xaramka",
+      "short": "Masaajidyada ugu qaarada",
+      "full": "Masjidka Xaramka waa kan ugu qaadis badan adduunka, wuxuu ku yaalaa Makkah."
+    },
+    "hira": {
+      "title": "Beeraha Hira",
+      "short": "Bilowga Waxyiga",
+      "full": "Beeraha Hira waa beeraha Nabigu (NNKH) waxyiga ku bilaabay, wuxuu ku yaalaa Makkah."
+    },
+    "thawr": {
+      "title": "Beeraha Thawr",
+      "short": "Badbaadada Hijrada",
+      "full": "Beeraha Thawr waa beeraha Nabigu (NNKH) iyo Abu Bakr ku badbaadeen, wuxuu ku yaalaa Makkah."
+    },
+    "arafat": {
+      "title": "Arafah",
+      "short": "Goobta Hajiiga",
+      "full": "Arafah waa goobta hajiiga, wuxuu ku yaalaa Makkah."
+    },
+    "mina": {
+      "title": "Mina",
+      "short": "Tuurida Xaraaraha",
+      "full": "Mina waa goobta tuurida xaraaraha, wuxuu ku yaalaa Makkah."
+    },
+    "muzdalifah": {
+      "title": "Muzdalifah",
+      "short": "Ururinta Xabooyaha",
+      "full": "Muzdalifah waa goobta ururinta xabooyaha, wuxuu ku yaalaa Makkah."
+    },
+    "namirah": {
+      "title": "Masjidka Namirah",
+      "short": "Masjidka Arafah",
+      "full": "Masjidka Namirah waa masjidka Arafah, wuxuu ku yaalaa Makkah."
+    },
+    "khayf": {
+      "title": "Masjidka Khayf",
+      "short": "Masjidka Nabiyada",
+      "full": "Masjidka Khayf waa masjidka Nabiyada Mina, wuxuu ku yaalaa Makkah."
+    },
+    "birthplace": {
+      "title": "Meelka Nabiga Dhalashada",
+      "short": "Farxad Nabinnimo",
+      "full": "Meelka Nabiga dhalashada waa meesha Nabigu (NNKH) ku dhashay, wuxuu ku yaalaa Makkah."
+    },
+    "jin_mosque": {
+      "title": "Masjidka Jinn",
+      "short": "Heshiiska Jinn",
+      "full": "Masjidka Jinn waa masjidka Jinn heshiisku, wuxuu ku yaalaa Makkah."
+    },
+    "nabawi": {
+      "title": "Masjidka Nabiga ﷺ",
+      "short": "Xaramka Nabiga",
+      "full": "Masjidka Nabiga (Nabawi) waa kan ugu muhiimsan Islaamka, wuxuu ku yaalaa Madinah."
+    },
+    "baqi": {
+      "title": "Al-Baqi",
+      "short": "Qabuuraha Saxaabadaha",
+      "full": "Al-Baqi waa qabuuraha Saxaabadaha iyo Xaliifadaha, wuxuu ku yaalaa Madinah."
+    },
+    "quba": {
+      "title": "Masjidka Quba",
+      "short": "Masjidkii ugu horreeyay Islaamka",
+      "full": "Masjidka Quba waa masjidkii ugu horreeyay Islaamka, wuxuu ku yaalaa Madinah."
+    },
+    "uhud": {
+      "title": "Buurta Uhud",
+      "short": "Shahiidada Uhud",
+      "full": "Buurta Uhud waa goobta dagaalkii Uhud, wuxuu ku yaalaa Madinah."
+    },
+    "qiblatayn": {
+      "title": "Masjidka Qiblatayn",
+      "short": "Bedelidda Qiblada",
+      "full": "Masjidka Qiblatayn waa goobta Qiblada loo bedelay, wuxuu ku yaalaa Madinah."
+    },
+    "sabah": {
+      "title": "Toddoba Masaajid",
+      "short": "Dhaxalka Dagaalka Khandaq",
+      "full": "Toddoba Masaajid waa masaajiyada taariikhda Khandaq, wuxuu ku yaalaa Madinah."
+    },
+    "khandaq": {
+      "title": "Dagaalkii Khandaq",
+      "short": "Buurta Sal'",
+      "full": "Dagaalkii Khandaq waa dagaalkii Ahzab, wuxuu ku yaalaa Madinah."
+    },
+    "ghamamah": {
+      "title": "Masjidka Ghamamah",
+      "short": "Masjidka Daruuriga",
+      "full": "Masjidka Ghamamah waa masjidka daruuriga, wuxuu ku yaalaa Madinah."
+    },
+    "ijabah": {
+      "title": "Masjidka Ijabah",
+      "short": "Codsiga la aqbalay",
+      "full": "Masjidka Ijabah waa goobta codsigu la aqbalay, wuxuu ku yaalaa Madinah."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Ihraamka Madinah",
+      "full": "Miqat waa goobta Ihraamka, wuxuu ku yaalaa Madinah."
+    },
+    "jummah": {
+      "title": "Masjidka Jummah",
+      "short": "Salaaddii ugu horreysay Jimcaha",
+      "full": "Masjidka Jummah waa goobta salaaddii ugu horreysay Jimcaha, wuxuu ku yaalaa Madinah."
+    },
+    "ambariyah": {
+      "title": "Masjidka Ambariyah",
+      "short": "Dhaxalka Otomaaniga",
+      "full": "Masjidka Ambariyah waa dhaxalka Otomaaniga, wuxuu ku yaalaa Madinah."
+    }
+  }
+}

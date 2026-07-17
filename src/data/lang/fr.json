@@ -1,0 +1,123 @@
+{
+  "lang_name": "Français",
+  "dir": "ltr",
+  "ui": {
+    "makkah_label": "La Mecque",
+    "madinah_label": "Médine",
+    "read_more": "Lire la suite",
+    "close": "Fermer",
+    "loading": "Chargement..."
+  },
+  "places": {
+    "haram": {
+      "title": "La Grande Mosquée",
+      "short": "Lieu le plus sacré sur Terre",
+      "full": "La Mosquée Sacrée est la plus grande mosquée du monde, située au cœur de La Mecque. En son centre se dresse la Kaaba, premier lieu de culte bâti pour l'humanité. La mosquée abrite la Pierre Noire, le Station d'Abraham, le Puits de Zamzam, ainsi que les collines de Safa et Marwa."
+    },
+    "hira": {
+      "title": "Grotte de Hira",
+      "short": "Début de la révélation",
+      "full": "Une grotte au sommet du Mont An-Nour, située à 4 km à l'est de la Grande Mosquée. Le Prophète Muhammad ﷺ y adorait avant de recevoir la révélation, et l'Ange Jibril y a fait descendre les premiers versets du Saint Coran."
+    },
+    "thawr": {
+      "title": "Grotte du Thawr",
+      "short": "Refuge pendant l'Hégire",
+      "full": "Une grotte au sommet du Mont Thawr dans le sud de La Mecque. Le Prophète Muhammad ﷺ et son compagnon Abou Bakr s'y sont réfugiés pendant trois jours lors de l'Hégire vers Médine, sauvés lorsque l'araignée a tissé sa toile à l'entrée de la grotte."
+    },
+    "arafat": {
+      "title": "Plaine d'Arafat",
+      "short": "Lieu de station des pèlerins",
+      "full": "Une vaste zone à environ 20 km à l'est de La Mecque où les pèlerins se rassemblent le 9e jour de Dhoul Hijja. En son centre se dresse le Mont Arafat où le Prophète ﷺ a prononcé son sermon d'adieu."
+    },
+    "mina": {
+      "title": "Terre de Mina",
+      "short": "Lapidation des Jamarat",
+      "full": "Une zone désertique à environ 5 km à l'est de La Mecque, située entre La Mecque et Arafat. Connu pour son rôle essentiel dans les rituels du Hajj où les pèlerins passent les Jours de Tashriq et lapident les Jamarat."
+    },
+    "muzdalifah": {
+      "title": "Muzdalifah",
+      "short": "Collecte de cailloux",
+      "full": "Une zone entre Arafat et Mina où les pèlerins passent la nuit du 10e jour de Dhoul Hijja et collectent des cailloux pour lapider les Jamarat à Mina."
+    },
+    "namirah": {
+      "title": "Mosquée de Namirah",
+      "short": "Mosquée d'Arafat",
+      "full": "Grande mosquée à Arafat construite à l'endroit où le Prophète ﷺ a prié le Jour d'Arafat, où l'imam prononce le sermon de la prière de Dhohr et Asr le 9e jour de Dhoul Hijja."
+    },
+    "khayf": {
+      "title": "Mosquée de Khayf",
+      "short": "Mosquée des prophètes à Mina",
+      "full": "Une mosquée à Mina où, selon les traditions, soixante-dix prophètes ont prié, et l'une des plus anciennes mosquées de la région de La Mecque."
+    },
+    "birthplace": {
+      "title": "Lieu de naissance du Prophète",
+      "short": "Mawlid an-Nabi",
+      "full": "L'endroit à La Mecque où le Prophète Muhammad ﷺ est né, aujourd'hui connu sous le nom de bibliothèque gérée par l'Administration des Waqf."
+    },
+    "jin_mosque": {
+      "title": "Mosquée des Djinns",
+      "short": "Allégeance des Djinns",
+      "full": "Une mosquée à La Mecque située dans la zone connue sous le nom d'Al-Ji'ranah, où la Sourate Al-Jinn a été révélée et où un groupe de djinns ont prêté allégeance au Prophète Muhammad ﷺ."
+    },
+    "nabawi": {
+      "title": "La Mosquée du Prophète",
+      "short": "Sanctuaire du Prophète ﷺ",
+      "full": "La deuxième mosquée la plus sainte de l'islam, située à Médine. Construite par le Prophète Muhammad ﷺ après l'Hégire, elle abrite sa tombe noble, la Raudah ash-Shareefah et son minbar. La mosquée s'est étendue au fil de l'histoire, notamment sous le règne du Sultan Abdul Hamid II."
+    },
+    "baqi": {
+      "title": "Cimetière de Al-Baqi",
+      "short": "Dernier repos des Imams",
+      "full": "Le cimetière le plus important de Médine, connu sous le nom de Jannat al-Baqi. Dernier repos de quatre califes bien guidés (Abou Bakr, Omar, Outhman et Husayn), de milliers de compagnons, ainsi que des épouses et de la famille du Prophète ﷺ."
+    },
+    "quba": {
+      "title": "Mosquée de Quba",
+      "short": "Première mosquée de l'Islam",
+      "full": "La première mosquée construite par le Prophète Muhammad ﷺ après son émigration vers Médine le premier jour de son arrivée. Prier ici équivaut à accomplir un Umrah entier selon le Noble Hadith."
+    },
+    "uhud": {
+      "title": "Mont Uhud",
+      "short": "Martyrs d'Uhud",
+      "full": "Le site de la bataille historique d'Uhud qui a eu lieu la troisième année de l'Hégire, et la tombe de 70 martyrs de l'Islam, dont Hamza ibn Abdul-Muttalib, le Lion d'Allah et oncle du Prophète ﷺ."
+    },
+    "qiblatayn": {
+      "title": "Mosquée des Qiblatayn",
+      "short": "Changement de direction",
+      "full": "La mosquée où le commandement divin a été révélé pour changer la Qiblah de Jérusalem à la Kaaba sacrée la deuxième année de l'Hégire, la première mosquée construite à Médine après la Mosquée de Quba."
+    },
+    "sabah": {
+      "title": "Les Sept Mosquées",
+      "short": "Héritage de la Guerre du Fossé",
+      "full": "Un ensemble de petites mosquées historiques à Médine construites aux endroits où l'armée musulmane était stationnée autour de Médine pendant la Bataille du Fossé (Al-Ahzab)."
+    },
+    "khandaq": {
+      "title": "Bataille du Fossé",
+      "short": "Mont Sal'",
+      "full": "La zone près du Mont Sal' où les musulmans ont creusé un fossé pour défendre Médine, suivant la suggestion de Salman al-Farisi pendant la Bataille du Fossé."
+    },
+    "ghamamah": {
+      "title": "Mosquée de Ghamamah",
+      "short": "Mosquée du Nuage",
+      "full": "Une mosquée historique à Médine où le Prophète ﷺ a prié pour la pluie et où un nuage lui a donné de l'ombre."
+    },
+    "ijabah": {
+      "title": "Mosquée de Ijabah",
+      "short": "Prière exaucée",
+      "full": "Une mosquée à Médine où le Prophète Muhammad ﷺ a invoqué et où Allah a exaucé certaines de ses prières pour sa Ummah, une mosquée bénie avec une signification spéciale."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Ihram depuis Médine",
+      "full": "Le miqat principal pour les pèlerins venant de Médine pour le Hajj ou l'Umrah, où ils entrent dans l'état d'Ihram et revêtent les vêtements d'Ihram."
+    },
+    "jummah": {
+      "title": "Mosquée du Vendredi",
+      "short": "Première prière du Vendredi",
+      "full": "L'endroit où le Prophète Muhammad ﷺ a dirigé la première prière du Vendredi de l'Islam après avoir quitté Quba en direction de Médine."
+    },
+    "ambariyah": {
+      "title": "Mosquée d'Ambariyah",
+      "short": "Héritage ottoman",
+      "full": "Une belle mosquée à Médine avec une architecture ottomane unique, située près de l'ancienne gare du chemin de fer du Hedjaz, considérée comme l'un des héritages architecturaux ottomans à Médine."
+    }
+  }
+}

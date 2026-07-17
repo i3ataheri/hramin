@@ -1,0 +1,123 @@
+{
+  "lang_name": "Kiswahili",
+  "dir": "ltr",
+  "ui": {
+    "makkah_label": "Makkah",
+    "madinah_label": "Madinah",
+    "read_more": "Soma Zaidi",
+    "close": "Funga",
+    "loading": "Inapakia..."
+  },
+  "places": {
+    "haram": {
+      "title": "Msikiti Mkuu",
+      "short": "Eneo takatifu zaidi duniani",
+      "full": "Msikiti wa Al-Haram ni msikiti mkubwa zaidi duniani, unaopatikana katikati ya Makkah. Katikati yake kuna Kaaba, jengo la kwanza la ibada lililojengwa kwa ajili ya wanadamu. Msikiti huu una Hajar Al-Aswad, Kijiji cha Ibrahim, Chemchemi ya Zamzam, na vilima vya Safa na Marwa."
+    },
+    "hira": {
+      "title": "Pango la Hira",
+      "short": "Mwanzo wa ufunuzi",
+      "full": "Pango kwenye kilele cha Mlima An-Nour kilichopo km 4 mashariki ya Msikiti Mkuu. Mtume Muhammad ﷺ aliabudu hapa kabla ya kupokea ufunuzi, na Jibril AS aliangusha aya za kwanza za Quran Takatifu mahali hapa."
+    },
+    "thawr": {
+      "title": "Pango la Thawr",
+      "short": "Malisho wakati wa Hijra",
+      "full": "Pango kwenye kilele cha Mlima Thawr kusini mwa Makkah. Mtume Muhammad ﷺ na rafiki yake Abu Bakr walifichwa hapa kwa siku tatu wakati wa Hijra kwenda Madinah, wakiokolewa baada ya buibui kusuka wavu mlangoni pa pango."
+    },
+    "arafat": {
+      "title": "Tambarare ya Arafah",
+      "short": "Eneo la kusimama kwa Wahaji",
+      "full": "Eneo kubwa karibu na km 20 mashariki ya Makkah ambapo wahaji wamekusanyika tarehe 9 ya Dhul Hijjah. Katikati yake kuna Mlima Arafah ambapo Mtume ﷺ alihutubia Hotuba ya Kuaga."
+    },
+    "mina": {
+      "title": "Nchi ya Mina",
+      "short": "Kutupa mawe ya Jamarat",
+      "full": "Eneo la jangwa karibu na km 5 mashariki ya Makkah, liko kati ya Makkah na Arafah. Inajulikana kwa jukumu lake muhimu katika ibada za Hajj ambapo wahaji hupitia Siku za Tashriq na kutupa mawe ya Jamarat."
+    },
+    "muzdalifah": {
+      "title": "Muzdalifah",
+      "short": "Kuchanga mawe madogo",
+      "full": "Eneo kati ya Arafah na Mina ambapo wahaji hulala usiku wa tarehe 10 ya Dhul Hijjah na kuchanga mawe madogo kwa ajili ya kutupa Jamarat Mina."
+    },
+    "namirah": {
+      "title": "Msikiti wa Namirah",
+      "short": "Msikiti wa Arafah",
+      "full": "Msikiti mkubwa Arafah uliojengwa mahali Mtume ﷺ aliposwali Siku ya Arafah, ambapo imamu hutoa hotuba za swala ya Dhuhr na Asr tarehe 9 ya Dhul Hijjah."
+    },
+    "khayf": {
+      "title": "Msikiti wa Khayf",
+      "short": "Msikiti wa Manabii Mina",
+      "full": "Msikiti Mina ambapo kwa mujibu wa mila manabii sabini waliswali, na ni mojawapo wa misikiti ya zamani zaidi katika eneo la Makkah."
+    },
+    "birthplace": {
+      "title": "Mahali Mtume alipozaliwa",
+      "short": "Maulidi wa Nabii",
+      "full": "Mahali Makkah ambapo Mtume Muhammad ﷺ alizaliwa, ambapo sasa inajulikana kama maktaba inayosimamiwa na Idara ya Awqaf."
+    },
+    "jin_mosque": {
+      "title": "Msikiti wa Jinn",
+      "short": "Mapatano ya Jinn",
+      "full": "Msikiti Makkah ulio kwenye eneo linalojulikana kama Al-Ji'ranah, ambapo Surat Al-Jinn iliangushwa na kundi la Jinn lilimpatia Mtume ﷺ ahadi ya kumsaidia."
+    },
+    "nabawi": {
+      "title": "Msikiti wa Nabii ﷺ",
+      "short": "Eneo takatifu la Mtume ﷺ",
+      "full": "Msikiti wa pili mtakatifu zaidi wa Kiislamu unaopatikana Madinah. Ulivyojengwa na Mtume Muhammad ﷺ baada ya Hijra, msikiti huu una kaburi lake takatifu, Raudha ash-Shareefah na minbari yake. Msikiti huu ulikuwa mkubwa zaidi katika historia, hasa wakati wa utawala wa Sultan Abdul Hamid II."
+    },
+    "baqi": {
+      "title": "Makaburi ya Al-Baqi",
+      "short": "Mahali pa mapumziko ya Imamu",
+      "full": "Makaburi muhimu zaidi ya Madinah, inayojulikana kama Jannat al-Baqi. Mahali pa mapumziko ya Khulafa wa Rashidin wanne (Abu Bakr, Omar, Uthman na Husain), maelfu ya Sahaba, pamoja na wake na familia ya Mtume ﷺ."
+    },
+    "quba": {
+      "title": "Msikiti wa Quba",
+      "short": "Msikiti wa kwanza wa Kiislamu",
+      "full": "Msikiti wa kwanza uliojengwa na Mtume Muhammad ﷺ baada ya Hijra kwenda Madinah siku ya kwanza ya kuwasili kwake. Kuswali hapa ni sawa na Umrah nzima kulingana na Hadithi Takatifu."
+    },
+    "uhud": {
+      "title": "Mlima Uhud",
+      "short": "Wahitimifu wa Uhud",
+      "full": "Eneo la Vita vya Uhud vilivyofanyika mwaka wa tatu wa Hijra, na kaburi la wahitimifu 70 wa Kiislamu ikiwa ni pamoja na Hamza bin Abdul Muttalib, Simba wa Mwenyezi Mungu na mjomba wa Mtume ﷺ."
+    },
+    "qiblatayn": {
+      "title": "Msikiti wa Qiblatayn",
+      "short": "Mabadiliko ya Qibla",
+      "full": "Msikiti ambapo amri ya Mwenyezi Mungu iliangushwa kubadilisha Qibla kutoka Jerusalem hadi Kaaba takatifu mwaka wa pili wa Hijra, msikiti wa kwanza uliojengwa Madinah baada ya Msikiti wa Quba."
+    },
+    "sabah": {
+      "title": "Misikiti Saba",
+      "short": "Urithi wa Vita vya Khandaq",
+      "full": "Mkusanyiko wa misikiti midogo ya kihistoria Madinah iliyojengwa mahali ambapo jeshi la Waislamu lilikuwa limepangwa karibu na Madinah wakati wa Vita vya Khandaq (Al-Ahzab)."
+    },
+    "khandaq": {
+      "title": "Vita vya Khandaq",
+      "short": "Mlima Sal'",
+      "full": "Eneo karibu na Mlima Sal' ambapo Waislamu walisima shimo la kujilinda dhidi ya Madinah, kufuata pendekezo la Salman Al-Farisi wakati wa Vita vya Khandaq."
+    },
+    "ghamamah": {
+      "title": "Msikiti wa Ghamamah",
+      "short": "Msikiti wa Wingu",
+      "full": "Msikiti wa kihistoria Madinah ambapo Mtume Muhammad ﷺ aliswali ombi la mvua na wingu lilimpa kivuli."
+    },
+    "ijabah": {
+      "title": "Msikiti wa Ijabah",
+      "short": "Ombi lililojibiwa",
+      "full": "Msikiti Madinah ambapo Mtume Muhammad ﷺ aliomba na Mwenyezi Mungu akajibu baadhi ya maombi yake kwa ajili ya Ummah wake, msikiti baraka na maana maalum."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Ihram kutoka Madinah",
+      "full": "Miqat kuu kwa wahaji wanaokuja Madinah kwa Hajj au Umrah, ambapo wanaingia katika hali ya Ihram na kuvaa nguo za Ihram."
+    },
+    "jummah": {
+      "title": "Msikiti wa Ijumaa",
+      "short": "Swala ya Ijumaa ya kwanza",
+      "full": "Mahali ambapo Mtume Muhammad ﷺ aliongoza swala ya Ijumaa ya kwanza ya Kiislamu baada ya kuoondoka Quba kwenda Madinah."
+    },
+    "ambariyah": {
+      "title": "Msikiti wa Ambariyah",
+      "short": "Urithi wa Ottoman",
+      "full": "Msikiti mzuri Madinah wenye usanifu wa Ottoman wa kipekee, uliokaribu na kituo zamani cha reli ya Hejaz, inachukuliwa kuwa mojawapo ya urithi wa usanifu wa Ottoman Madinah."
+    }
+  }
+}

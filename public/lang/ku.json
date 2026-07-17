@@ -1,0 +1,124 @@
+{
+  "lang_name": "Kurdî",
+  "dir": "ltr",
+  "ui": {
+    "site_title": "Dergehên Pîroz",
+    "site_short": "Mekk û Medîne",
+    "makkah": "Mecca",
+    "madinah": "Medîne",
+    "map": "Xarîta",
+    "info": "Agahî"
+  },
+  "places": {
+    "haram": {
+      "title": "Dergehê Mezîn",
+      "short": "Qeybeyên cîhan",
+      "full": "Dergehê Mezîn (Haram) li Mecca de, ew serkeftinê ye ku di qeybeyên cîhan de derbas dikê."
+    },
+    "hira": {
+      "title": "Magaraya Hîra",
+      "short": "Destpêka wahîyê",
+      "full": "Magaraya Hîra li çiyayê Nûr de, li Mecca. Di vir de Peygamber ﷺ wahîyê qebûl kard."
+    },
+    "thawr": {
+      "title": "Magaraya Seûr",
+      "short": "Pênûça heceretê",
+      "full": "Magaraya Seûr li çiyayê Seûr de, li Mecca. Peygamber ﷺ û Ebu Bekir li vir ve hatin pênûçandin."
+    },
+    "arafat": {
+      "title": "Bêstana Arefat",
+      "short": "Cihê ruketina haccan",
+      "full": "Bêstana Arefat li Mecca de, cihê ku haccan di roja 9'ê Zîlheccê de di vir de ruket dibin."
+    },
+    "mina": {
+      "title": "Meşkera Mina",
+      "short": "Bêrkana kevrexan",
+      "full": "Meşkera Mina li Mecca de, li vir de kevrexan dibare."
+    },
+    "muzdalifah": {
+      "title": "Muzdelfe",
+      "short": "Berxwedana kevrexan",
+      "full": "Muzdelfe li navîna Arefat û Mina de, li vir de haccan kevrexan berxwedan dike."
+    },
+    "namirah": {
+      "title": "Dergeha Namîra",
+      "short": "Dergeha Arefat",
+      "full": "Dergeha Namîra li Bêstana Arefat de, li vir de Peygamber ﷺ nimazê nîswan kird."
+    },
+    "khayf": {
+      "title": "Dergeha Xeyf",
+      "short": "Dergeha peyghamersan",
+      "full": "Dergeha Xeyf li Mina de, li vir de piştî kevrexanê peyghamber hatine dîtin."
+    },
+    "birthplace": {
+      "title": "Tevlêdetiya Peygamber ﷺ",
+      "short": "Xweşîya nubûetê",
+      "full": "Tevlêdetiya Peygamber ﷺ li Mecca de, di serbestiya welatê de hatî."
+    },
+    "jin_mosque": {
+      "title": "Dergeha Cinn",
+      "short": "Peymanna cinnan",
+      "full": "Dergeha Cinn li Mecca de, li vir de cinnan Peygamber ﷺ'a peyman daye."
+    },
+    "nabawi": {
+      "title": "Dergeha Peygamber ﷺ",
+      "short": "Qeyba Peygamber",
+      "full": "Dergeha Peygamber (Nebavî) li Medîne de, serkeftinê ya pêşîn diya."
+    },
+    "baqi": {
+      "title": "Baqî",
+      "short": "Qeyba hevalan",
+      "full": "Baqî li Medîne de, qeyba hevalan û xelîfan di vir de ne."
+    },
+    "quba": {
+      "title": "Dergeha Quba",
+      "short": "Pêşîn dergeha islama",
+      "full": "Dergeha Quba li Medîne de, di vir de Peygamber ﷺ'a pêşîn dergeha islama bina kird."
+    },
+    "uhud": {
+      "title": "Çiyayê Uhud",
+      "short": "Şehîdên Uhud",
+      "full": "Çiyayê Uhud li Medîne de, li vir de desteya Uhud'ê hat."
+    },
+    "qiblatayn": {
+      "title": "Dergeha Qibletayn",
+      "short": "Guhertina qibleyê",
+      "full": "Dergeha Qibletayn li Medîne de, di vir de qible hat guhertin."
+    },
+    "sabah": {
+      "title": "Şişt Dergehan",
+      "short": "Mirata çavkaniyê",
+      "full": "Şişt Dergehan li Medîne de, di girtina Medîne de li vir de hatin."
+    },
+    "khandaq": {
+      "title": "Desteya Çavkaniyê",
+      "short": "Çiyayê Selew",
+      "full": "Desteya Çavkaniyê (Ahzab) li Medîne de, li vir de desteya Ahzab hat."
+    },
+    "ghamamah": {
+      "title": "Dergeha Ghamame",
+      "short": "Dergeha abrê",
+      "full": "Dergeha Ghamame li Medîne de, li vir de Peygamber ﷺ di abrê de hat."
+    },
+    "ijabah": {
+      "title": "Dergeha Îcabeh",
+      "short": "Duayê qebûlî",
+      "full": "Dergeha Îcabeh li Medîne de, li vir de Peygamber ﷺ duayê qebûlî kird."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Îhrîmîya Medîne",
+      "full": "Miqat li derbasê Medîne de, li vir de haccan îhrîm dibin."
+    },
+    "jummah": {
+      "title": "Dergeha Cuwmeyê",
+      "short": "Pêşîn cuwmeyê",
+      "full": "Dergeha Cuwmeyê li Medîne de, li vir de Peygamber ﷺ pêşîn cuwmeyê kird."
+    },
+    "ambariyah": {
+      "title": "Dergeha Ambariye",
+      "short": "Mirata osmanî",
+      "full": "Dergeha Ambariye li Medîne de, li vir de mirata osmanî ye."
+    }
+  }
+}

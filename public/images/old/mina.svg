@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="minaSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3c72"/>
+      <stop offset="50%" stop-color="#2a5298"/>
+      <stop offset="100%" stop-color="#56a3d6"/>
+    </linearGradient>
+    <linearGradient id="gold11" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b8860b"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="600" fill="url(#minaSky)"/>
+
+  <!-- Mountains -->
+  <polygon points="0,300 60,200 120,260 180,180 250,240 320,190 400,280 400,300" fill="#1e3c72" opacity="0.5"/>
+  <polygon points="0,320 80,240 160,280 220,220 300,270 400,250 400,320" fill="#2a5298" opacity="0.4"/>
+
+  <!-- Ground -->
+  <rect x="0" y="300" width="400" height="300" fill="#e8d5b7"/>
+
+  <!-- Tents - Mina Valley -->
+  <g fill="#fff" opacity="0.8">
+    <!-- Row 1 -->
+    <polygon points="30,300 55,270 80,300"/>
+    <polygon points="80,300 105,270 130,300"/>
+    <polygon points="130,300 155,270 180,300"/>
+    <polygon points="180,300 205,270 230,300"/>
+    <polygon points="230,300 255,270 280,300"/>
+    <polygon points="280,300 305,270 330,300"/>
+    <polygon points="330,300 355,270 380,300"/>
+
+    <!-- Row 2 -->
+    <polygon points="50,330 75,300 100,330"/>
+    <polygon points="100,330 125,300 150,330"/>
+    <polygon points="150,330 175,300 200,330"/>
+    <polygon points="200,330 225,300 250,330"/>
+    <polygon points="250,330 275,300 300,330"/>
+    <polygon points="300,330 325,300 350,330"/>
+
+    <!-- Row 3 -->
+    <polygon points="30,360 55,330 80,360"/>
+    <polygon points="80,360 105,330 130,360"/>
+    <polygon points="130,360 155,330 180,360"/>
+    <polygon points="180,360 205,330 230,360"/>
+    <polygon points="230,360 255,330 280,360"/>
+    <polygon points="280,360 305,330 330,360"/>
+    <polygon points="330,360 355,330 380,360"/>
+  </g>
+
+  <!-- Roads between tents -->
+  <g fill="#c9a96e" opacity="0.3">
+    <rect x="0" y="308" width="400" height="2"/>
+    <rect x="0" y="338" width="400" height="2"/>
+    <rect x="0" y="368" width="400" height="2"/>
+  </g>
+
+  <!-- Bridge of Jamarat -->
+  <rect x="150" y="390" width="100" height="30" fill="#8b7355" rx="3"/>
+  <rect x="160" y="395" width="80" height="20" fill="#a08060" rx="2"/>
+
+  <!-- Pillars -->
+  <g fill="#6b5b3a">
+    <rect x="155" y="385" width="5" height="40"/>
+    <rect x="240" y="385" width="5" height="40"/>
+  </g>
+
+  <!-- People walking -->
+  <g fill="#5a4a3a" opacity="0.3">
+    <circle cx="100" cy="395" r="3"/>
+    <circle cx="180" cy="393" r="3"/>
+    <circle cx="260" cy="395" r="3"/>
+    <circle cx="340" cy="393" r="3"/>
+  </g>
+
+  <!-- Title -->
+  <text x="200" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#1e3c72" font-weight="bold">منى</text>
+  <text x="200" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#2a5298">Mina Valley</text>
+</svg>

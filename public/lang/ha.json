@@ -1,0 +1,123 @@
+{
+  "lang_name": "Hausa",
+  "dir": "ltr",
+  "ui": {
+    "makkah_label": "Makkah",
+    "madinah_label": "Madinah",
+    "read_more": "Ƙara Karantawa",
+    "close": "Rufe",
+    "loading": "Ana lodi..."
+  },
+  "places": {
+    "haram": {
+      "title": "Masu Addini Biyu",
+      "short": "Yanki mafi tsarki a duniya",
+      "full": "Masjid al-Haram shine cibiyar addini a cikin Alkur'ani, ana gudanar da ayyuka masu tsarki da yawa. Ƙofar Alkawari tana nan a tsakiyar Masu Addini Biyu, wanda shi ne mausammi na Musulunci."
+    },
+    "hira": {
+      "title": "Tumafufin Hira",
+      "short": "Farkon Wahi",
+      "full": "Tumafufi a saman Dutsen An-Nur wanda yake a faɗi na Gabas na Masu Addini Biyu. Annabi Muhammad ﷺ yana bauta a nan kafin ya karɓi wahi, Jibril AS ya saukar da aya na farko na Alkur'ani Mai Tsarki a nan."
+    },
+    "thawr": {
+      "title": "Tumafufin Thawr",
+      "short": "Masu Tsare-tsare na Hijira",
+      "full": "Tumafufi a saman Dutsen Thawr a karkara na Kudancin Makkah. Annabi Muhammad ﷺ da abokinsa Abu Bakr sun boye a nan na tsakanin rana uku a lokacin Hijira zuwa Madinah, an cece su lokacin da gurgu ya gina gangara a bakin tumafufin."
+    },
+    "arafat": {
+      "title": "Yankin Arafat",
+      "short": "Wurin Zayyana Alhajai",
+      "full": "Yanki mai faɗi kusan kilomita 20 a Gabas na Makkah inda Alhajai ke tattara a 9 na watan Dhul Hijjah. A tsakiyarsa akwai Dutsen Arafat inda Annabi ﷺ ya yi khutba na ƙarshe."
+    },
+    "mina": {
+      "title": "Yankin Mina",
+      "short": "Jawo Kwanuka",
+      "full": "Yankin hamada kusan kilomita 5 a Gabas na Makkah, yana tsakanin Makkah da Arafat. Ana san shi da muhimmancinsa a cikin alummomin Alhajji inda Alhajai ke ci gaba da Rana Tashriq kuma suna jawo kwanuka."
+    },
+    "muzdalifah": {
+      "title": "Muzdalifah",
+      "short": "Tattara Kunkune",
+      "full": "Yanki a tsakanin Arafat da Mina inda Alhajai ke bacci na dare na 10 na watan Dhul Hijjah suna tattara kukan don jawo Jamarat a Mina."
+    },
+    "namirah": {
+      "title": "Masjid Namirah",
+      "short": "Masjid na Arafat",
+      "full": "Babban Masjid a Arafat an gina shi a wurin da Annabi ﷺ ya yi salla a Rana Arafah, inda Imamu ke bayyana khutba na sallar Dhuhr da Asr a 9 na watan Dhul Hijjah."
+    },
+    "khayf": {
+      "title": "Masjid Khayf",
+      "short": "Masjid Annabawa a Mina",
+      "full": "Masjid a Mina inda a bisa wa gargajiya manabi talatin suka yi salla, kuma shi ne ɗaya daga cikin masu ta-addini da suka fi tsufa a yankin Makkah."
+    },
+    "birthplace": {
+      "title": "Wurin Haihuwar Annabi",
+      "short": "Mawlidin Annabi",
+      "full": "Wurin a Makkah inda Annabi Muhammad ﷺ ya haihu, wanda yanzu ana san shi da ɗakin karatu da Ma'aikatar Awqaf ke gudanarwa."
+    },
+    "jin_mosque": {
+      "title": "Masjid na Jinn",
+      "short": "Yakin Jinn",
+      "full": "Masjid a Makkah yana cikin yanki da ake kira Al-Ji'ranah, inda Surat Al-Jinn ta sauka kuma ƙungiyar Jinn ta yi 'yakin Annabi Muhammad ﷺ."
+    },
+    "nabawi": {
+      "title": "Masjid na Nabii ﷺ",
+      "short": "Muhallin Tsoron Annabi ﷺ",
+      "full": "Na biyu masu tsarki a addinin Islam suna a Madinah. Annabi Muhammad ﷺ ya gina shi bayan Hijira, masjid yana ƙunshe da kaburinsa mai tsarki, Raudha ash-Shareefah da minbari. Masjid ya fadada a tarihi, musamman a lokacin Uwakilin Sultan Abdul Hamid II."
+    },
+    "baqi": {
+      "title": "Kaburuwar Al-Baqi",
+      "short": "Wurin Bacci na Imamu",
+      "full": "Kaburuwar da ta fi muhimmanci a Madinah, tana da suna Jannat al-Baqi. Wurin bacci na Khulafa Rashiidin huɗu (Abu Bakr, Umar, Uthman da Husain), dubban Sahaba, kuma matan Annabi ﷺ da iyalansa."
+    },
+    "quba": {
+      "title": "Masjid Quba",
+      "short": "Farkon Masjid a Islam",
+      "full": "Farkon Masjid da Annabi Muhammad ﷺ ya gina bayan Hijira zuwa Madinah a rana ta farko da ya iso. Salla a nan tana da darajar Umrah guda  bisa ga Hadisin Mai Tsarki."
+    },
+    "uhud": {
+      "title": "Dutsen Uhud",
+      "short": "Martyrs na Uhud",
+      "full": "Wurin Taikin Uhud da ya faru a shekara ta uku na Hijira, kuma kaburin martyrs 70 na Musulunci ciki har da Hamza bin Abdul Muttalib, leon na Allah da kuma rane Annabi ﷺ."
+    },
+    "qiblatayn": {
+      "title": "Masjid na Qiblatayn",
+      "short": "Canjin Qibla",
+      "full": "Masjid inda umarni ta Allah ta sauka don canza Qibla daga Jerusalem zuwa Kaaba mai tsarki a shekara ta biyu na Hijira, farkon Masjid da aka gina a Madinah bayan Masjid Quba."
+    },
+    "sabah": {
+      "title": "Masu Addini Biyu (7)",
+      "short": "Jarirar Taikin Khandaq",
+      "full": "ƙungiyar masu addini masu ƙanƙanta a tarihi a Madinah an gina su a wurare inda jihadiyar Musulunta ta tsaya a Madinah a lokacin Taikin Khandaq (Al-Ahzab)."
+    },
+    "khandaq": {
+      "title": "Taikin Khandaq",
+      "short": "Dutsen Sal'",
+      "full": "Yanki a kusa da Dutsen Sal' inda Musulunta suka koyar don kare Madinah, bisa shawarar Salman Al-Farisi a lokacin Taikin Khandaq."
+    },
+    "ghamamah": {
+      "title": "Masjid Ghamamah",
+      "short": "Masjid na Saman",
+      "full": "Masjid a tarihi a Madinah inda Annabi Muhammad ﷺ ya yi addu'a don ruwa kuma saman ya bayar masa duwatsu."
+    },
+    "ijabah": {
+      "title": "Masjid Ijabah",
+      "short": "Addu'a da aka karɓe",
+      "full": "Masjid a Madinah inda Annabi Muhammad ﷺ ya yi addu'a kuma Allah ya karɓe wasu addu'oinsa na Ummah, masjid mai albarka da ma'ana musamman."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Ihram daga Madinah",
+      "full": "Miqat na farko ga Alhajai daga Madinah don Hajj ko Umrah, inda suke shiga halin Ihram kuma suna sanya tufafin Ihram."
+    },
+    "jummah": {
+      "title": "Masjid Aljum'a",
+      "short": "Farkon Sallar Aljum'a",
+      "full": "Wurin da Annabi Muhammad ﷺ ya jagoranta farkon Sallar Aljum'a a Islam bayan ya tafi daga Quba zuwa Madinah."
+    },
+    "ambariyah": {
+      "title": "Masjid Ambariyah",
+      "short": "Gadon Ottoman",
+      "full": "Masjid kyau a Madinah tare da fasahar Ottoman ta musamman, yana kusa da tashar tarin tsohon Hejaz, ana ƙididdige shi ɗaya daga cikin gadon fasahar Ottoman a Madinah."
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "lang_name": "Indonesia",
+  "dir": "ltr",
+  "ui": {
+    "makkah_label": "Makkah",
+    "madinah_label": "Madinah",
+    "read_more": "Baca Selengkapnya",
+    "close": "Tutup",
+    "loading": "Memuat..."
+  },
+  "places": {
+    "haram": {
+      "title": "Masjidil Haram",
+      "short": "Tempat paling suci",
+      "full": "Masjidil Haram adalah masjid terbesar di dunia yang terletak di jantung kota Makkah. Di tengahnya berdiri Ka'bah, bangunan ibadah pertama yang dibangun untuk umat manusia. Masjid ini memiliki Hajar Aswad, Maqam Ibrahim, Sumur Zamzam, serta bukit Shafa dan Marwah."
+    },
+    "hira": {
+      "title": "Gua Hira",
+      "short": "Awal turunnya wahyu",
+      "full": "Gua di puncak Gunung An-Nur yang terletak 4 km di sebelah timur Masjidil Haram. Nabi Muhammad ﷺ beribadah di sini sebelum menerima wahyu, dan Jibril AS menurunkan ayat-ayat pertama Al-Qur'an di tempat ini."
+    },
+    "thawr": {
+      "title": "Gua Tsur",
+      "short": "Perlindungan saat Hijrah",
+      "full": "Gua di puncak Gunung Tsur di selatan Makkah. Nabi Muhammad ﷺ dan sahabatnya Abu Bakr berlindung di sini selama tiga hari saat hijrah ke Madinah, diselamatkan ketika laba-laba membuat jaring di mulut gua."
+    },
+    "arafat": {
+      "title": "Padang Arafah",
+      "short": "Tempat berdirinya jemaah haji",
+      "full": "Area luas sekitar 20 km di timur Makkah tempat jemaah haji berkumpul pada tanggal 9 Dzulhijjah. Di tengahnya berdiri Gunung Arafah di mana Nabi Muhammad ﷺ menyampaikan Khutbah Wada'."
+    },
+    "mina": {
+      "title": "Tanah Mina",
+      "short": "Melempar Jumrah",
+      "full": "Area gurun sekitar 5 km di timur Makkah, terletak antara Makkah dan Arafah. Dikenal peran pentingnya dalam ritual haji di mana jemaah menghabiskan Hari Tasyriq dan melempar jumrah."
+    },
+    "muzdalifah": {
+      "title": "Muzdalifah",
+      "short": "Mengumpulkan kerikil",
+      "full": "Area antara Arafah dan Mina di mana jemaah bermalam pada malam ke-10 Dzulhijjah dan mengumpulkan kerikil untuk melempar jumrah di Mina."
+    },
+    "namirah": {
+      "title": "Masjid Namirah",
+      "short": "Masjid Arafah",
+      "full": "Masjid besar di Arafah yang dibangun di tempat Nabi Muhammad ﷺ shalat pada Hari Arafah, di mana imam menyampaikan khutbah shalat Dzuhur dan Asr pada tanggal 9 Dzulhijjah."
+    },
+    "khayf": {
+      "title": "Masjid Khayf",
+      "short": "Masjid para Nabi di Mina",
+      "full": "Masjid di Mina di mana menurut tradisi tujuh puluh nabi pernah shalat, dan merupakan salah satu masjid tertua di kawasan Makkah."
+    },
+    "birthplace": {
+      "title": "Tempat Lahir Nabi",
+      "short": "Maulid Nabi",
+      "full": "Tempat di Makkah di mana Nabi Muhammad ﷺ dilahirkan, yang sekarang dikenal sebagai perpustakaan yang dikelola oleh Dinas Wakaf."
+    },
+    "jin_mosque": {
+      "title": "Masjid Jinn",
+      "short": "Bai'at Jin",
+      "full": "Masjid di Makkah yang terletak di daerah yang dikenal sebagai Al-Ji'ranah, di mana Surah Al-Jinn diturunkan dan sekelompok jin membai'at Nabi Muhammad ﷺ."
+    },
+    "nabawi": {
+      "title": "Masjid Nabawi",
+      "short": "Tempat suci Nabi ﷺ",
+      "full": "Masjid suci kedua dalam Islam yang terletak di Madinah. Dibangun oleh Nabi Muhammad ﷺ setelah hijrah, masjid ini berisi makam beliau yang mulia, Raudah Syarifah, dan mimbar beliau. Masjid ini meluas sepanjang sejarah, terutama pada masa pemerintahan Sultan Abdul Hamid II."
+    },
+    "baqi": {
+      "title": "Pekuburan Baqi",
+      "short": "Tempat peristirahatan Imam",
+      "full": "Pekuburan terpenting di Madinah, dikenal sebagai Jannat al-Bqi. Tempat peristirahatan empat Khalifah Rasyidin (Abu Bakar, Umar, Utsman, dan Husain), ribuan sahabat, serta istri dan keluarga Nabi ﷺ."
+    },
+    "quba": {
+      "title": "Masjid Quba",
+      "short": "Masjid pertama dalam Islam",
+      "full": "Masjid pertama yang dibangun oleh Nabi Muhammad ﷺ setelah hijrah ke Madinah pada hari pertama kedatangan. Shalat di masjid ini senilai dengan satu umrah menurut hadits yang mulia."
+    },
+    "uhud": {
+      "title": "Gunung Uhud",
+      "short": "Syuhada Uhud",
+      "full": "Lokasi Perang Uhud yang bersejarah yang terjadi pada tahun ketiga hijrah, dan makam 70 syuhada Islam termasuk Hamza bin Abdul Muttalib, paman Nabi ﷺ dan Pahlawan Allah."
+    },
+    "qiblatayn": {
+      "title": "Masjid Qiblatayn",
+      "short": "Perubahan arah kiblat",
+      "full": "Masjid di mana perintah ilahi diturunkan untuk mengubah kiblat dari Baitul Maqdis ke Ka'bah pada tahun kedua hijrah, masjid pertama yang dibangun di Madinah setelah Masjid Quba."
+    },
+    "sabah": {
+      "title": "Tujuh Masjid",
+      "short": "Warisan Perang Parit",
+      "full": "Kumpulan masjid-masjid kecil bersejarah di Madinah yang dibangun di lokasi-lokasi di mana tentara Muslim ditempatkan di sekitar Madinah selama Perang Parit (Khandaq)."
+    },
+    "khandaq": {
+      "title": "Perang Parit",
+      "short": "Gunung Sal'",
+      "full": "Area dekat Gunung Sal' di mana Muslim menggali parit untuk membela Madinah, mengikuti saran Salman Al-Farisi selama Perang Parit."
+    },
+    "ghamamah": {
+      "title": "Masjid Ghamamah",
+      "short": "Masjid Awan",
+      "full": "Masjid bersejarah di Madinah di mana Nabi Muhammad ﷺ shalat minta hujan dan awan menaungi beliau."
+    },
+    "ijabah": {
+      "title": "Masjid Ijabah",
+      "short": "Doa yang dikabulkan",
+      "full": "Masjid di Madinah di mana Nabi Muhammad ﷺ berdoa dan Allah mengabulkan sebagian doa beliau untuk umatnya, masjid yang diberkahi dengan keistimewaan khusus."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Ihram dari Madinah",
+      "full": "Miqat utama bagi jemaah yang datang dari Madinah untuk haji atau umrah, di mana mereka memasuki keadaan ihram dan mengenakan pakaian ihram."
+    },
+    "jummah": {
+      "title": "Masjid Jumat",
+      "short": "Shalat Jumat pertama",
+      "full": "Tempat di mana Nabi Muhammad ﷺ memimpin shalat Jumat pertama dalam Islam setelah berangkat dari Quba menuju Madinah."
+    },
+    "ambariyah": {
+      "title": "Masjid Ambariyah",
+      "short": "Warisan Ottoman",
+      "full": "Masjid indah di Madinah dengan arsitektur Ottoman yang unik, terletak dekat stasiun kereta api Hejaz tua, merupakan salah satu warisan arsitektur Ottoman di Madinah."
+    }
+  }
+}

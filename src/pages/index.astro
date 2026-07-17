@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/App.astro';
+---
+
+<Layout>
+  <!-- Phone container (direct) -->
+  <div id="app-container" class="app-container">
+    <!-- Background scene inside phone -->
+    <div id="phone-scene" class="phone-scene">
+      <div class="phone-gradient"></div>
+    </div>
+
+    <!-- Info panel -->
+    <div class="info-panel">
+      <div class="title-row">
+        <div>
+          <h2 id="app-title" class="app-title">...</h2>
+          <p id="app-short" class="app-short">...</p>
+        </div>
+        <button class="info-btn" id="info-btn" aria-label="info">
+          <svg viewBox="0 0 24 24" width="22" height="22">
+            <path d="M10,9 L14,8 L13,11 L11,10 L10,9 Z M10,12 L14,11 L13,18 L9,19 L10,12 Z" fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Language sidebar (20 lang) -->
+      <div class="lang-sidebar" id="lang-sidebar">
+      <div class="lang-scroll">
+        <div class="lang-item active" data-lang="ar">AR</div>
+        <div class="lang-item" data-lang="fa">FA</div>
+        <div class="lang-item" data-lang="en">EN</div>
+        <div class="lang-item" data-lang="ur">UR</div>
+        <div class="lang-item" data-lang="id">ID</div>
+        <div class="lang-item" data-lang="bn">BN</div>
+        <div class="lang-item" data-lang="tr">TR</div>
+        <div class="lang-item" data-lang="ms">MS</div>
+        <div class="lang-item" data-lang="fr">FR</div>
+        <div class="lang-item" data-lang="sw">SW</div>
+        <div class="lang-item" data-lang="ha">HA</div>
+        <div class="lang-item" data-lang="ps">PS</div>
+        <div class="lang-item" data-lang="uz">UZ</div>
+        <div class="lang-item" data-lang="ru">RU</div>
+        <div class="lang-item" data-lang="zh">ZH</div>
+        <div class="lang-item" data-lang="az">AZ</div>
+        <div class="lang-item" data-lang="ku">KU</div>
+        <div class="lang-item" data-lang="so">SO</div>
+        <div class="lang-item" data-lang="bs">BS</div>
+        <div class="lang-item" data-lang="tg">TG</div>
+      </div>
+    </div>
+
+    <!-- Image slider -->
+    <div class="slider-viewport">
+      <div class="image-track" id="image-track"></div>
+    </div>
+
+    <!-- City selector -->
+    <div class="city-selector">
+      <a href="/map" class="city-btn map-btn" title="نقشه">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
+      </a>
+      <button id="btn-makkah" class="city-btn active-makkah" data-city="makkah">
+        <img src="/images/makkah.svg" alt="مکه" width="22" height="22">
+      </button>
+      <button id="btn-madinah" class="city-btn" data-city="madinah">
+        <img src="/images/madinah.svg" alt="مدینه" width="22" height="22">
+      </button>
+    </div>
+
+    <!-- Bottom menu -->
+    <div class="sidebar-bottom" id="places-list"></div>
+
+    <!-- Description overlay -->
+    <div class="desc-overlay" id="desc-overlay">
+      <button class="close-btn" id="close-desc"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+      <h2 id="modal-title" class="modal-title">...</h2>
+      <div id="modal-description" class="modal-desc">...</div>
+    </div>
+  </div>
+</Layout>

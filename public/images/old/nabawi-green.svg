@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="rainSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="50%" stop-color="#4a6741"/>
+      <stop offset="100%" stop-color="#1a252f"/>
+    </linearGradient>
+    <linearGradient id="gold5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b8860b"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="greenDome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d6a4f"/>
+      <stop offset="50%" stop-color="#1b4332"/>
+      <stop offset="100%" stop-color="#081c15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="600" fill="url(#rainSky)"/>
+
+  <!-- Clouds -->
+  <g fill="#4a6741" opacity="0.3">
+    <ellipse cx="100" cy="80" rx="80" ry="30"/>
+    <ellipse cx="300" cy="100" rx="70" ry="25"/>
+    <ellipse cx="200" cy="60" rx="60" ry="20"/>
+  </g>
+
+  <!-- Rain -->
+  <g stroke="#7fb3d3" stroke-width="0.5" opacity="0.3">
+    <line x1="20" y1="0" x2="15" y2="20"/>
+    <line x1="60" y1="10" x2="55" y2="30"/>
+    <line x1="100" y1="5" x2="95" y2="25"/>
+    <line x1="140" y1="15" x2="135" y2="35"/>
+    <line x1="180" y1="0" x2="175" y2="20"/>
+    <line x1="220" y1="8" x2="215" y2="28"/>
+    <line x1="260" y1="3" x2="255" y2="23"/>
+    <line x1="300" y1="12" x2="295" y2="32"/>
+    <line x1="340" y1="7" x2="335" y2="27"/>
+    <line x1="380" y1="2" x2="375" y2="22"/>
+  </g>
+
+  <!-- Green Dome (Masjid an-Nabawi) -->
+  <ellipse cx="200" cy="300" rx="100" ry="65" fill="url(#greenDome)"/>
+  <ellipse cx="200" cy="295" rx="90" ry="60" fill="#2d6a4f"/>
+
+  <!-- Dome details -->
+  <ellipse cx="200" cy="290" rx="80" ry="55" fill="#357a58"/>
+  <ellipse cx="200" cy="285" rx="70" ry="50" fill="#3a8c61"/>
+
+  <!-- Crescent on top -->
+  <circle cx="200" cy="240" r="10" fill="url(#gold5)"/>
+  <circle cx="203" cy="238" r="8" fill="#357a58"/>
+
+  <!-- Minaret -->
+  <rect x="185" y="180" width="12" height="120" fill="#1b4332"/>
+  <polygon points="185,180 191,165 197,180" fill="#1b4332"/>
+  <circle cx="191" cy="163" r="4" fill="url(#gold5)"/>
+
+  <!-- Building -->
+  <rect x="60" y="340" width="280" height="120" fill="#1b4332"/>
+  <rect x="60" y="335" width="280" height="10" fill="url(#gold5)" opacity="0.5"/>
+
+  <!-- Windows -->
+  <g fill="#2d6a4f" opacity="0.6">
+    <rect x="80" y="360" width="25" height="35" rx="12"/>
+    <rect x="130" y="360" width="25" height="35" rx="12"/>
+    <rect x="245" y="360" width="25" height="35" rx="12"/>
+    <rect x="295" y="360" width="25" height="35" rx="12"/>
+  </g>
+
+  <!-- Gold accents -->
+  <rect x="60" y="380" width="280" height="3" fill="url(#gold5)" opacity="0.3"/>
+  <rect x="60" y="420" width="280" height="3" fill="url(#gold5)" opacity="0.3"/>
+
+  <!-- Courtyard -->
+  <rect x="0" y="460" width="400" height="140" fill="#1a252f"/>
+  <rect x="0" y="460" width="400" height="5" fill="url(#gold5)" opacity="0.15"/>
+
+  <!-- Umbrellas -->
+  <g fill="#2d6a4f" opacity="0.4">
+    <polygon points="50,470 30,455 70,455"/>
+    <line x1="50" y1="455" x2="50" y2="485" stroke="#555" stroke-width="1"/>
+    <polygon points="150,468 130,453 170,453"/>
+    <line x1="150" y1="453" x2="150" y2="483" stroke="#555" stroke-width="1"/>
+    <polygon points="250,470 230,455 270,455"/>
+    <line x1="250" y1="455" x2="250" y2="485" stroke="#555" stroke-width="1"/>
+    <polygon points="350,468 330,453 370,453"/>
+    <line x1="350" y1="453" x2="350" y2="483" stroke="#555" stroke-width="1"/>
+  </g>
+
+  <!-- Title -->
+  <text x="200" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#ffd700" font-weight="bold">المسجد النبوي</text>
+  <text x="200" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#7fb3d3">Masjid an-Nabawi</text>
+</svg>

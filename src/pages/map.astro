@@ -1,0 +1,386 @@
+---
+import Layout from '../layouts/App.astro';
+---
+
+<Layout>
+  <div id="map-page">
+    <div id="map-header">
+      <a href="/" class="back-btn">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"/></svg>
+      </a>
+      <h1 id="map-title">نقشه حرمین شریفین</h1>
+      <div class="lang-select" id="map-lang-select">
+        <button class="lang-btn" id="map-lang-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" fill="currentColor"/></svg>
+        </button>
+        <div class="lang-dropdown" id="map-lang-dropdown"></div>
+      </div>
+    </div>
+    <div id="map-container"></div>
+    <div id="map-legend">
+      <div class="legend-item"><span class="legend-dot makkah"></span><span id="legend-makkah">مكة</span></div>
+      <div class="legend-item"><span class="legend-dot madinah"></span><span id="legend-madinah">المدينة</span></div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <style>
+    #map-page {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #0a0a0a;
+    }
+
+    #map-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      background: rgba(10,10,10,0.95);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      z-index: 100;
+      flex-shrink: 0;
+    }
+
+    .back-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.06);
+      color: #D4AF37;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: rgba(212,175,55,0.15);
+    }
+
+    #map-title {
+      font-family: 'Amiri', 'Vazirmatn', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #D4AF37;
+    }
+
+    .lang-select {
+      position: relative;
+    }
+
+    .lang-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.06);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .lang-btn:hover {
+      background: rgba(212,175,55,0.15);
+    }
+
+    .lang-dropdown {
+      position: absolute;
+      top: 48px;
+      right: 0;
+      background: #111;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 8px;
+      display: none;
+      max-height: 300px;
+      overflow-y: auto;
+      min-width: 140px;
+      z-index: 200;
+    }
+
+    .lang-dropdown.open {
+      display: block;
+    }
+
+    .lang-option {
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #ccc;
+      transition: 0.2s;
+    }
+
+    .lang-option:hover {
+      background: rgba(212,175,55,0.15);
+      color: #D4AF37;
+    }
+
+    .lang-option.active {
+      color: #D4AF37;
+      background: rgba(212,175,55,0.1);
+    }
+
+    #map-container {
+      flex: 1;
+      z-index: 1;
+    }
+
+    #map-legend {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      background: rgba(10,10,10,0.9);
+      backdrop-filter: blur(10px);
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: 1px solid rgba(255,255,255,0.1);
+      z-index: 100;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .legend-dot.makkah { background: #D4AF37; }
+    .legend-dot.madinah { background: #2E7D32; }
+
+    .leaflet-popup-content-wrapper {
+      background: rgba(10,10,10,0.95) !important;
+      border-radius: 12px !important;
+      border: 1px solid rgba(212,175,55,0.3) !important;
+      color: #fff !important;
+    }
+
+    .leaflet-popup-tip {
+      background: rgba(10,10,10,0.95) !important;
+      border: 1px solid rgba(212,175,55,0.3) !important;
+    }
+
+    .popup-title {
+      font-family: 'Amiri', 'Vazirmatn', sans-serif;
+      font-size: 16px;
+      color: #D4AF37;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .popup-city {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+
+    .popup-short {
+      font-size: 13px;
+      color: #bbb;
+    }
+  </style>
+
+  <script is:inline>
+    const landmarkData = {
+      makkah: [
+        { id: "haram", lat: 21.4225, lng: 39.8262 },
+        { id: "hira", lat: 21.4533, lng: 39.8646 },
+        { id: "thawr", lat: 21.3783, lng: 39.8433 },
+        { id: "arafat", lat: 21.3547, lng: 39.9839 },
+        { id: "mina", lat: 21.4167, lng: 39.8944 },
+        { id: "muzdalifah", lat: 21.3833, lng: 39.9333 },
+        { id: "namirah", lat: 21.3528, lng: 39.9750 },
+        { id: "khayf", lat: 21.4111, lng: 39.8889 },
+        { id: "birthplace", lat: 21.4230, lng: 39.8260 },
+        { id: "jin_mosque", lat: 21.4100, lng: 39.8700 }
+      ],
+      madinah: [
+        { id: "nabawi", lat: 24.4672, lng: 39.6024 },
+        { id: "baqi", lat: 24.4630, lng: 39.6110 },
+        { id: "quba", lat: 24.4430, lng: 39.6150 },
+        { id: "uhud", lat: 24.5050, lng: 39.6100 },
+        { id: "qiblatayn", lat: 24.5100, lng: 39.5700 },
+        { id: "sabah", lat: 24.4650, lng: 39.5900 },
+        { id: "khandaq", lat: 24.4800, lng: 39.5900 },
+        { id: "ghamamah", lat: 24.4660, lng: 39.6050 },
+        { id: "ijabah", lat: 24.4600, lng: 39.6200 },
+        { id: "miqat", lat: 24.4100, lng: 39.6300 },
+        { id: "jummah", lat: 24.4500, lng: 39.6100 },
+        { id: "ambariyah", lat: 24.4580, lng: 39.5950 }
+      ]
+    };
+
+    let mapLang = 'ar';
+    const translationsCache = {};
+
+    async function loadMapLang(code) {
+      if (translationsCache[code]) return translationsCache[code];
+      try {
+        const res = await fetch(`/lang/${code}.json`);
+        if (!res.ok) throw new Error(`Lang ${code} not found`);
+        const data = await res.json();
+        translationsCache[code] = {
+          title: data.ui.site_title,
+          makkah: data.ui.makkah,
+          madinah: data.ui.madinah,
+          labels: {},
+          short: {}
+        };
+        Object.keys(data.places).forEach(id => {
+          translationsCache[code].labels[id] = data.places[id].title;
+          translationsCache[code].short[id] = data.places[id].short;
+        });
+        return translationsCache[code];
+      } catch (e) {
+        console.error(`Failed to load lang ${code}:`, e);
+        return null;
+      }
+    }
+
+    const allLangs = [
+      { code: 'ar', label: 'العربية' },
+      { code: 'fa', label: 'فارسی' },
+      { code: 'en', label: 'English' },
+      { code: 'ur', label: 'اردو' },
+      { code: 'id', label: 'Indonesia' },
+      { code: 'bn', label: 'বাংলা' },
+      { code: 'tr', label: 'Türkçe' },
+      { code: 'ms', label: 'Melayu' },
+      { code: 'fr', label: 'Français' },
+      { code: 'sw', label: 'Kiswahili' },
+      { code: 'ha', label: 'Hausa' },
+      { code: 'ps', label: 'پښتو' },
+      { code: 'uz', label: "O'zbek" },
+      { code: 'ru', label: 'Русский' },
+      { code: 'zh', label: '中文' },
+      { code: 'az', label: 'Azərbaycan' },
+      { code: 'ku', label: 'Kurdî' },
+      { code: 'so', label: 'Soomaali' },
+      { code: 'bs', label: 'Bosanski' },
+      { code: 'tg', label: 'Тоҷикӣ' }
+    ];
+
+    let map, markers = [];
+
+    async function initMap() {
+      map = L.map('map-container', {
+        center: [23.5, 39.5],
+        zoom: 7,
+        zoomControl: false
+      });
+
+      L.control.zoom({ position: 'topright' }).addTo(map);
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      }).addTo(map);
+
+      await addMarkers();
+      buildLangDropdown();
+    }
+
+    async function addMarkers() {
+      markers.forEach(m => map.removeLayer(m));
+      markers = [];
+
+      let t = translationsCache[mapLang];
+      if (!t) {
+        t = await loadMapLang(mapLang);
+      }
+      if (!t) return;
+
+      const makkahIcon = L.divIcon({
+        className: 'custom-marker',
+        html: '<div style="width:14px;height:14px;background:#D4AF37;border-radius:50%;border:2px solid #000;box-shadow:0 0 10px rgba(212,175,55,0.6)"></div>',
+        iconSize: [14, 14],
+        iconAnchor: [7, 7]
+      });
+
+      const madinahIcon = L.divIcon({
+        className: 'custom-marker',
+        html: '<div style="width:14px;height:14px;background:#2E7D32;border-radius:50%;border:2px solid #000;box-shadow:0 0 10px rgba(46,125,50,0.6)"></div>',
+        iconSize: [14, 14],
+        iconAnchor: [7, 7]
+      });
+
+      landmarkData.makkah.forEach(p => {
+        const marker = L.marker([p.lat, p.lng], { icon: makkahIcon })
+          .addTo(map)
+          .bindPopup(`
+            <div class="popup-title">${t.labels[p.id] || p.id}</div>
+            <div class="popup-city">${t.makkah}</div>
+            <div class="popup-short">${t.short[p.id] || ''}</div>
+          `);
+        markers.push(marker);
+      });
+
+      landmarkData.madinah.forEach(p => {
+        const marker = L.marker([p.lat, p.lng], { icon: madinahIcon })
+          .addTo(map)
+          .bindPopup(`
+            <div class="popup-title">${t.labels[p.id] || p.id}</div>
+            <div class="popup-city">${t.madinah}</div>
+            <div class="popup-short">${t.short[p.id] || ''}</div>
+          `);
+        markers.push(marker);
+      });
+    }
+
+    function buildLangDropdown() {
+      const dropdown = document.getElementById('map-lang-dropdown');
+      dropdown.innerHTML = '';
+      allLangs.forEach(l => {
+        const div = document.createElement('div');
+        div.className = `lang-option ${l.code === mapLang ? 'active' : ''}`;
+        div.textContent = l.label;
+        div.onclick = async () => {
+          mapLang = l.code;
+          const t = await loadMapLang(l.code);
+          if (t) {
+            document.getElementById('map-title').textContent = t.title;
+            document.getElementById('legend-makkah').textContent = t.makkah;
+            document.getElementById('legend-madinah').textContent = t.madinah;
+          }
+          await addMarkers();
+          dropdown.querySelectorAll('.lang-option').forEach(el => el.classList.remove('active'));
+          div.classList.add('active');
+          dropdown.classList.remove('open');
+        };
+        dropdown.appendChild(div);
+      });
+    }
+
+    document.getElementById('map-lang-btn').onclick = () => {
+      document.getElementById('map-lang-dropdown').classList.toggle('open');
+    };
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.lang-select')) {
+        document.getElementById('map-lang-dropdown').classList.remove('open');
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', initMap);
+  </script>
+</Layout>

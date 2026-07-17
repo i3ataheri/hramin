@@ -1,0 +1,124 @@
+{
+  "lang_name": "Bosanski",
+  "dir": "ltr",
+  "ui": {
+    "site_title": "Svete Džamije",
+    "site_short": "Mekka & Medina",
+    "makkah": "Mekka",
+    "madinah": "Medina",
+    "map": "Karta",
+    "info": "Informacije"
+  },
+  "places": {
+    "haram": {
+      "title": "Velika džamija",
+      "short": "Najsvetije mjesto",
+      "full": "Velika džamija (Haram) u Meki je najsvetije mjesto u islamu."
+    },
+    "hira": {
+      "title": "Pećina Hira",
+      "short": "Početak objave",
+      "full": "Pećina Hira je mjesto gdje je Poslanik ﷺ primio prvu objavu, u Meki."
+    },
+    "thawr": {
+      "title": "Pećina Thawr",
+      "short": "Utok tijekom hidžre",
+      "full": "Pećina Thawr je mjesto gdje su se Poslanik ﷺ i Ebu Bekr skrili tijekom hidžre, u Meki."
+    },
+    "arafat": {
+      "title": "Ravnica Arafat",
+      "short": "Mjesto stajanja hodočasnika",
+      "full": "Ravnica Arafat je mjesto gdje hodočasnici stoje tijekom hadža, u Meki."
+    },
+    "mina": {
+      "title": "Područje Mina",
+      "short": "Bacanje kamenčića",
+      "full": "Područje Mina je mjesto bacanja kamenčića tijekom hadža, u Meki."
+    },
+    "muzdalifah": {
+      "title": "Muzdalifah",
+      "short": "Skupljanje kamenčića",
+      "full": "Muzdalifah je mjesto gdje hodočasnici skupljaju kamenčiće, u Meki."
+    },
+    "namirah": {
+      "title": "Džamija Namirah",
+      "short": "Džamija Arafat",
+      "full": "Džamija Namirah je džamija na Arafatu, u Meki."
+    },
+    "khayf": {
+      "title": "Džamija Khayf",
+      "short": "Džamija poslanika",
+      "full": "Džamija Khayf je džamija poslanika u Mini, u Meki."
+    },
+    "birthplace": {
+      "title": "Rodno mjesto Poslanika ﷺ",
+      "short": "Radost poslanstva",
+      "full": "Rodno mjesto Poslanika ﷺ je mjesto gdje je rođen, u Meki."
+    },
+    "jin_mosque": {
+      "title": "Džamija Džinn",
+      "short": "Zakletva džinna",
+      "full": "Džamija Džinn je mjesto gdje su džinni dali zakletvu Poslaniku ﷺ, u Meki."
+    },
+    "nabawi": {
+      "title": "Poslanikova džamija ﷺ",
+      "short": "Svetilište Poslanika",
+      "full": "Poslanikova džamija (Nabawi) u Medini je najsvetija džamija nakon Hrama."
+    },
+    "baqi": {
+      "title": "Al-Baqi",
+      "short": "Groblje drugova",
+      "full": "Al-Baqi je groblje drugova i halifa Poslanika ﷺ, u Medini."
+    },
+    "quba": {
+      "title": "Džamija Kuba",
+      "short": "Prva džamija u islamu",
+      "full": "Džamija Kuba je prva džamija u islamu, u Medini."
+    },
+    "uhud": {
+      "title": "Planina Uhud",
+      "short": "Šehidi Uhuda",
+      "full": "Planina Uhud je mjesto bitke za Uhud, u Medini."
+    },
+    "qiblatayn": {
+      "title": "Džamija Qiblatayn",
+      "short": "Promjena kible",
+      "full": "Džamija Qiblatayn je mjesto gdje je kiba promijenjena, u Medini."
+    },
+    "sabah": {
+      "title": "Sedam džamija",
+      "short": "Naslijeđe bitke za jarak",
+      "full": "Sedam džamija je naslijeđe bitke za jarak, u Medini."
+    },
+    "khandaq": {
+      "title": "Bitka za jarak",
+      "short": "Planina Sal'",
+      "full": "Bitka za jarak (Ahzab) je bitka u Medini."
+    },
+    "ghamamah": {
+      "title": "Džamija Ghamamah",
+      "short": "Džamija oblaka",
+      "full": "Džamija Ghamamah je džamija oblaka, u Medini."
+    },
+    "ijabah": {
+      "title": "Džamija Ijabah",
+      "short": "Uslišana molitva",
+      "full": "Džamija Ijabah je mjesto gdje je molitva uslišana, u Medini."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Ihram iz Medine",
+      "full": "Miqat je mjesto gdje hodočasnici oblače ihram, u Medini."
+    },
+    "jummah": {
+      "title": "Džamija Petka",
+      "short": "Prva molitva petkom",
+      "full": "Džamija Petka je mjesto prve molitve petkom, u Medini."
+    },
+    "ambariyah": {
+      "title": "Džamija Ambariyah",
+      "short": "Osmansko naslijeđe",
+      "full": "Džamija Ambariyah je osmansko naslijeđe, u Medini."
+    }
+  }
+}

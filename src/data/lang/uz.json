@@ -1,0 +1,124 @@
+{
+  "lang_name": "O'zbek",
+  "dir": "ltr",
+  "ui": {
+    "site_title": "Muqaddas Masjidlар",
+    "site_short": "Makka va Madina",
+    "makkah": "Makka",
+    "madinah": "Madina",
+    "map": "Xarita",
+    "info": "Ma'lumot"
+  },
+  "places": {
+    "haram": {
+      "title": "Masjidul Haram",
+      "short": "Dunyoning eng muqaddas joyi",
+      "full": "Masjidul Haram Makka shahrida joylashgan bo'lib, dunyoning eng muqaddas joyi hisoblanadi."
+    },
+    "hira": {
+      "title": "Hiyor g'ori",
+      "short": "Vahiy boshlanishi",
+      "full": "Hiyor g'ori Makka shahrida joylashgan bo'lib, Payg'ambar ﷺ birinchi vahiy olgan joy."
+    },
+    "thawr": {
+      "title": "Tovr g'ori",
+      "short": "Hijrat paytida panoh",
+      "full": "Tovr g'ori Makka shahrida joylashgan bo'lib, Payg'ambar ﷺ va Abu Bakr hijrat paytida shu yerda panoh topishgan."
+    },
+    "arafat": {
+      "title": "Arafat vodiysi",
+      "short": "Hajdorchilar turadigan joy",
+      "full": "Arafat vodiysi Makka shahrida joylashgan bo'lib, hajdorchilar Zulhijja oyining 9-kunida shu yerda turadilar."
+    },
+    "mina": {
+      "title": "Mina erlari",
+      "short": "Tosh otish joyi",
+      "full": "Mina erlari Makka shahrida joylashgan bo'lib, haj paytida tosh otish amali bajariladi."
+    },
+    "muzdalifah": {
+      "title": "Muzdalifa",
+      "short": "Tosh yig'ish joyi",
+      "full": "Muzdalifa Makka shahrida joylashgan bo'lib, hajdorchilar shu yerda tosh yig'adilar."
+    },
+    "namirah": {
+      "title": "Namira masjidi",
+      "short": "Arafat masjidi",
+      "full": "Namira masjidi Makka shahrida joylashgan bo'lib, Payg'ambar ﷺ shu yerda namoz o'qigan."
+    },
+    "khayf": {
+      "title": "Xayf masjidi",
+      "short": "Payg'ambarlar masjidi",
+      "full": "Xayf masjidi Makka shahrida joylashgan bo'lib, payg'ambarlar shu yerda namoz o'qiganlar."
+    },
+    "birthplace": {
+      "title": "Payg'ambar ﷺ tug'ilgan joy",
+      "short": "Payg'ambarlik quvonchi",
+      "full": "Payg'ambar ﷺ tug'ilgan joy Makka shahrida joylashgan."
+    },
+    "jin_mosque": {
+      "title": "Jinn masjidi",
+      "short": "Jinnlar ahdlashgan joy",
+      "full": "Jinn masjidi Makka shahrida joylashgan bo'lib, jinnlar shu yerda Payg'ambar ﷺ ga ahd berishgan."
+    },
+    "nabawi": {
+      "title": "Payg'ambar masjidi ﷺ",
+      "short": "Payg'ambar maqomi",
+      "full": "Payg'ambar masjidi (Nabaviy) Madina shahrida joylashgan bo'lib, Islomning ikkinchi muqaddas joyi."
+    },
+    "baqi": {
+      "title": "Boqiy",
+      "short": "Sahobalar qabristoni",
+      "full": "Boqiy Madina shahrida joylashgan bo'lib, sahobalar va xalifalar qabristoni."
+    },
+    "quba": {
+      "title": "Quba masjidi",
+      "short": "Islomdagi birinchi masjid",
+      "full": "Quba masjidi Madina shahrida joylashgan bo'lib, Islomdagi birinchi masjid."
+    },
+    "uhud": {
+      "title": "Uhud tog'i",
+      "short": "Uhud shahidlari",
+      "full": "Uhud tog'i Madina shahrida joylashgan bo'lib, Uhud jangi shu yerda sodir bo'lgan."
+    },
+    "qiblatayn": {
+      "title": "Qiblatajn masjidi",
+      "short": "Qibla o'zgarishi",
+      "full": "Qiblatajn masjidi Madina shahrida joylashgan bo'lib, qibla shu yerda o'zgartirilgan."
+    },
+    "sabah": {
+      "title": "Yetti masjid",
+      "short": "Xandaq jangi merosi",
+      "full": "Yetti masjid Madina shahrida joylashgan bo'lib, Xandaq jangi merosi."
+    },
+    "khandaq": {
+      "title": "Xandaq jangi",
+      "short": "Sal' tog'i",
+      "full": "Xandaq jangi (Ahzab) Madina shahrida sodir bo'lgan."
+    },
+    "ghamamah": {
+      "title": "Ghamama masjidi",
+      "short": "Bulut masjidi",
+      "full": "Ghamama masjidi Madina shahrida joylashgan bo'lib, bulut shu yerda paydo bo'lgan."
+    },
+    "ijabah": {
+      "title": "Ijaba masjidi",
+      "short": "Qabul qilingan duo",
+      "full": "Ijaba masjidi Madina shahrida joylashgan bo'lib, duo shu yerda qabul qilingan."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Madinadan ihram",
+      "full": "Miqat Madina shahrida joylashgan bo'lib, hajdorchilar shu yerda ihram kiyadilar."
+    },
+    "jummah": {
+      "title": "Juma masjidi",
+      "short": "Birinchi Juma namozi",
+      "full": "Juma masjidi Madina shahrida joylashgan bo'lib, birinchi Juma namozi shu yerda o'qilgan."
+    },
+    "ambariyah": {
+      "title": "Ambariya masjidi",
+      "short": "Osmonliy meros",
+      "full": "Ambariya masjidi Madina shahrida joylashgan bo'lib, Osmonliy meros."
+    }
+  }
+}
