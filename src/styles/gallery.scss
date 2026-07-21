@@ -330,7 +330,6 @@ html, body {
   left: 0;
   right: 0;
   z-index: 50;
-  padding: 0 16px;
 
   &-inner {
     display: flex;
@@ -340,8 +339,8 @@ html, body {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    padding-bottom: 4px;
-    justify-content: center;
+    padding: 6px 20px 10px;
+    justify-content: flex-start;
     flex-wrap: nowrap;
 
     &::-webkit-scrollbar { display: none; }
