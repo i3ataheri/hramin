@@ -95,6 +95,29 @@ import '../styles/welcome.scss';
       tg: 'Даромадан'
     };
 
+    const changeLangText = {
+      ar: '← تغيير اللغة',
+      fa: '← تغییر زبان',
+      en: 'Change Language →',
+      ur: '← زبان تبدیل کریں',
+      id: '← Ganti Bahasa',
+      bn: '← ভাষা পরিবর্তন করুন',
+      tr: '← Dil Değiştir',
+      ms: '← Tukar Bahasa',
+      fr: '← Changer la langue',
+      sw: '← Badilisha Lugha',
+      ha: '← Canja Harshe',
+      ps: '← ژبه بدل کړئ',
+      uz: "← Tilni o'zgartirish",
+      ru: '← Сменить язык',
+      zh: '← 切换语言',
+      az: '← Dili dəyişdir',
+      ku: '← Ziman biguherîne',
+      so: '← Badal Luqadda',
+      bs: '← Promijeni jezik',
+      tg: '← Забонро иваз кунед'
+    };
+
     // ═══════ INIT ═══════
     async function init() {
       const lang = localStorage.getItem('haramain_lang') || 'ar';
@@ -139,11 +162,7 @@ import '../styles/welcome.scss';
 
         // Set change language link
         const changeLangEl = document.getElementById('change-lang');
-        if (dir === 'rtl') {
-          changeLangEl.textContent = '← تغییر زبان';
-        } else {
-          changeLangEl.textContent = 'Change Language →';
-        }
+        changeLangEl.textContent = changeLangText[lang] || changeLangText['fa'];
 
         // Hide loading
         setTimeout(() => {
@@ -153,7 +172,7 @@ import '../styles/welcome.scss';
       } catch (e) {
         console.error('Failed to load welcome data:', e);
         // Fallback to Persian
-        document.getElementById('welcome-title').textContent = 'به گنجینه‌ی مقدّس حرمین شریفین خوش آمدید';
+        document.getElementById('welcome-title').textContent = 'به رحاب مقدّس حرمین شریفین خوش آمدید';
         document.getElementById('welcome-loading').classList.add('hidden');
       }
     }
