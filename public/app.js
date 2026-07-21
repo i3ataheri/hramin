@@ -232,8 +232,18 @@ function goToPlace(index) {
   const itemWidth = activeItem.offsetWidth;
   const maxScroll = scrollWidth - clientWidth;
 
-  let target = itemLeft - (clientWidth - itemWidth) / 2;
-  target = Math.max(0, Math.min(target, maxScroll));
+  const isFirst = index === 0;
+  const isLast = index === getPlaces().length - 1;
+
+  let target;
+  if (isFirst) {
+    target = 0;
+  } else if (isLast) {
+    target = maxScroll;
+  } else {
+    target = itemLeft - clientWidth * 0.3;
+    target = Math.max(0, Math.min(target, maxScroll));
+  }
 
   inner.scrollTo({ left: target, behavior: 'smooth' });
 }
