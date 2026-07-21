@@ -302,6 +302,7 @@ $darker: #050508;
 .welcome-title {
   font-size: clamp(24px, 5vw, 36px);
   font-weight: 700;
+  font-family: var(--page-font, 'Inter', sans-serif);
   text-align: center;
   background: linear-gradient(
     135deg,
@@ -330,6 +331,7 @@ $darker: #050508;
 .welcome-text {
   font-size: clamp(15px, 3.5vw, 18px);
   line-height: 2;
+  font-family: var(--page-font, 'Inter', sans-serif);
   color: rgba(255, 255, 255, 0.85);
   text-align: justify;
   animation: fadeInUp 1s ease-out both;
@@ -365,6 +367,7 @@ $darker: #050508;
   padding: 18px 48px;
   font-size: 18px;
   font-weight: 600;
+  font-family: var(--page-font, 'Inter', sans-serif);
   color: #000;
   background: linear-gradient(135deg, $gold-light, $gold, $gold-dark);
   background-size: 200% auto;
@@ -413,6 +416,7 @@ $darker: #050508;
   padding: 18px 48px;
   font-size: 18px;
   font-weight: 600;
+  font-family: var(--page-font, 'Inter', sans-serif);
   color: $gold;
   background: transparent;
   border: 2px solid $gold;
