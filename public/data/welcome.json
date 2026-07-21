@@ -1,6 +1,6 @@
 {
   "fa": {
-    "title": "به رحاب مقدّس حرمین شریفین خوش آمدید",
+    "title": "به سرزمین حرمین شریفین خوش آمدید",
     "paragraphs": [
       "این سرزمین، جایی‌ست که آسمان و زمین به هم می‌رسند؛ جایی‌که نخستین کلمات وحی بر قلب پاک خاتم‌النبیین ﷺ نازل شد و تاریخ بشریت برای همیشه دگرگون گشت.",
       "اینجا مکه است و مدینه؛ سرزمینی که هر سنگی در آن روایتگر عشق است و هر بادی که می‌وزد، بوی خوش عبادت دارد.",
@@ -9,7 +9,7 @@
     ]
   },
   "ar": {
-    "title": "مرحباً بكم في رحاب الحرمين الشريفين",
+    "title": "مرحباً بكم في أرض الحرمين الشريفين",
     "paragraphs": [
       "هذه الأرض، حيث يلتقي السماء بالأرض؛ حيث نزلت أول كلمات الوحي على قلب خاتم النبيين ﷺ وتغيّر تاريخ البشرية إلى الأبد.",
       "هنا مكة والمدينة؛ أرضٌ كلُّ حجرٍ فيها يروي حبًّا، وكلُّ نسمةٌ هواءٍ فيها تحمل رائحة العبادة.",
@@ -18,7 +18,7 @@
     ]
   },
   "en": {
-    "title": "Welcome to the Sacred Realm of the Two Holy Sanctuaries",
+    "title": "Welcome to the Land of the Two Holy Sanctuaries",
     "paragraphs": [
       "This is the land where heaven and earth converge; where the first words of divine revelation descended upon the pure heart of the Final Prophet ﷺ, forever changing the course of human history.",
       "This is Makkah and Madinah — a land where every stone tells a story of love, and every breeze carries the sweet scent of devotion.",
@@ -27,7 +27,7 @@
     ]
   },
   "ur": {
-    "title": "حرمین شریفین کے مقدس رحاب میں خوش آمدید",
+    "title": "حرمین شریفین کی سرزمین میں خوش آمدید",
     "paragraphs": [
       "یہ وہ سرزمین ہے جہاں آسمان اور زمین ملتے ہیں؛ جہاں خاتم النبیین ﷺ کے پاک دل پر وحی کے پہلے لفظ نازل ہوے اور تاریخِ بشریت ہمیشہ کے لیے بدل گئی۔",
       "یہاں مکہ ہے اور مدینہ ہے؛ ایسی سرزمین جہاں ہر پتھر محبت کی داستان سناتا ہے اور ہر ہوا عبادت کی خوشبو لاتی ہے۔",
@@ -36,7 +36,7 @@
     ]
   },
   "id": {
-    "title": "Selamat Datang di Ruang Suci Dua Tanah Suci",
+    "title": "Selamat Datang di Tanah Dua Tanah Suci",
     "paragraphs": [
       "Tanah ini adalah tempat di mana langit dan bumi bertemu; di mana kata-kata pertama wahyu ilahi turun ke hati suci Nabi Penutup ﷺ dan sejarah manusia berubah selamanya.",
       "Inilah Makkah dan Madinah; tanah di mana setiap batu menceritakan kisah cinta, dan setiap angin yang bertiup membawa wangi ibadah.",
@@ -45,7 +45,7 @@
     ]
   },
   "bn": {
-    "title": "পবিত্র হারামাইনের পবিত্র ক্ষেত্রে স্বাগতম",
+    "title": "পবিত্র হারামাইনের ভূমিতে স্বাগতম",
     "paragraphs": [
       "এই ভূমি যেখানে আকাশ ও পৃথিবী মিলিত হয়; যেখানে শেষ নবী ﷺ-এর পবিত্র হৃদয়ে প্রথম ওহীর শব্দ নামে এবং মানব ইতিহাস চিরতরে পরিবর্তিত হয়।",
       "এটি মক্কা ও মদিনা; এমন এক ভূমি যেখানে প্রতিটি পাথর ভালোবাসার গল্প বলে এবং প্রতিটি বাতাস ইবাদতের মিষ্টি গন্ধ বহন করে।",
@@ -54,7 +54,7 @@
     ]
   },
   "tr": {
-    "title": "İki Kutsal Mescidin Kutsal Alanına Hoş Geldiniz",
+    "title": "İki Kutsal Mescidin Topraklarına Hoş Geldiniz",
     "paragraphs": [
       "Bu topraklar, gökle yerin buluştuğu yerdir; Son Peygamber ﷺ'in kalbine ilk vahiy kelimelerinin indiği ve insanlık tarihinin sonsuza dek değiştiği yerdir.",
       "İşte burası Mekke ve Medine; her taşının aşk hikayesi anlattığı, her esen rüzgarın ibadet kokusu taşıdığı topraklar.",
@@ -63,7 +63,7 @@
     ]
   },
   "ms": {
-    "title": "Selamat Datang ke Ruang Suci Dua Tanah Haram",
+    "title": "Selamat Datang ke Tanah Dua Tanah Haram",
     "paragraphs": [
       "Tanah ini adalah tempat di mana langit dan bumi bertemu; di mana perkataan pertama wahyu Ilahi turun ke atas hati suci Nabi Penutup ﷺ dan sejarah manusia berubah selama-lamanya.",
       "Inilah Makkah dan Madinah; tanah di mana setiap batu menceritakan kisah cinta, dan setiap angin yang bertiup membawa wangi ibadat.",
@@ -72,7 +72,7 @@
     ]
   },
   "fr": {
-    "title": "Bienvenue dans le Sacré Espace des Deux Sanctuaires",
+    "title": "Bienvenue sur la Terre des Deux Sanctuaires",
     "paragraphs": [
       "Cette terre est le lieu où le ciel et la terre se rencontrent ; là où les premiers mots de la révélation divine sont descendus sur le cœur pur du Prophète final ﷺ, changeant à jamais le cours de l'histoire humaine.",
       "Voici La Mecque et Médine ; une terre où chaque pierre raconte une histoire d'amour, et où chaque brise porte le doux parfum de la dévotion.",
@@ -81,7 +81,7 @@
     ]
   },
   "sw": {
-    "title": "Karibu katika Nafasi Takatifu ya Maeneo Matakatifu Mawili",
+    "title": "Karibu katika Ardhi ya Maeneo Matakatifu Mawili",
     "paragraphs": [
       "Hii ni ardhi ambapo mbingu na dunia zinakutana; ambapo maneno ya kwanza ya ufunzo wa Mwenyezi Mungu yalianguka kwenye moyo mtakatifu wa Nabii wa Mwisho ﷺ, na historia ya binadamu ilibadilika milele.",
       "Hii ni Makka na Madina; ardhi ambapo kila jiwe lina hadithi ya upendo, na kila upepo unaibuka harufu nzuri ya ibada.",
@@ -90,7 +90,7 @@
     ]
   },
   "ha": {
-    "title": "Barka da zuwa a Farkon Masu Biyayya biyu",
+    "title": "Barka da zuwa a Ƙasar Masu Biyayya biyu",
     "paragraphs": [
       "Wannan ƙasa ce inda sama da ƙasa suka bi ci; inda kalmomin farko na wahayin Allah suka sauka zuwa zuciyar kaƙƙan Annabin karshe ﷺ, kuma tarihin ɗan Adam ya canza har abada.",
       "Wannan Makka ce da Madina; ƙasa inda kowace dutse yana gayan labarin ƙauna, kowace iska tana ɗaukar da gyaran wariyar ibada.",
@@ -99,7 +99,7 @@
     ]
   },
   "ps": {
-    "title": "د دو حرم شریفونو مقدس رحاب ته ښه راغلاست",
+    "title": "د دو حرم شریفونو سرزمین ته ښه راغلاست",
     "paragraphs": [
       "دغه هغه سرزمین ده چې آسمان او زمین تر یوسره ملاتړیږي؛ چېته چې د وحي لومړۍ کلمې د خاتم النبیین ﷺ پاک زړه ته اتېدل او د انسانو تاریخ تل عوض شو.",
       "دغه مکه او مدینه ده؛ هغه سرزمین چې تر هر ګل می نه محبته قصه وایي او تر هر ویاړ می نه عبادت خوشبوالیږي.",
@@ -108,7 +108,7 @@
     ]
   },
   "uz": {
-    "title": "Muqaddas Ikki Xaramning Muqaddas Fazosiga Xush Kelibsiz",
+    "title": "Muqaddas Ikki Xaramning Yurtiga Xush Kelibsiz",
     "paragraphs": [
       "Bu yer - osmon va yerning uchrashgan joyi; bu yerda vahiyning birinchi so'zlari oxirgi Payg'ambar ﷺning pok diliga tushdi va insoniyat tarixi abadiy o'zgardi.",
       "Bu Makkah va Madinah; har tosh sevgi hikoyasi aytadigan, har shamol ibodatning go'z hidini olib keladigan yurtdir.",
@@ -117,7 +117,7 @@
     ]
   },
   "ru": {
-    "title": "Добро пожаловать в Священное пространство Двух Святынь",
+    "title": "Добро пожаловать в Землю Двух Святынь",
     "paragraphs": [
       "Эта земля, где небо встречается с землёй; где первые слова Божественного откровения сошли на чистое сердце Последнего Пророка ﷺ, навсегда изменив ход человеческой истории.",
       "Это Мекка и Медина — земля, где каждый камень рассказывает историю любви, и каждый ветерок несёт сладкий аромат поклонения.",
@@ -126,7 +126,7 @@
     ]
   },
   "zh": {
-    "title": "欢迎来到两圣寺的神圣领域",
+    "title": "欢迎来到两圣寺的土地",
     "paragraphs": [
       "这片土地是天地交汇之处；先知穆罕默德 ﷺ 的纯洁心灵在此接受到了神圣启示的第一个字，人类历史从此永远改变。",
       "这里是麦加和麦地那——每一块石头都诉说着爱的故事，每一缕微风都带着虔诚的芬芳。",
@@ -135,7 +135,7 @@
     ]
   },
   "az": {
-    "title": "İki Müqəddəs Məscidin Müqəddəs Məkanına Xoş Gəlmisiniz",
+    "title": "İki Müqəddəs Məscidin Torpağına Xoş Gəlmisiniz",
     "paragraphs": [
       "Bu torpaq, göyün yerlə görüşdüyü yerdə; Son Peyğəmbər ﷺ-in pak ürəyinə ilk vahiy kəlmələrinin endiyi və insan tarixinin əbədi dəyişdiyi yerdir.",
       "Bu Məkkə və Mədinədir; hər daşının sevgi hekayəti danışdığı, hər esən küləyin ibadət ətri gətirdiyi diyar.",
@@ -144,7 +144,7 @@
     ]
   },
   "ku": {
-    "title": "Bi Fazaya Pîroz a du Xarîman Pîroz re baş be xwe hatîye",
+    "title": "Bi Malê du Xarîman Pîroz re baş be xwe hatîye",
     "paragraphs": [
       "Ez malê ku asman û zemin dikeve ser yek dîtine; li dilê pak a Peygembera dawetî ﷺ peyameke yekem vahî ket, û dîrokê mirovîyê abadî serkeît.",
       "Ev Mecca û Medîneyê; malê ku her kevirê di wê de qiseyê evînê dibêje û her bayê şewleya serbestiyê dihile.",
@@ -153,7 +153,7 @@
     ]
   },
   "so": {
-    "title": "Ku soo dhawoow Goobta Qaddiiska ah ee Labada Meelood Qaddiiska ah",
+    "title": "Ku soo dhawoow Dhulka Labada Meelood Qaddiiska ah",
     "paragraphs": [
       "Tani waa dhulka ay isku yimaadaan cirka iyo dhulka; meesha ay ku dhaceen kalmadihii ugu horreeyay ee waxyiga Ilaahay qalbiga Nabiga Geyga ah ﷺ, taariikhda aadmiga si walba loogu beddelay.",
       "Tani waa Makka iyo Medina; dhulka ay ku yaallaan dhag kasta sheeko jacayl ah, kana kuli neef caabuddeed u ridaya.",
@@ -162,7 +162,7 @@
     ]
   },
   "bs": {
-    "title": "Dobrodošli u Sveto Prostranstvo Dva Sveta Hrama",
+    "title": "Dobrodošli u Zemlju Dva Sveta Hrama",
     "paragraphs": [
       "Ova zemlja je mjesto gdje se nebo i zemlja sreću; gdje su prve riječi božanske objave sišle na čisto srce Posljednjeg Poslanika ﷺ, zauvijek promijenivši tok ljudske historije.",
       "Ovo je Meka i Medina; zemlja gdje svaki kamen govori priču o ljubavi, i svaki vjetar nosi slatki miris predanosti.",
@@ -171,7 +171,7 @@
     ]
   },
   "tg": {
-    "title": " ба Фазои Муқаддаси Ду Масҷиди Муқаддас Хуш Омадед",
+    "title": " ба Замини Ду Масҷиди Муқаддас Хуш Омадед",
     "paragraphs": [
       "Ин заминест, ки осмону замин ба ҳам мерасанд; ҷои аввалин калимаҳои ваҳй ба дили поки Хатамул-Анбиё ﷺ нозил шуд ва таърихи башарият ба ҳамешагӣ дигаргун шуд.",
       "Ин Маккаву Мадина аст; замине, ки ҳар санги он қиссаи муҳаббат мегӯяд ва ҳар боди он бӯи хуши ибодат дорад.",

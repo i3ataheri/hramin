@@ -94,13 +94,12 @@ import Layout from '../layouts/App.astro';
 
       grid.innerHTML = allLangs.map(lang => {
         let iconClass = 'lang-card__icon';
-        let nameClass = 'lang-card__name';
 
         return `
           <div class="lang-card" data-lang="${lang.code}" data-dir="${lang.dir}">
             <div class="ripple-container"></div>
             <img class="${iconClass}" src="${lang.flag}" alt="${lang.native}" loading="lazy">
-            <div class="${nameClass}" data-font="${lang.font}">${lang.native}</div>
+            <div class="lang-card__name" style="font-family: '${lang.font}', sans-serif !important">${lang.native}</div>
             <div class="lang-card__code">${lang.label}</div>
           </div>
         `;

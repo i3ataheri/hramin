@@ -518,14 +518,6 @@ $glass-hover: rgba(255, 255, 255, 0.1);
     position: relative;
     z-index: 1;
   }
-
-  // Font families for each language
-  &__name[data-font="Vazirmatn"] { font-family: 'Vazirmatn', sans-serif; }
-  &__name[data-font="Inter"] { font-family: 'Inter', sans-serif; }
-  &__name[data-font="Gulzar"] { font-family: 'Gulzar', sans-serif; }
-  &__name[data-font="Noto Sans Bengali"] { font-family: 'Noto Sans Bengali', sans-serif; }
-  &__name[data-font="Noto Sans SC"] { font-family: 'Noto Sans SC', sans-serif; }
-  &__name[data-font="Amiri"] { font-family: 'Amiri', serif; }
 }
 
 /* ═══════ SELECTED STATE ═══════ */

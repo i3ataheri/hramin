@@ -377,6 +377,11 @@ $darker: #050508;
   animation: fadeInUp 1s ease-out 1.7s both, pulseGlow 3s ease-in-out infinite;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
 
   &::before {
     content: '';
