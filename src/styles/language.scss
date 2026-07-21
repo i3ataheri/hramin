@@ -159,7 +159,13 @@ $glass: rgba(255, 255, 255, 0.05);
 $glass-border: rgba(255, 255, 255, 0.08);
 $glass-hover: rgba(255, 255, 255, 0.1);
 
-/* ═══════ RESET - Override Tailwind preflight ═══════ */
+/* ═══════ RESET ═══════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   font-family: 'Inter', sans-serif !important;
   margin: 0;

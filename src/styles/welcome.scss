@@ -139,6 +139,13 @@ $gold-glow: rgba(212, 175, 55, 0.4);
 $dark: #0A0A0F;
 $darker: #050508;
 
+/* ═══════ RESET ═══════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* ═══════ BASE ═══════ */
 .welcome-page {
   position: fixed;
