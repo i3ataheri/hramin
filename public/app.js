@@ -181,11 +181,8 @@ function renderPlaceMenu() {
 
   const activeItem = inner.querySelector('.active');
   if (activeItem) {
-    const containerRect = inner.getBoundingClientRect();
-    const itemRect = activeItem.getBoundingClientRect();
-    if (itemRect.left < containerRect.left || itemRect.right > containerRect.right) {
-      activeItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-    }
+    const scrollLeft = activeItem.offsetLeft - inner.offsetWidth / 2 + activeItem.offsetWidth / 2;
+    inner.scrollTo({ left: Math.max(0, scrollLeft), behavior: 'smooth' });
   }
 }
 
