@@ -167,7 +167,7 @@ html, body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 25px;
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.55);
   overflow: hidden;
 }
 
@@ -189,7 +189,7 @@ html, body {
   }
 
   &:not(.active) {
-    border-right: 1px solid rgba(212, 175, 55, 0.25);
+    border-right: 1px solid rgba(212, 175, 55, 0.45);
   }
 
   &:hover:not(.active) {
