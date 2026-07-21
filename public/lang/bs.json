@@ -120,5 +120,35 @@
       "short": "Osmansko naslijeđe",
       "full": "Džamija Ambariyah je osmansko naslijeđe, u Medini."
     }
+  },
+  "shop": {
+    "title": "Prodavnica",
+    "about_title": "O Proizvodima",
+    "about_text": "Naši proizvodi spajaju ljepotu i tehnologiju. Svaki proizvod ima NFC čip koji otvara svet Svetih mesta kada dodirnete telefon.",
+    "products_title": "Proizvodi",
+    "product_keychain": "NFC Privesak",
+    "product_keychain_desc": "Elegantan dizajn sa islamskim motivima, sa NFC čipom",
+    "product_card": "NFC Kartica",
+    "product_card_desc": "Kompaktna kartica sa NFC čipom za direktan pristup",
+    "product_phone": "NFC Maskica",
+    "product_phone_desc": "Kompatibilna maskica sa ugrađenim NFC čipom",
+    "contact_title": "Kontaktirajte Prodavače",
+    "how_title": "Kako Dobiti Proizvod",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Email",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Odaberite odgovarajući proizvod iz ovlašćenih prodavnica",
+      "Kontaktirajte prodavača putem WhatsApp-a ili email-a",
+      "Odaberite načina plaćanja i isporuke",
+      "Preuzmite proizvod i uživajte u jedinstvenom iskustvu"
+    ]
   }
 }

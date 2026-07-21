@@ -119,5 +119,35 @@
       "short": "Warisan Uthmaniyyah",
       "full": "Masjid indah di Madinah dengan seni bina Uthmaniyyah yang unik, terletak berdekatan stesen kereta api Hejaz lama, merupakan salah satu warisan seni bina Uthmaniyyah di Madinah."
     }
+  },
+  "shop": {
+    "title": "Kedai",
+    "about_title": "Tentang Produk",
+    "about_text": "Produk kami menggabungkan keindahan dengan teknologi. Setiap produk dilengkapi cip NFC yang membuka dunia Tanah Suci apabila anda menyentuhkannya ke telefon.",
+    "products_title": "Produk",
+    "product_keychain": "Gigi Kunci NFC",
+    "product_keychain_desc": "Reka bentuk elegan dengan corak Islam, dilengkapi cip NFC",
+    "product_card": "Kad NFC",
+    "product_card_desc": "Kad kompak dengan cip NFC untuk akses terus",
+    "product_phone": "Sarung Telefon NFC",
+    "product_phone_desc": "Sarung serasi dengan cip NFC terbina dalam",
+    "contact_title": "Hubungi Penjual",
+    "how_title": "Cara Mendapatkan Produk",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Emel",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Pilih produk yang sesuai dari kedai rasmi",
+      "Hubungi penjual melalui WhatsApp atau emel",
+      "Pilih kaedah pembayaran dan penghantaran",
+      "Terima produk dan nikmati pengalaman unik"
+    ]
   }
 }

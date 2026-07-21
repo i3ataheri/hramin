@@ -119,5 +119,35 @@
       "short": "Héritage ottoman",
       "full": "Une belle mosquée à Médine avec une architecture ottomane unique, située près de l'ancienne gare du chemin de fer du Hedjaz, considérée comme l'un des héritages architecturaux ottomans à Médine."
     }
+  },
+  "shop": {
+    "title": "Boutique",
+    "about_title": "À Propos des Produits",
+    "about_text": "Nos produits allient beauté et technologie. Chaque produit dispose d'une puce NFC qui ouvre le monde des Lieux Saints lorsque vous touchez votre téléphone.",
+    "products_title": "Produits",
+    "product_keychain": "Porte-clés NFC",
+    "product_keychain_desc": "Design élégant avec motifs islamiques, équipé d'une puce NFC",
+    "product_card": "Carte NFC",
+    "product_card_desc": "Carte compacte avec puce NFC pour un accès direct",
+    "product_phone": "Étui Téléphone NFC",
+    "product_phone_desc": "Étui compatible avec puce NFC intégrée",
+    "contact_title": "Contacter les Vendeurs",
+    "how_title": "Comment Obtenir le Produit",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Email",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Choisissez le produit dans les boutiques agréées",
+      "Contactez le vendeur via WhatsApp ou email",
+      "Choisissez votre mode de paiement et livraison",
+      "Recevez votre produit et profitez d'une expérience unique"
+    ]
   }
 }

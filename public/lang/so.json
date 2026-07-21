@@ -120,5 +120,35 @@
       "short": "Dhaxalka Otomaaniga",
       "full": "Masjidka Ambariyah waa dhaxalka Otomaaniga, wuxuu ku yaalaa Madinah."
     }
+  },
+  "shop": {
+    "title": "Dukaan",
+    "about_title": "Ku Saabsan Alaabta",
+    "about_text": "Alaabtayadu waxay isku daraysaa qurux iyo teknoloji. Alaab kasta waxay leedahay NFC chip oo furaysa adduunka Meelaha Quruxda badan markaad taabatay telefoonkaaga.",
+    "products_title": "Alaabta",
+    "product_keychain": "Furaha NFC",
+    "product_keychain_desc": "Naqshad qurux badan oo Islaami ah, leh NFC chip",
+    "product_card": "Kaarka NFC",
+    "product_card_desc": "Kaar yar oo leh NFC chip si toos ah loogu galo app-ka",
+    "product_phone": "Daboolka Taleefanka NFC",
+    "product_phone_desc": "Dabool iswaafajiya oo leh NFC chip gudaheeda",
+    "contact_title": "La Xiriir Diiyaariyayaasha",
+    "how_title": "Sida Loo Helo Alaabta",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Email",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Dooro alaabta ku habboon dukaamada rasmiga ah",
+      "La xiriir diiwaariyaha WhatsApp ama email",
+      "Dooro habka lacag bixinta iyo shipping-ka",
+      "Ku qaado alaabtaada oo ku raaxayso khibrad gaar ah"
+    ]
   }
 }

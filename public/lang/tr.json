@@ -119,5 +119,35 @@
       "short": "Osmanlı mirası",
       "full": "Medine'de benzersiz Osmanlı mimarisine sahip güzel mescit. Eski Hicaz Tren İstasyonu'nun yakınında bulunur ve Medine'deki Osmanlı mimari mirası considered bir eserdir."
     }
+  },
+  "shop": {
+    "title": "Mağaza",
+    "about_title": "Uürünler Hakkında",
+    "about_text": "Uürünlerimiz güzelliği teknolojiyle buluşturur. Her üründe NFC çipi bulunur, telefonunuzla dokunduğunuzda kutsal mekanların dünyasını açar.",
+    "products_title": "Uürünler",
+    "product_keychain": "NFC Anahtarlık",
+    "product_keychain_desc": "Islami desenlerle zarif tasarım, NFC çipli",
+    "product_card": "NFC Kart",
+    "product_card_desc": "Doğrudan uygulama erişimi için kompakt NFC kart",
+    "product_phone": "NFC Kılıf",
+    "product_phone_desc": "Dahili NFC çipli uyumlu telefon kılıfı",
+    "contact_title": "Satıcılarla İletişim",
+    "how_title": "Ürünü Nasıl Alabilirsiniz",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "E-posta",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Yetkili mağazalardan doğru ürünü seçin",
+      "WhatsApp veya e-posta ile satıcıyla iletişime geçin",
+      "Ödeme ve gönderim yöntemini seçin",
+      "Ürününüzü alın ve benzersiz bir deneyim yaşayın"
+    ]
   }
 }

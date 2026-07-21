@@ -119,5 +119,35 @@
       "short": "Urithi wa Ottoman",
       "full": "Msikiti mzuri Madinah wenye usanifu wa Ottoman wa kipekee, uliokaribu na kituo zamani cha reli ya Hejaz, inachukuliwa kuwa mojawapo ya urithi wa usanifu wa Ottoman Madinah."
     }
+  },
+  "shop": {
+    "title": "Duka",
+    "about_title": "Kuhusu Bidhaa",
+    "about_text": "Bidhaa zetu zinaunganisha uzuri na teknolojia. Kila bidhaa ina NFC chip inayofungua ulimwengu wa Maeneo Takatifu unapolinga simu yako.",
+    "products_title": "Bidhaa",
+    "product_keychain": "Mfunguo NFC",
+    "product_keychain_desc": "Muundo wa kifahari na michoro ya Kiislamu, yenye NFC chip",
+    "product_card": "Kadi ya NFC",
+    "product_card_desc": "Kadi ndogo yenye NFC chip kwa upatikanaji wa moja kwa moja",
+    "product_phone": "Gesi ya Simu NFC",
+    "product_phone_desc": "Gesi inayofanana yenye NFC chip iliyojengwa ndani",
+    "contact_title": "Wasiliana na Wauzaji",
+    "how_title": "Jinsi ya Kupata Bidhaa",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Barua Pepe",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Chagua bidhaa inayofaa kutoka duka rasmi",
+      "Wasiliana na muuzaji kupitia WhatsApp au barua pepe",
+      "Chagua njia ya malipo na usafirishaji",
+      "Pokea bidhaa yako na furahia uzoefu wa kipekee"
+    ]
   }
 }

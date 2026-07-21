@@ -119,5 +119,35 @@
       "short": "Ottoman heritage",
       "full": "A beautiful mosque in Madinah with unique Ottoman architecture, located near the old Hejaz Railway station, considered one of the Ottoman architectural heritage in Madinah."
     }
+  },
+  "shop": {
+    "title": "Shop",
+    "about_title": "About Products",
+    "about_text": "Our products combine beauty with technology. Each product features an NFC chip that opens the world of the Holy Sites when you tap your phone. Elegant and durable design makes them a perfect gift for lovers of sacred places.",
+    "products_title": "Products",
+    "product_keychain": "NFC Keychain",
+    "product_keychain_desc": "Elegant design with Islamic patterns, equipped with NFC chip that activates when near your phone",
+    "product_card": "NFC Card",
+    "product_card_desc": "Compact and lightweight card with NFC chip for direct app access",
+    "product_phone": "NFC Phone Case",
+    "product_phone_desc": "Compatible phone case with built-in NFC chip for seamless experience",
+    "contact_title": "Contact Sellers",
+    "how_title": "How to Get the Product",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Email",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Choose the right product from authorized stores",
+      "Contact the seller via WhatsApp or email",
+      "Choose your preferred payment and shipping method",
+      "Receive your product and enjoy a unique experience"
+    ]
   }
 }

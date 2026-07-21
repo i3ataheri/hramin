@@ -119,5 +119,35 @@
       "short": "Gadon Ottoman",
       "full": "Masjid kyau a Madinah tare da fasahar Ottoman ta musamman, yana kusa da tashar tarin tsohon Hejaz, ana ƙididdige shi ɗaya daga cikin gadon fasahar Ottoman a Madinah."
     }
+  },
+  "shop": {
+    "title": "Shago",
+    "about_title": "Game da Kayayyaki",
+    "about_text": "Kayayyakmu haɗa kyau da fasaha. Kowace kayayyaki tana da NFC chip da ke buɗe duniyar wurare masu tsarki lokacin da ka taɓa wayar ka.",
+    "products_title": "Kayayyaki",
+    "product_keychain": "Maballin NFC",
+    "product_keychain_desc": "Tsarin kyau tare da salon Islama, tare da NFC chip",
+    "product_card": "Katin NFC",
+    "product_card_desc": "Katin ƙarami tare da NFC chip don samun dama kai tsaye",
+    "product_phone": "Rufin Wayar NFC",
+    "product_phone_desc": "Rufin da ya dace tare da NFC chip a ciki",
+    "contact_title": "Tuntuɓi Masu Sayarwa",
+    "how_title": "Yadda za a Sami Kayayyaki",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Imel",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Zaɓi kayayyakin da ya dace daga shago masu amincewa",
+      "Tuntuɓi mai sayarwa ta hanyar WhatsApp ko imel",
+      "Zaɓi hanyar biya da kayan aiki",
+      "Sami kayayyaki kuma ji daɗin ƙwarewa ta musamman"
+    ]
   }
 }

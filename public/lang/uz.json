@@ -120,5 +120,35 @@
       "short": "Osmonliy meros",
       "full": "Ambariya masjidi Madina shahrida joylashgan bo'lib, Osmonliy meros."
     }
+  },
+  "shop": {
+    "title": "Do'kon",
+    "about_title": "Mahsulotlar Haqida",
+    "about_text": "Mahsulotlarimiz go'zallikni texnologiya bilan birlashtiradi. Har bir mahsulot NFC chip bilan jihozlangan bo'lib, telefoningizga tegishingiz bilan muqaddas joylar olamini ochadi.",
+    "products_title": "Mahsulotlar",
+    "product_keychain": "NFC Kalitxona",
+    "product_keychain_desc": "Islomiy naqshlar bilan chiroyli dizayn, NFC chip bilan",
+    "product_card": "NFC Karta",
+    "product_card_desc": "To'g'ridan-to'g'ri ilova kirish uchun kompakt NFC karta",
+    "product_phone": "NFC Telefon Qopqog'i",
+    "product_phone_desc": "Ichki NFC chip bilan mos telefon qopqog'i",
+    "contact_title": "Sotuvchilar Bilan Bog'lanish",
+    "how_title": "Mahsulotni Qanday Olish Mumkin",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Email",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Rasmiy do'konlardan to'g'ri mahsulotni tanlang",
+      "WhatsApp yoki email orqali sotuvchi bilan bog'laning",
+      "To'lov va yetkazib berish usulini tanlang",
+      "Mahsulotni oling va noyob tajribadan bahramand bo'ling"
+    ]
   }
 }

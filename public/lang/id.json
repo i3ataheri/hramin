@@ -119,5 +119,35 @@
       "short": "Warisan Ottoman",
       "full": "Masjid indah di Madinah dengan arsitektur Ottoman yang unik, terletak dekat stasiun kereta api Hejaz tua, merupakan salah satu warisan arsitektur Ottoman di Madinah."
     }
+  },
+  "shop": {
+    "title": "Toko",
+    "about_title": "Tentang Produk",
+    "about_text": "Produk kami menggabungkan keindahan dengan teknologi. Setiap produk dilengkapi chip NFC yang membuka dunia Tanah Suci saat Anda menyentuhkannya ke ponsel.",
+    "products_title": "Produk",
+    "product_keychain": "Gantungan Kunci NFC",
+    "product_keychain_desc": "Desain elegan dengan pola Islam, dilengkapi chip NFC",
+    "product_card": "Kartu NFC",
+    "product_card_desc": "Kartu kompak dengan chip NFC untuk akses langsung",
+    "product_phone": "Case HP NFC",
+    "product_phone_desc": "Case kompatibel dengan chip NFC terintegrasi",
+    "contact_title": "Hubungi Penjual",
+    "how_title": "Cara Mendapatkan Produk",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Email",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Pilih produk yang sesuai dari toko resmi",
+      "Hubungi penjual melalui WhatsApp atau email",
+      "Pilih metode pembayaran dan pengiriman",
+      "Terima produk dan nikmati pengalaman unik"
+    ]
   }
 }

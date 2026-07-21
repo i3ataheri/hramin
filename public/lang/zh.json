@@ -119,5 +119,35 @@
       "short": "奥斯曼遗产",
       "full": "麦地那一座美丽的清真寺，具有独特的奥斯曼建筑风格，位于希贾兹旧火车站附近，被认为是麦地那奥斯曼建筑遗产之一。"
     }
+  },
+  "shop": {
+    "title": "商店",
+    "about_title": "关于产品",
+    "about_text": "我们的产品将美丽与科技相结合。每个产品都配备NFC芯片，当您用手机触碰时，即可打开圣地的世界。优雅耐用的设计使其成为热爱圣地之人的完美礼物。",
+    "products_title": "产品",
+    "product_keychain": "NFC钥匙链",
+    "product_keychain_desc": "伊斯兰花纹的优雅设计，配备NFC芯片",
+    "product_card": "NFC卡片",
+    "product_card_desc": "紧凑的NFC卡片，可直接访问应用",
+    "product_phone": "NFC手机壳",
+    "product_phone_desc": "兼容各种设备，内置NFC芯片",
+    "contact_title": "联系卖家",
+    "how_title": "如何获取产品",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "电子邮件",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "从授权商店选择合适的产品",
+      "通过WhatsApp或电子邮件联系卖家",
+      "选择合适的支付和配送方式",
+      "收到产品，享受独特体验"
+    ]
   }
 }

@@ -223,9 +223,7 @@ function goToPlace(index) {
   const inner = document.querySelector('.place-menu-inner');
   const activeItem = inner?.querySelector('.active');
   if (inner && activeItem) {
-    const itemRect = activeItem.getBoundingClientRect();
-    const innerRect = inner.getBoundingClientRect();
-    const offset = itemRect.left - innerRect.left + inner.scrollLeft - innerRect.width / 2 + itemRect.width / 2;
+    const offset = activeItem.offsetLeft - (inner.offsetWidth - activeItem.offsetWidth) / 2;
     inner.scrollTo({ left: Math.max(0, offset), behavior: 'smooth' });
   }
 }

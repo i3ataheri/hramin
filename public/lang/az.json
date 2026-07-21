@@ -119,5 +119,35 @@
       "short": "Osmanlı irsi",
       "full": "Mədinədə unikal Osmanlı memarlığına malik gözəl məscid, qədim Hicaz Dəmiryolu Stansiyasının yaxınında, Mədinədə Osmanlı memarlıq irsinin nümunələrindən biri."
     }
+  },
+  "shop": {
+    "title": "Mağaza",
+    "about_title": "Məhsullar Haqqında",
+    "about_text": "Məhsullarımız gözəlliklə texnologiyanı birlŞştirir. Hər məhsul NFC çip ilə təchiz olunub ki, telefonunuza toxunduqda müqəddəs yerlərin dünyasını açır.",
+    "products_title": "Məhsullar",
+    "product_keychain": "NFC Açarlıq",
+    "product_keychain_desc": "İslam naxışı ilə zərif dizayn, NFC çipli",
+    "product_card": "NFC Kart",
+    "product_card_desc": "Birbaşa tətbiq girişi üchün kompakt NFC kart",
+    "product_phone": "NFC Telefon Qabı",
+    "product_phone_desc": "Daxili NFC çip ilə uygun telefon qabı",
+    "contact_title": "Satıcılarla İlaqə",
+    "how_title": "Məhsulu Necə Almaq Olar",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Email",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Sertifikatlı mağazalardan uygun məhsulu seçin",
+      "WhatsApp və ya email vasitəsilə satıcı ilə İlaqə saxlayın",
+      "Ödəniş və çatdırılma metodunu seçin",
+      "Məhsulunuzu alın və unikal təcrübcədən zövq alın"
+    ]
   }
 }

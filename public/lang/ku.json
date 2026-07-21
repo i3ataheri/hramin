@@ -120,5 +120,35 @@
       "short": "Mirata osmanî",
       "full": "Dergeha Ambariye li Medîne de, li vir de mirata osmanî ye."
     }
+  },
+  "shop": {
+    "title": "Dîkan",
+    "about_title": "Derbarê Productan",
+    "about_text": "Productan me hûnînî le di technologyê de təkildîne. Her product de çîpa NFC heye ku di həsanê bi telefonê re dunyaya Qutbulxaniman ve dike.",
+    "products_title": "Productan",
+    "product_keychain": "Guhertina Mifteêrê NFC",
+    "product_keychain_desc": "Nimûneyên İslamî bi endamaya nerm, bi çîpa NFC re",
+    "product_card": "Karta NFC",
+    "product_card_desc": "Karta compact bi çîpa NFC re ji bo gihîştina rastî",
+    "product_phone": "Qoba Téléfona NFC",
+    "product_phone_desc": "Qoba hevgirtî bi çîpa NFC re",
+    "contact_title": "Təkiliya Firotîyan",
+    "how_title": "Çawa Dibe Product Bînî",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Email",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Producta awayî ji dikênên bi nav nas kirîn êxîne",
+      "Bi WhatsApp an email re bi firotîyan təkiliya bîne",
+      "Awayî pəşdrîdan û seferkirinê êxîne",
+      "Producta xwe bistîne û tecûrbeya taybetî hejîn bîne"
+    ]
   }
 }
