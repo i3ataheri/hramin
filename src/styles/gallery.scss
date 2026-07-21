@@ -197,9 +197,9 @@ html, body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.92);
   border: 2px solid transparent;
-  color: white;
+  color: #333;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -210,13 +210,13 @@ html, body {
 
   &:hover {
     border-color: $gold;
-    background: rgba(212, 175, 55, 0.15);
+    background: rgba(212, 175, 55, 0.18);
     color: $gold;
   }
 
   &.active {
     border-color: $gold;
-    background: rgba(212, 175, 55, 0.2);
+    background: rgba(212, 175, 55, 0.22);
     color: $gold;
   }
 }
