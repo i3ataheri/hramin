@@ -4,7 +4,7 @@
 
 let placesData = {};
 let translations = {};
-let currentLang = 'ar';
+let currentLang = localStorage.getItem('haramain_lang') || 'ar';
 let currentCity = 'makkah';
 let currentIndex = 0;
 
@@ -12,7 +12,7 @@ const allLangs = [
   { code: 'ar', label: 'AR', dir: 'rtl', font: 'Vazirmatn', native: 'العربية' },
   { code: 'fa', label: 'FA', dir: 'rtl', font: 'Vazirmatn', native: 'فارسی' },
   { code: 'en', label: 'EN', dir: 'ltr', font: 'Inter', native: 'English' },
-  { code: 'ur', label: 'UR', dir: 'rtl', font: 'Gulzar', native: 'اردو' },
+  { code: 'ur', label: 'UR', dir: 'rtl', font: 'Vazirmatn', native: 'اردو' },
   { code: 'id', label: 'ID', dir: 'ltr', font: 'Inter', native: 'Indonesia' },
   { code: 'bn', label: 'ব', dir: 'ltr', font: 'Noto Sans Bengali', native: 'বাংলা' },
   { code: 'tr', label: 'TR', dir: 'ltr', font: 'Inter', native: 'Türkçe' },
@@ -91,6 +91,16 @@ function setupListeners() {
   // City buttons
   document.getElementById('btn-makkah').addEventListener('click', () => switchCity('makkah'));
   document.getElementById('btn-madinah').addEventListener('click', () => switchCity('madinah'));
+
+  // Change language button
+  const changeLangBtn = document.getElementById('change-lang-btn');
+  if (changeLangBtn) {
+    changeLangBtn.addEventListener('click', () => {
+      localStorage.removeItem('haramain_lang');
+      localStorage.removeItem('haramain_dir');
+      window.location.href = '/';
+    });
+  }
 
   // Language sidebar - hover (desktop)
   document.getElementById('lang-sidebar').addEventListener('mouseover', (e) => {
@@ -252,4 +262,9 @@ function showPlace(index) {
 }
 
 // ──── Start ────
-window.addEventListener('DOMContentLoaded', init);
+window.addEventListener('DOMContentLoaded', () => {
+  // Sync language sidebar with saved language
+  syncLangSidebar();
+  applyDir();
+  init();
+});

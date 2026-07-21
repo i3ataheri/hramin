@@ -1,82 +1,166 @@
 ---
+import '../styles/language.scss';
+import '../styles/global.css';
 import Layout from '../layouts/App.astro';
 ---
 
 <Layout>
-  <!-- Phone container (direct) -->
-  <div id="app-container" class="app-container">
-    <!-- Background scene inside phone -->
-    <div id="phone-scene" class="phone-scene">
-      <div class="phone-gradient"></div>
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="loader"></div>
+    <div class="loading-text">Loading...</div>
+  </div>
+
+  <!-- Language Selection Page -->
+  <div class="language-page" id="language-page">
+    <!-- Animated Background -->
+    <div class="lang-bg"></div>
+
+    <!-- Geometric Pattern -->
+    <div class="geometric-pattern">
+      <div class="pattern-ring"></div>
+      <div class="pattern-ring"></div>
+      <div class="pattern-ring"></div>
     </div>
 
-    <!-- Info panel -->
-    <div class="info-panel">
-      <div class="title-row">
-        <div>
-          <h2 id="app-title" class="app-title">...</h2>
-          <p id="app-short" class="app-short">...</p>
-        </div>
-        <button class="info-btn" id="info-btn" aria-label="info">
-          <svg viewBox="0 0 24 24" width="22" height="22">
-            <path d="M10,9 L14,8 L13,11 L11,10 L10,9 Z M10,12 L14,11 L13,18 L9,19 L10,12 Z" fill="currentColor" />
-          </svg>
-        </button>
-      </div>
+    <!-- Floating Particles -->
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
     </div>
 
-    <!-- Language sidebar (20 lang) -->
-      <div class="lang-sidebar" id="lang-sidebar">
-      <div class="lang-scroll">
-        <div class="lang-item active" data-lang="ar">AR</div>
-        <div class="lang-item" data-lang="fa">FA</div>
-        <div class="lang-item" data-lang="en">EN</div>
-        <div class="lang-item" data-lang="ur">UR</div>
-        <div class="lang-item" data-lang="id">ID</div>
-        <div class="lang-item" data-lang="bn">BN</div>
-        <div class="lang-item" data-lang="tr">TR</div>
-        <div class="lang-item" data-lang="ms">MS</div>
-        <div class="lang-item" data-lang="fr">FR</div>
-        <div class="lang-item" data-lang="sw">SW</div>
-        <div class="lang-item" data-lang="ha">HA</div>
-        <div class="lang-item" data-lang="ps">PS</div>
-        <div class="lang-item" data-lang="uz">UZ</div>
-        <div class="lang-item" data-lang="ru">RU</div>
-        <div class="lang-item" data-lang="zh">ZH</div>
-        <div class="lang-item" data-lang="az">AZ</div>
-        <div class="lang-item" data-lang="ku">KU</div>
-        <div class="lang-item" data-lang="so">SO</div>
-        <div class="lang-item" data-lang="bs">BS</div>
-        <div class="lang-item" data-lang="tg">TG</div>
-      </div>
-    </div>
+    <!-- Main Content -->
+    <div class="lang-content">
+      <!-- Language Grid -->
+      <div class="lang-grid" id="lang-grid"></div>
 
-    <!-- Image slider -->
-    <div class="slider-viewport">
-      <div class="image-track" id="image-track"></div>
-    </div>
 
-    <!-- City selector -->
-    <div class="city-selector">
-      <a href="/map" class="city-btn map-btn" title="نقشه">
-        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
-      </a>
-      <button id="btn-makkah" class="city-btn active-makkah" data-city="makkah">
-        <img src="/images/makkah.svg" alt="مکه" width="22" height="22">
-      </button>
-      <button id="btn-madinah" class="city-btn" data-city="madinah">
-        <img src="/images/madinah.svg" alt="مدینه" width="22" height="22">
-      </button>
-    </div>
-
-    <!-- Bottom menu -->
-    <div class="sidebar-bottom" id="places-list"></div>
-
-    <!-- Description overlay -->
-    <div class="desc-overlay" id="desc-overlay">
-      <button class="close-btn" id="close-desc"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></button>
-      <h2 id="modal-title" class="modal-title">...</h2>
-      <div id="modal-description" class="modal-desc">...</div>
     </div>
   </div>
+
+  <script is:inline>
+    // ═══════ LANGUAGE DATA ═══════
+    const allLangs = [
+      { code: 'ar', label: 'AR', dir: 'rtl', font: 'Vazirmatn', native: 'العربية', flag: '/flags/sa.svg' },
+      { code: 'fa', label: 'FA', dir: 'rtl', font: 'Vazirmatn', native: 'فارسی', flag: '/flags/ir.svg' },
+      { code: 'en', label: 'EN', dir: 'ltr', font: 'Inter', native: 'English', flag: '/flags/gb.svg' },
+      { code: 'ur', label: 'UR', dir: 'rtl', font: 'Vazirmatn', native: 'اردو', flag: '/flags/pk.svg' },
+      { code: 'id', label: 'ID', dir: 'ltr', font: 'Inter', native: 'Indonesia', flag: '/flags/id.svg' },
+      { code: 'bn', label: 'BN', dir: 'ltr', font: 'Noto Sans Bengali', native: 'বাংলা', flag: '/flags/bd.svg' },
+      { code: 'tr', label: 'TR', dir: 'ltr', font: 'Inter', native: 'Türkçe', flag: '/flags/tr.svg' },
+      { code: 'ms', label: 'MS', dir: 'ltr', font: 'Inter', native: 'Melayu', flag: '/flags/my.svg' },
+      { code: 'fr', label: 'FR', dir: 'ltr', font: 'Inter', native: 'Français', flag: '/flags/fr.svg' },
+      { code: 'sw', label: 'SW', dir: 'ltr', font: 'Inter', native: 'Kiswahili', flag: '/flags/tz.svg' },
+      { code: 'ha', label: 'HA', dir: 'ltr', font: 'Inter', native: 'Hausa', flag: '/flags/ng.svg' },
+      { code: 'ps', label: 'PS', dir: 'rtl', font: 'Vazirmatn', native: 'پښتو', flag: '/flags/af.svg' },
+      { code: 'uz', label: 'UZ', dir: 'ltr', font: 'Inter', native: "O'zbek", flag: '/flags/uz.svg' },
+      { code: 'ru', label: 'RU', dir: 'ltr', font: 'Inter', native: 'Русский', flag: '/flags/ru.svg' },
+      { code: 'zh', label: 'ZH', dir: 'ltr', font: 'Noto Sans SC', native: '中文', flag: '/flags/cn.svg' },
+      { code: 'az', label: 'AZ', dir: 'ltr', font: 'Inter', native: 'Azərbaycan', flag: '/flags/az.svg' },
+      { code: 'ku', label: 'KU', dir: 'ltr', font: 'Inter', native: 'Kurdî', flag: '/flags/ku.svg' },
+      { code: 'so', label: 'SO', dir: 'ltr', font: 'Inter', native: 'Soomaali', flag: '/flags/so.svg' },
+      { code: 'bs', label: 'BS', dir: 'ltr', font: 'Inter', native: 'Bosanski', flag: '/flags/ba.svg' },
+      { code: 'tg', label: 'TG', dir: 'ltr', font: 'Inter', native: 'Тоҷикӣ', flag: '/flags/tj.svg' }
+    ];
+
+    // ═══════ CHECK IF LANGUAGE ALREADY SELECTED ═══════
+    const savedLang = localStorage.getItem('haramain_lang');
+    if (savedLang) {
+      window.location.href = '/gallery';
+    }
+
+    // ═══════ RENDER LANGUAGE GRID ═══════
+    function renderLangGrid() {
+      const grid = document.getElementById('lang-grid');
+      if (!grid) return;
+
+      grid.innerHTML = allLangs.map(lang => {
+        let iconClass = 'lang-card__icon';
+
+        return `
+          <div class="lang-card" data-lang="${lang.code}" data-dir="${lang.dir}">
+            <div class="ripple-container"></div>
+            <img class="${iconClass}" src="${lang.flag}" alt="${lang.native}" loading="lazy">
+            <div class="lang-card__name" style="font-family: '${lang.font}', sans-serif">${lang.native}</div>
+            <div class="lang-card__code">${lang.label}</div>
+          </div>
+        `;
+      }).join('');
+
+      // Add click listeners
+      grid.querySelectorAll('.lang-card').forEach(card => {
+        card.addEventListener('click', () => selectLanguage(card));
+      });
+    }
+
+    // ═══════ SELECT LANGUAGE ═══════
+    function selectLanguage(card) {
+      const langCode = card.dataset.lang;
+      const langDir = card.dataset.dir;
+
+      // Remove previous selection
+      document.querySelectorAll('.lang-card').forEach(c => c.classList.remove('selected'));
+
+      // Add selection with ripple
+      card.classList.add('selected');
+      createRipple(card);
+
+      // Save to localStorage
+      localStorage.setItem('haramain_lang', langCode);
+      localStorage.setItem('haramain_dir', langDir);
+
+      // Transition to gallery
+      setTimeout(() => {
+        const page = document.getElementById('language-page');
+        page.classList.add('exiting');
+        
+        setTimeout(() => {
+          window.location.href = '/gallery';
+        }, 800);
+      }, 600);
+    }
+
+    // ═══════ RIPPLE EFFECT ═══════
+    function createRipple(card) {
+      const container = card.querySelector('.ripple-container');
+      if (!container) return;
+
+      const ripple = document.createElement('div');
+      ripple.className = 'ripple';
+      ripple.style.left = '50%';
+      ripple.style.top = '50%';
+      ripple.style.transform = 'translate(-50%, -50%)';
+      container.appendChild(ripple);
+
+      setTimeout(() => ripple.remove(), 800);
+    }
+
+    // ═══════ HIDE LOADING ═══════
+    window.addEventListener('load', () => {
+      renderLangGrid();
+      
+      setTimeout(() => {
+        const loading = document.getElementById('loading-overlay');
+        if (loading) loading.classList.add('hidden');
+      }, 500);
+    });
+  </script>
 </Layout>

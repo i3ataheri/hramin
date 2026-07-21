@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs><clipPath id="c"><circle cx="50" cy="50" r="50"/></clipPath></defs>
+  <g clip-path="url(#c)">
+    <rect width="100" height="100" fill="#006C35"/>
+    <text x="50" y="45" text-anchor="middle" fill="white" font-family="serif" font-size="16" font-weight="bold">لا إله</text>
+    <text x="50" y="62" text-anchor="middle" fill="white" font-family="serif" font-size="16" font-weight="bold">إلا الله</text>
+    <line x1="25" y1="72" x2="75" y2="72" stroke="white" stroke-width="2"/>
+  </g>
+</svg>
