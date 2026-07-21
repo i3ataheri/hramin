@@ -194,14 +194,14 @@ html, body {
 }
 
 .info-btn {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
+  border: 2px solid transparent;
+  color: #333;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -211,20 +211,27 @@ html, body {
   flex-shrink: 0;
 
   &:hover {
+    border-color: $gold;
+    background: rgba(212, 175, 55, 0.15);
+    color: $gold;
+  }
+
+  &.active {
+    border-color: $gold;
     background: rgba(212, 175, 55, 0.2);
-    border-color: rgba(212, 175, 55, 0.5);
+    color: $gold;
   }
 }
 
 .change-lang-btn {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
+  border: 2px solid transparent;
+  color: #333;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -234,8 +241,14 @@ html, body {
   flex-shrink: 0;
 
   &:hover {
+    border-color: $gold;
+    background: rgba(212, 175, 55, 0.15);
+    color: $gold;
+  }
+
+  &.active {
+    border-color: $gold;
     background: rgba(212, 175, 55, 0.2);
-    border-color: rgba(212, 175, 55, 0.5);
     color: $gold;
   }
 }
