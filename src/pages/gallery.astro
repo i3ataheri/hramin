@@ -19,9 +19,20 @@ import '../styles/gallery.scss';
         <button class="city-tab active" data-city="makkah" id="btn-makkah">مكة المكرمة</button>
         <button class="city-tab" data-city="madinah" id="btn-madinah">المدينة المنورة</button>
       </div>
-      <button class="info-btn" id="info-btn" aria-label="info">
-        <img src="/icons/info.svg" alt="" width="24" height="24">
-      </button>
+      <div class="top-right-btns">
+        <button class="pause-btn" id="pause-btn" aria-label="pause">
+          <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20">
+            <rect x="6" y="4" width="4" height="16" rx="1" fill="currentColor"/>
+            <rect x="14" y="4" width="4" height="16" rx="1" fill="currentColor"/>
+          </svg>
+          <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20" style="display:none">
+            <path d="M8 5v14l11-7z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button class="info-btn" id="info-btn" aria-label="info">
+          <img src="/icons/info.svg" alt="" width="24" height="24">
+        </button>
+      </div>
     </div>
 
     <!-- Stories viewport -->

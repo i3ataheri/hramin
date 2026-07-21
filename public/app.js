@@ -178,12 +178,6 @@ function renderPlaceMenu() {
   });
 
   container.appendChild(inner);
-
-  const activeItem = inner.querySelector('.active');
-  if (activeItem) {
-    const scrollLeft = activeItem.offsetLeft - inner.offsetWidth / 2 + activeItem.offsetWidth / 2;
-    inner.scrollTo({ left: Math.max(0, scrollLeft), behavior: 'smooth' });
-  }
 }
 
 /* ═══════ NAVIGATION ═══════ */
@@ -225,6 +219,13 @@ function goToPlace(index) {
   currentPlaceIndex = index;
   currentPhotoIndex = 0;
   renderSlide();
+
+  const inner = document.querySelector('.place-menu-inner');
+  const activeItem = inner?.querySelector('.active');
+  if (inner && activeItem) {
+    const scrollLeft = activeItem.offsetLeft - inner.offsetWidth / 2 + activeItem.offsetWidth / 2;
+    inner.scrollTo({ left: Math.max(0, scrollLeft), behavior: 'smooth' });
+  }
 }
 
 /* ═══════ AUTO TIMER ═══════ */
@@ -306,9 +307,9 @@ function setupTouchHandlers() {
 
     if (absDx > absDy && absDx > threshold) {
       if (dx < 0) {
-        nextPlace();
+        nextPhoto();
       } else {
-        prevPlace();
+        prevPhoto();
       }
     } else if (absDy > absDx && absDy > threshold) {
       if (dy < 0) {
@@ -390,6 +391,25 @@ function hideTooltip() {
   if (tooltipEl) tooltipEl.classList.remove('show');
 }
 
+/* ═══════ PAUSE / RESUME ═══════ */
+function togglePause() {
+  if (isPaused) {
+    resumeAuto();
+    updatePauseBtn(false);
+  } else {
+    pauseAuto();
+    updatePauseBtn(true);
+  }
+}
+
+function updatePauseBtn(paused) {
+  const btn = document.getElementById('pause-btn');
+  if (!btn) return;
+  btn.classList.toggle('paused', paused);
+  btn.querySelector('.icon-pause').style.display = paused ? 'none' : 'block';
+  btn.querySelector('.icon-play').style.display = paused ? 'block' : 'none';
+}
+
 /* ═══════ LISTENERS ═══════ */
 function setupListeners() {
   setupTouchHandlers();
@@ -419,6 +439,11 @@ function setupListeners() {
       window.location.href = '/';
     });
   }
+
+  document.getElementById('pause-btn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    togglePause();
+  });
 
 }
 

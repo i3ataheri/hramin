@@ -197,6 +197,40 @@ html, body {
   }
 }
 
+.top-right-btns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.pause-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: 2px solid transparent;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+  flex-shrink: 0;
+
+  &:hover {
+    border-color: $gold;
+    background: rgba(212, 175, 55, 0.18);
+    color: $gold;
+  }
+
+  &.paused {
+    border-color: $gold;
+    background: rgba(212, 175, 55, 0.22);
+    color: $gold;
+  }
+}
+
 .info-btn {
   width: 42px;
   height: 42px;
