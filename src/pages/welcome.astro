@@ -23,8 +23,8 @@ import '../styles/welcome.scss';
 
     <!-- Content -->
     <div class="welcome-content">
-      <!-- Bismillah -->
-      <div class="bismillah" id="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+      <!-- Title -->
+      <h1 class="welcome-title" id="welcome-title"></h1>
 
       <!-- Decorative Line -->
       <div class="decorative-line">
@@ -33,17 +33,14 @@ import '../styles/welcome.scss';
         <div class="line"></div>
       </div>
 
-      <!-- Title -->
-      <h1 class="welcome-title" id="welcome-title"></h1>
-
       <!-- Paragraphs -->
       <div class="welcome-paragraphs" id="welcome-paragraphs"></div>
 
-      <!-- Enter Button -->
-      <button class="enter-btn" id="enter-btn">وارد شوید</button>
-
-      <!-- Change Language -->
-      <a class="change-lang-link" id="change-lang">تغییر زبان</a>
+      <!-- Buttons -->
+      <div class="welcome-buttons">
+        <button class="enter-btn" id="enter-btn">وارد شوید</button>
+        <button class="change-lang-btn" id="change-lang">تغییر زبان</button>
+      </div>
     </div>
   </div>
 
@@ -138,12 +135,12 @@ import '../styles/welcome.scss';
         const dir = lang === 'ar' || lang === 'fa' || lang === 'ur' || lang === 'ps' ? 'rtl' : 'ltr';
         document.documentElement.setAttribute('dir', dir);
         document.documentElement.setAttribute('lang', lang);
+        document.body.setAttribute('data-lang', lang);
 
-        // Set bismillah
-        const bismillahEl = document.getElementById('bismillah');
-        if (bismillahEl) {
-          bismillahEl.textContent = bismillahText[lang] || bismillahText['ar'];
-        }
+        // Set font
+        const fontMap = { ar: 'Vazirmatn', fa: 'Vazirmatn', ur: 'Vazirmatn', ps: 'Vazirmatn', bn: 'Noto Sans Bengali', zh: 'Noto Sans SC', en: 'Inter', id: 'Inter', tr: 'Inter', ms: 'Inter', fr: 'Inter', sw: 'Inter', ha: 'Inter', uz: 'Inter', ru: 'Inter', az: 'Inter', ku: 'Inter', so: 'Inter', bs: 'Inter', tg: 'Inter' };
+        const font = fontMap[lang] || 'Inter';
+        document.documentElement.style.setProperty('--page-font', `'${font}', sans-serif`);
 
         // Set title
         document.getElementById('welcome-title').textContent = langData.title;

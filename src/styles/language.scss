@@ -159,6 +159,34 @@ $glass: rgba(255, 255, 255, 0.05);
 $glass-border: rgba(255, 255, 255, 0.08);
 $glass-hover: rgba(255, 255, 255, 0.1);
 
+/* ═══════ RESET - Override Tailwind preflight ═══════ */
+html, body {
+  font-family: 'Inter', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #050508;
+  color: white;
+  overflow: hidden;
+  direction: rtl;
+}
+
+body[data-lang="ar"], body[data-lang="fa"], body[data-lang="ur"], body[data-lang="ps"] {
+  direction: rtl;
+}
+
+body[data-lang="en"], body[data-lang="id"], body[data-lang="bn"], body[data-lang="tr"],
+body[data-lang="ms"], body[data-lang="fr"], body[data-lang="sw"], body[data-lang="ha"],
+body[data-lang="uz"], body[data-lang="ru"], body[data-lang="zh"], body[data-lang="az"],
+body[data-lang="ku"], body[data-lang="so"], body[data-lang="bs"], body[data-lang="tg"] {
+  direction: ltr;
+}
+
+.lang-card__name {
+  font-weight: 600;
+}
+
 /* ═══════ BASE ═══════ */
 .language-page {
   position: fixed;
