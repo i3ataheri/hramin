@@ -222,10 +222,20 @@ function goToPlace(index) {
 
   const inner = document.querySelector('.place-menu-inner');
   const activeItem = inner?.querySelector('.active');
-  if (inner && activeItem) {
-    const offset = activeItem.offsetLeft - (inner.offsetWidth - activeItem.offsetWidth) / 2;
-    inner.scrollTo({ left: Math.max(0, offset), behavior: 'smooth' });
-  }
+  if (!inner || !activeItem) return;
+
+  const scrollWidth = inner.scrollWidth;
+  const clientWidth = inner.clientWidth;
+  if (scrollWidth <= clientWidth) return;
+
+  const itemLeft = activeItem.offsetLeft;
+  const itemWidth = activeItem.offsetWidth;
+  const maxScroll = scrollWidth - clientWidth;
+
+  let target = itemLeft - (clientWidth - itemWidth) / 2;
+  target = Math.max(0, Math.min(target, maxScroll));
+
+  inner.scrollTo({ left: target, behavior: 'smooth' });
 }
 
 /* ═══════ AUTO TIMER ═══════ */
