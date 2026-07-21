@@ -199,7 +199,6 @@ html, body {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.92);
   border: 2px solid transparent;
-  color: #333;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -208,16 +207,18 @@ html, body {
   padding: 0;
   flex-shrink: 0;
 
+  img { transition: filter 0.3s ease; }
+
   &:hover {
     border-color: $gold;
     background: rgba(212, 175, 55, 0.18);
-    color: $gold;
+    img { filter: brightness(0) saturate(100%) invert(64%) sepia(60%) saturate(500%) hue-rotate(2deg) brightness(95%) contrast(90%); }
   }
 
   &.active {
     border-color: $gold;
     background: rgba(212, 175, 55, 0.22);
-    color: $gold;
+    img { filter: brightness(0) saturate(100%) invert(64%) sepia(60%) saturate(500%) hue-rotate(2deg) brightness(95%) contrast(90%); }
   }
 }
 
