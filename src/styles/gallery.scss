@@ -334,7 +334,7 @@ html, body {
 
   &-inner {
     display: flex;
-    gap: 6px;
+    gap: 8px;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -349,9 +349,9 @@ html, body {
 
   .place-item {
     flex-shrink: 0;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 11px;
+    padding: 8px 18px;
+    border-radius: 22px;
+    font-size: 13px;
     font-weight: 600;
     font-family: var(--page-font, 'Inter', sans-serif);
     color: rgba(255, 255, 255, 0.55);
@@ -371,9 +371,13 @@ html, body {
       box-shadow: 0 0 12px $gold-glow;
     }
 
-    &:not(.active):hover {
-      color: rgba(255, 255, 255, 0.85);
-      border-color: rgba(212, 175, 55, 0.3);
+    &:not(.active) {
+      border-right: 1px solid rgba(212, 175, 55, 0.25);
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.85);
+        border-color: rgba(212, 175, 55, 0.3);
+      }
     }
   }
 }
