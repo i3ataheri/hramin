@@ -324,27 +324,56 @@ html, body {
 }
 
 /* ═══════ STORY DOTS ═══════ */
-.story-dots {
+.place-menu {
   position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
+  bottom: 20px;
+  left: 0;
+  right: 0;
   z-index: 50;
+  padding: 0 16px;
 
-  .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    transition: all 0.3s ease;
+  &-inner {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    &::-webkit-scrollbar { display: none; }
+  }
+
+  .place-item {
+    flex-shrink: 0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: var(--page-font, 'Inter', sans-serif);
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    user-select: none;
 
     &.active {
+      color: #000;
       background: $gold;
-      box-shadow: 0 0 10px $gold-glow;
-      transform: scale(1.2);
+      border-color: $gold;
+      box-shadow: 0 0 12px $gold-glow;
+    }
+
+    &:not(.active):hover {
+      color: rgba(255, 255, 255, 0.85);
+      border-color: rgba(212, 175, 55, 0.3);
     }
   }
 }

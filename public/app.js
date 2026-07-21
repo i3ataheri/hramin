@@ -122,7 +122,7 @@ function renderSlide() {
     .join('');
 
   renderProgress();
-  renderDots();
+  renderPlaceMenu();
   renderCityLabels();
   startAutoTimer();
 }
@@ -158,18 +158,31 @@ function renderCityLabels() {
   document.getElementById('btn-madinah').textContent = lang.ui.madinah_label || 'المدينة المنورة';
 }
 
-/* ═══════ STORY DOTS ═══════ */
-function renderDots() {
-  const dots = document.getElementById('story-dots');
+/* ═══════ PLACE MENU ═══════ */
+function renderPlaceMenu() {
+  const container = document.getElementById('place-menu');
   const places = getPlaces();
-  dots.innerHTML = '';
+  const lang = translations[currentLang];
+  container.innerHTML = '';
 
-  places.forEach((_, i) => {
-    const dot = document.createElement('div');
-    dot.className = `dot ${i === currentPlaceIndex ? 'active' : ''}`;
-    dot.addEventListener('click', () => goToPlace(i));
-    dots.appendChild(dot);
+  const inner = document.createElement('div');
+  inner.className = 'place-menu-inner';
+
+  places.forEach((place, i) => {
+    const item = document.createElement('button');
+    item.className = `place-item ${i === currentPlaceIndex ? 'active' : ''}`;
+    const title = lang?.places?.[place.id]?.title || place.id;
+    item.textContent = title;
+    item.addEventListener('click', () => goToPlace(i));
+    inner.appendChild(item);
   });
+
+  container.appendChild(inner);
+
+  const activeItem = inner.querySelector('.active');
+  if (activeItem) {
+    activeItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
 }
 
 /* ═══════ NAVIGATION ═══════ */
