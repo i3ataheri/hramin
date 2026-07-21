@@ -84,7 +84,7 @@ import Layout from '../layouts/App.astro';
     // ═══════ CHECK IF LANGUAGE ALREADY SELECTED ═══════
     const savedLang = localStorage.getItem('haramain_lang');
     if (savedLang) {
-      window.location.href = '/gallery';
+      window.location.href = '/welcome';
     }
 
     // ═══════ RENDER LANGUAGE GRID ═══════
@@ -127,13 +127,13 @@ import Layout from '../layouts/App.astro';
       localStorage.setItem('haramain_lang', langCode);
       localStorage.setItem('haramain_dir', langDir);
 
-      // Transition to gallery
+      // Transition to welcome page
       setTimeout(() => {
         const page = document.getElementById('language-page');
         page.classList.add('exiting');
         
         setTimeout(() => {
-          window.location.href = '/gallery';
+          window.location.href = '/welcome';
         }, 800);
       }, 600);
     }

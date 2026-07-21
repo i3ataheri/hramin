@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/App.astro';
+import '../styles/welcome.scss';
+---
+
+<Layout>
+  <!-- Loading -->
+  <div class="welcome-loading" id="welcome-loading">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Welcome Page -->
+  <div class="welcome-page" id="welcome-page">
+    <!-- Background -->
+    <div class="welcome-bg"></div>
+
+    <!-- Geometric Pattern -->
+    <div class="welcome-pattern">
+      <div class="pattern-ring"></div>
+      <div class="pattern-ring"></div>
+      <div class="pattern-ring"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="welcome-content">
+      <!-- Bismillah -->
+      <div class="bismillah" id="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+
+      <!-- Decorative Line -->
+      <div class="decorative-line">
+        <div class="line"></div>
+        <div class="diamond"></div>
+        <div class="line"></div>
+      </div>
+
+      <!-- Title -->
+      <h1 class="welcome-title" id="welcome-title"></h1>
+
+      <!-- Paragraphs -->
+      <div class="welcome-paragraphs" id="welcome-paragraphs"></div>
+
+      <!-- Enter Button -->
+      <button class="enter-btn" id="enter-btn">وارد شوید</button>
+
+      <!-- Change Language -->
+      <a class="change-lang-link" id="change-lang">تغییر زبان</a>
+    </div>
+  </div>
+
+  <script is:inline>
+    // ═══════ CONFIG ═══════
+    const bismillahText = {
+      ar: 'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ',
+      fa: 'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ',
+      en: 'In the name of Allah, the Most Gracious, the Most Merciful',
+      ur: 'بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِيمِ',
+      id: 'Dengan nama Allah, Yang Maha Pengasih, Yang Maha Penyayang',
+      bn: 'পরম পিতা মোর, তোমাই সর্বজন',
+      tr: 'Rahman ve Rahim olan Allah\'ın adıyla',
+      ms: 'Dengan nama Allah, Yang Maha Pengasih, Yang Maha Penyayang',
+      fr: 'Au nom d\'Allah, le Miséricordieux, le Compassion',
+      sw: 'Kwa jina la Mwenyezi Mungu, Mwenye rehema, Mwenye kujali',
+      ha: 'Suna Ubangijin, Mai jan hankali, Mai jin kai',
+      ps: 'د نوم د اللہ د رحمان د رحیم',
+      uz: 'Rahmon va Rahim Alloh nomi bilan',
+      ru: 'Во имя Аллаха, Милостивого, Милосердного',
+      zh: '奉至仁至慈的真主之名',
+      az: 'Mərhəmətli və Rəhmli Allahın adı ilə',
+      ku: 'Bi navê Xwedê rehmań û rehim re',
+      so: 'Magaca Alle, Naxariistaha Badan, Naxariistaha Badan',
+      bs: 'U ime Allaha, Milostivog, Samiloznog',
+      tg: 'Бо номи Худованди меҳрубони раҳим'
+    };
+
+    const enterBtnText = {
+      ar: 'ادخل الموقع',
+      fa: 'وارد شوید',
+      en: 'Enter',
+      ur: 'درآئیں',
+      id: 'Masuk',
+      bn: 'প্রবেশ করুন',
+      tr: 'Gir',
+      ms: 'Masuk',
+      fr: 'Entrer',
+      sw: 'Ingia',
+      ha: 'Shiga',
+      ps: 'ننه شه',
+      uz: 'Kirish',
+      ru: 'Войти',
+      zh: '进入',
+      az: 'Daxil ol',
+      ku: 'Bike',
+      so: 'Gal',
+      bs: 'Uđi',
+      tg: 'Даромадан'
+    };
+
+    // ═══════ INIT ═══════
+    async function init() {
+      const lang = localStorage.getItem('haramain_lang') || 'ar';
+      
+      // Check if language is selected
+      if (!localStorage.getItem('haramain_lang')) {
+        window.location.href = '/';
+        return;
+      }
+
+      // Load welcome data
+      try {
+        const res = await fetch('/data/welcome.json');
+        const data = await res.json();
+        const langData = data[lang] || data['ar'];
+
+        // Set direction
+        const dir = lang === 'ar' || lang === 'fa' || lang === 'ur' || lang === 'ps' ? 'rtl' : 'ltr';
+        document.documentElement.setAttribute('dir', dir);
+        document.documentElement.setAttribute('lang', lang);
+
+        // Set bismillah
+        const bismillahEl = document.getElementById('bismillah');
+        if (bismillahEl) {
+          bismillahEl.textContent = bismillahText[lang] || bismillahText['ar'];
+        }
+
+        // Set title
+        document.getElementById('welcome-title').textContent = langData.title;
+
+        // Set paragraphs
+        const paragraphsEl = document.getElementById('welcome-paragraphs');
+        langData.paragraphs.forEach(text => {
+          const p = document.createElement('p');
+          p.className = 'welcome-text';
+          p.textContent = text;
+          paragraphsEl.appendChild(p);
+        });
+
+        // Set button text
+        document.getElementById('enter-btn').textContent = enterBtnText[lang] || 'وارد شوید';
+
+        // Set change language link
+        const changeLangEl = document.getElementById('change-lang');
+        if (dir === 'rtl') {
+          changeLangEl.textContent = '← تغییر زبان';
+        } else {
+          changeLangEl.textContent = 'Change Language →';
+        }
+
+        // Hide loading
+        setTimeout(() => {
+          document.getElementById('welcome-loading').classList.add('hidden');
+        }, 300);
+
+      } catch (e) {
+        console.error('Failed to load welcome data:', e);
+        // Fallback to Persian
+        document.getElementById('welcome-title').textContent = 'به گنجینه‌ی مقدّس حرمین شریفین خوش آمدید';
+        document.getElementById('welcome-loading').classList.add('hidden');
+      }
+    }
+
+    // ═══════ LISTENERS ═══════
+    document.getElementById('enter-btn').addEventListener('click', () => {
+      const page = document.getElementById('welcome-page');
+      page.classList.add('exiting');
+      setTimeout(() => {
+        window.location.href = '/gallery';
+      }, 800);
+    });
+
+    document.getElementById('change-lang').addEventListener('click', () => {
+      localStorage.removeItem('haramain_lang');
+      localStorage.removeItem('haramain_dir');
+      window.location.href = '/';
+    });
+
+    // ═══════ START ═══════
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</Layout>
