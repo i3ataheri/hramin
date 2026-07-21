@@ -123,6 +123,7 @@ function renderSlide() {
 
   renderProgress();
   renderDots();
+  renderCityLabels();
   startAutoTimer();
 }
 
@@ -147,6 +148,14 @@ function renderProgress() {
     seg.appendChild(fill);
     bar.appendChild(seg);
   }
+}
+
+/* ═══════ CITY LABELS ═══════ */
+function renderCityLabels() {
+  const lang = translations[currentLang];
+  if (!lang || !lang.ui) return;
+  document.getElementById('btn-makkah').textContent = lang.ui.makkah_label || 'مكة المكرمة';
+  document.getElementById('btn-madinah').textContent = lang.ui.madinah_label || 'المدينة المنورة';
 }
 
 /* ═══════ STORY DOTS ═══════ */
