@@ -1,0 +1,145 @@
+---
+import Layout from '../layouts/App.astro';
+import '../styles/shop.scss';
+---
+
+<Layout>
+  <div class="shop-page" id="shop-page">
+    <div class="shop-header">
+      <a href="/gallery" class="back-btn" id="back-btn">
+        <img src="/icons/back.svg" alt="" width="22" height="22">
+      </a>
+      <h1 class="shop-title" id="shop-title"></h1>
+    </div>
+
+    <div class="shop-content">
+      <section class="shop-section">
+        <h2 class="section-title" id="section-about"></h2>
+        <p class="section-text" id="about-text"></p>
+      </section>
+
+      <section class="shop-section">
+        <h2 class="section-title" id="section-products"></h2>
+        <div class="products-grid" id="products-grid">
+          <div class="product-card">
+            <div class="product-icon">
+              <img src="/icons/keychain.svg" alt="" width="48" height="48">
+            </div>
+            <h3 class="product-name" id="product-keychain"></h3>
+            <p class="product-desc" id="product-keychain-desc"></p>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">
+              <img src="/icons/card.svg" alt="" width="48" height="48">
+            </div>
+            <h3 class="product-name" id="product-card"></h3>
+            <p class="product-desc" id="product-card-desc"></p>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">
+              <img src="/icons/phone.svg" alt="" width="48" height="48">
+            </div>
+            <h3 class="product-name" id="product-phone"></h3>
+            <p class="product-desc" id="product-phone-desc"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-section">
+        <h2 class="section-title" id="section-contact"></h2>
+        <div class="contact-list" id="contact-list">
+        </div>
+      </section>
+
+      <section class="shop-section">
+        <h2 class="section-title" id="section-how"></h2>
+        <div class="steps-list" id="steps-list">
+        </div>
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const allLangs = [
+    { code: 'ar', font: 'Vazirmatn', dir: 'rtl' },
+    { code: 'fa', font: 'Vazirmatn', dir: 'rtl' },
+    { code: 'en', font: 'Inter', dir: 'ltr' },
+    { code: 'ur', font: 'Vazirmatn', dir: 'rtl' },
+    { code: 'id', font: 'Inter', dir: 'ltr' },
+    { code: 'bn', font: 'Noto Sans Bengali', dir: 'ltr' },
+    { code: 'tr', font: 'Inter', dir: 'ltr' },
+    { code: 'ms', font: 'Inter', dir: 'ltr' },
+    { code: 'fr', font: 'Inter', dir: 'ltr' },
+    { code: 'sw', font: 'Inter', dir: 'ltr' },
+    { code: 'ha', font: 'Inter', dir: 'ltr' },
+    { code: 'ps', font: 'Vazirmatn', dir: 'rtl' },
+    { code: 'uz', font: 'Inter', dir: 'ltr' },
+    { code: 'ru', font: 'Inter', dir: 'ltr' },
+    { code: 'zh', font: 'Noto Sans SC', dir: 'ltr' },
+    { code: 'az', font: 'Inter', dir: 'ltr' },
+    { code: 'ku', font: 'Inter', dir: 'ltr' },
+    { code: 'so', font: 'Inter', dir: 'ltr' },
+    { code: 'bs', font: 'Inter', dir: 'ltr' },
+    { code: 'tg', font: 'Inter', dir: 'ltr' }
+  ];
+
+  async function init() {
+    const lang = localStorage.getItem('haramain_lang') || 'ar';
+    const langInfo = allLangs.find(l => l.code === lang) || allLangs[0];
+
+    document.documentElement.style.setProperty('--page-font', `'${langInfo.font}', sans-serif`);
+    document.documentElement.setAttribute('dir', langInfo.dir);
+    document.body.setAttribute('data-lang', lang);
+
+    try {
+      const res = await fetch(`/lang/${lang}.json`);
+      if (!res.ok) throw new Error('Lang not found');
+      const data = await res.json();
+      const shop = data.shop;
+      if (!shop) return;
+
+      document.getElementById('shop-title').textContent = shop.title || '';
+      document.getElementById('section-about').textContent = shop.about_title || '';
+      document.getElementById('about-text').textContent = shop.about_text || '';
+      document.getElementById('section-products').textContent = shop.products_title || '';
+      document.getElementById('product-keychain').textContent = shop.product_keychain || '';
+      document.getElementById('product-keychain-desc').textContent = shop.product_keychain_desc || '';
+      document.getElementById('product-card').textContent = shop.product_card || '';
+      document.getElementById('product-card-desc').textContent = shop.product_card_desc || '';
+      document.getElementById('product-phone').textContent = shop.product_phone || '';
+      document.getElementById('product-phone-desc').textContent = shop.product_phone_desc || '';
+      document.getElementById('section-contact').textContent = shop.contact_title || '';
+      document.getElementById('section-how').textContent = shop.how_title || '';
+
+      const contactList = document.getElementById('contact-list');
+      if (shop.contacts) {
+        shop.contacts.forEach(c => {
+          const div = document.createElement('div');
+          div.className = 'contact-item';
+          div.innerHTML = `<span class="contact-label">${c.label}</span><span class="contact-value">${c.value}</span>`;
+          contactList.appendChild(div);
+        });
+      }
+
+      const stepsList = document.getElementById('steps-list');
+      if (shop.steps) {
+        shop.steps.forEach((s, i) => {
+          const div = document.createElement('div');
+          div.className = 'step-item';
+          div.innerHTML = `<span class="step-num">${i + 1}</span><span class="step-text">${s}</span>`;
+          stepsList.appendChild(div);
+        });
+      }
+    } catch (e) {
+      console.error('Shop init error:', e);
+    }
+  }
+
+  document.getElementById('back-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.history.back();
+  });
+
+  init();
+</script>
