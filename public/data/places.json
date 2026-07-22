@@ -4,104 +4,104 @@
       "id": "haram",
       "icon": "<svg viewBox='0 0 24 24'><path d='M12 2L4 6v12l8 4 8-4V6l-8-4zm0 3l5 2.5v7l-5 2.5-5-2.5v-7L12 5z' fill='currentColor'/><path d='M12 8v8M8 10v4M16 10v4' stroke='currentColor' stroke-width='1.5' fill='none'/></svg>",
       "images": [
-        "/images/makkah/haram/1.jpg",
-        "/images/makkah/haram/2.jpg",
-        "/images/makkah/haram/3.jpg",
-        "/images/makkah/haram/4.jpg",
-        "/images/makkah/haram/5.jpg",
-        "/images/makkah/haram/6.jpg",
-        "/images/makkah/haram/7.jpg",
-        "/images/makkah/haram/8.jpg"
+        "/images/makkah/haram/1.svg",
+        "/images/makkah/haram/2.svg",
+        "/images/makkah/haram/3.svg",
+        "/images/makkah/haram/4.svg",
+        "/images/makkah/haram/5.svg",
+        "/images/makkah/haram/6.svg",
+        "/images/makkah/haram/7.svg",
+        "/images/makkah/haram/8.svg"
       ]
     },
     {
       "id": "hira",
       "icon": "<svg viewBox='0 0 24 24'><path d='M3 20l4-8 3 4 4-6 4 5 3-3v8H3z' fill='currentColor' opacity='0.3'/><path d='M3 20l4-8 3 4 4-6 4 5 3-3' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='12' cy='7' r='2' fill='currentColor'/></svg>",
       "images": [
-        "/images/makkah/hira/1.jpg",
-        "/images/makkah/hira/2.jpg",
-        "/images/makkah/hira/3.jpg",
-        "/images/makkah/hira/4.jpg",
-        "/images/makkah/hira/5.jpg"
+        "/images/makkah/hira/1.svg",
+        "/images/makkah/hira/2.svg",
+        "/images/makkah/hira/3.svg",
+        "/images/makkah/hira/4.svg",
+        "/images/makkah/hira/5.svg"
       ]
     },
     {
       "id": "thawr",
       "icon": "<svg viewBox='0 0 24 24'><path d='M2 20l6-10 4 6 4-8 4 7 4-5v10H2z' fill='currentColor' opacity='0.3'/><path d='M2 20l6-10 4 6 4-8 4 7 4-5' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M10 12l2-3 2 3' stroke='currentColor' stroke-width='1.5' fill='none'/></svg>",
       "images": [
-        "/images/makkah/thawr/1.jpg",
-        "/images/makkah/thawr/2.jpg",
-        "/images/makkah/thawr/3.jpg",
-        "/images/makkah/thawr/4.jpg"
+        "/images/makkah/thawr/1.svg",
+        "/images/makkah/thawr/2.svg",
+        "/images/makkah/thawr/3.svg",
+        "/images/makkah/thawr/4.svg"
       ]
     },
     {
       "id": "arafat",
       "icon": "<svg viewBox='0 0 24 24'><path d='M12 4v12M8 8l4-4 4 4M4 20h16' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M6 20l6-6 6 6' fill='currentColor' opacity='0.2'/></svg>",
       "images": [
-        "/images/makkah/arafat/1.jpg",
-        "/images/makkah/arafat/2.jpg",
-        "/images/makkah/arafat/3.jpg",
-        "/images/makkah/arafat/4.jpg",
-        "/images/makkah/arafat/5.jpg",
-        "/images/makkah/arafat/6.jpg"
+        "/images/makkah/arafat/1.svg",
+        "/images/makkah/arafat/2.svg",
+        "/images/makkah/arafat/3.svg",
+        "/images/makkah/arafat/4.svg",
+        "/images/makkah/arafat/5.svg",
+        "/images/makkah/arafat/6.svg"
       ]
     },
     {
       "id": "mina",
       "icon": "<svg viewBox='0 0 24 24'><path d='M4 20h16M6 20l2-8h2l2 4h2l2-4h2l2 8' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='12' cy='6' r='3' fill='currentColor' opacity='0.3'/></svg>",
       "images": [
-        "/images/makkah/mina/1.jpg",
-        "/images/makkah/mina/2.jpg",
-        "/images/makkah/mina/3.jpg",
-        "/images/makkah/mina/4.jpg",
-        "/images/makkah/mina/5.jpg"
+        "/images/makkah/mina/1.svg",
+        "/images/makkah/mina/2.svg",
+        "/images/makkah/mina/3.svg",
+        "/images/makkah/mina/4.svg",
+        "/images/makkah/mina/5.svg"
       ]
     },
     {
       "id": "muzdalifah",
       "icon": "<svg viewBox='0 0 24 24'><circle cx='8' cy='14' r='2' fill='currentColor' opacity='0.5'/><circle cx='12' cy='12' r='2' fill='currentColor' opacity='0.7'/><circle cx='16' cy='14' r='2' fill='currentColor' opacity='0.5'/><circle cx='10' cy='17' r='1.5' fill='currentColor' opacity='0.3'/><circle cx='14' cy='17' r='1.5' fill='currentColor' opacity='0.3'/><path d='M12 4v4M8 6l4 2 4-2' stroke='currentColor' stroke-width='1.5' fill='none'/></svg>",
       "images": [
-        "/images/makkah/muzdalifah/1.jpg",
-        "/images/makkah/muzdalifah/2.jpg",
-        "/images/makkah/muzdalifah/3.jpg"
+        "/images/makkah/muzdalifah/1.svg",
+        "/images/makkah/muzdalifah/2.svg",
+        "/images/makkah/muzdalifah/3.svg"
       ]
     },
     {
       "id": "namirah",
       "icon": "<svg viewBox='0 0 24 24'><path d='M4 20h16M8 20V10l4-6 4 6v10M10 20v-6h4v6M12 6v-2' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
       "images": [
-        "/images/makkah/namirah/1.jpg",
-        "/images/makkah/namirah/2.jpg",
-        "/images/makkah/namirah/3.jpg"
+        "/images/makkah/namirah/1.svg",
+        "/images/makkah/namirah/2.svg",
+        "/images/makkah/namirah/3.svg"
       ]
     },
     {
       "id": "khayf",
       "icon": "<svg viewBox='0 0 24 24'><path d='M3 20l5-12h2l4 8 4-8h2l5 12' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M3 20l5-12h2l4 8 4-8h2l5 12' fill='currentColor' opacity='0.1'/></svg>",
       "images": [
-        "/images/makkah/khayf/1.jpg",
-        "/images/makkah/khayf/2.jpg",
-        "/images/makkah/khayf/3.jpg",
-        "/images/makkah/khayf/4.jpg"
+        "/images/makkah/khayf/1.svg",
+        "/images/makkah/khayf/2.svg",
+        "/images/makkah/khayf/3.svg",
+        "/images/makkah/khayf/4.svg"
       ]
     },
     {
       "id": "birthplace",
       "icon": "<svg viewBox='0 0 24 24'><path d='M4 20V10l8-6 8 6v10H4z' fill='currentColor' opacity='0.2'/><path d='M4 20V10l8-6 8 6v10' stroke='currentColor' stroke-width='2' fill='none'/><path d='M9 20v-6h6v6M12 8v2' stroke='currentColor' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>",
       "images": [
-        "/images/makkah/birthplace/1.jpg",
-        "/images/makkah/birthplace/2.jpg",
-        "/images/makkah/birthplace/3.jpg"
+        "/images/makkah/birthplace/1.svg",
+        "/images/makkah/birthplace/2.svg",
+        "/images/makkah/birthplace/3.svg"
       ]
     },
     {
       "id": "jin_mosque",
       "icon": "<svg viewBox='0 0 24 24'><path d='M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9-4-9-9-9z' stroke='currentColor' stroke-width='2' fill='none'/><path d='M12 7v10M7 12h10' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><circle cx='12' cy='12' r='3' fill='currentColor' opacity='0.2'/></svg>",
       "images": [
-        "/images/makkah/jin_mosque/1.jpg",
-        "/images/makkah/jin_mosque/2.jpg",
-        "/images/makkah/jin_mosque/3.jpg"
+        "/images/makkah/jin_mosque/1.svg",
+        "/images/makkah/jin_mosque/2.svg",
+        "/images/makkah/jin_mosque/3.svg"
       ]
     }
   ],
@@ -110,127 +110,127 @@
       "id": "nabawi",
       "icon": "<svg viewBox='0 0 24 24'><path d='M4 20V8l8-5 8 5v12H4z' fill='currentColor' opacity='0.2'/><path d='M4 20V8l8-5 8 5v12' stroke='currentColor' stroke-width='2' fill='none'/><path d='M9 20v-8h6v8M12 5V3M8 10h8' stroke='currentColor' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>",
       "images": [
-        "/images/madinah/nabawi/1.jpg",
-        "/images/madinah/nabawi/2.jpg",
-        "/images/madinah/nabawi/3.jpg",
-        "/images/madinah/nabawi/4.jpg",
-        "/images/madinah/nabawi/5.jpg",
-        "/images/madinah/nabawi/6.jpg",
-        "/images/madinah/nabawi/7.jpg",
-        "/images/madinah/nabawi/8.jpg",
-        "/images/madinah/nabawi/9.jpg",
-        "/images/madinah/nabawi/10.jpg"
+        "/images/madinah/nabawi/1.svg",
+        "/images/madinah/nabawi/2.svg",
+        "/images/madinah/nabawi/3.svg",
+        "/images/madinah/nabawi/4.svg",
+        "/images/madinah/nabawi/5.svg",
+        "/images/madinah/nabawi/6.svg",
+        "/images/madinah/nabawi/7.svg",
+        "/images/madinah/nabawi/8.svg",
+        "/images/madinah/nabawi/9.svg",
+        "/images/madinah/nabawi/10.svg"
       ]
     },
     {
       "id": "baqi",
       "icon": "<svg viewBox='0 0 24 24'><path d='M4 20h16M6 20V12h3v8M10.5 20V12h3v8M15 20V12h3v8' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M7.5 9l1.5-3 1.5 3M12 9l1.5-3 1.5 3M16.5 9l1.5-3 1.5 3' stroke='currentColor' stroke-width='1.5' fill='none'/></svg>",
       "images": [
-        "/images/madinah/baqi/1.jpg",
-        "/images/madinah/baqi/2.jpg",
-        "/images/madinah/baqi/3.jpg",
-        "/images/madinah/baqi/4.jpg",
-        "/images/madinah/baqi/5.jpg"
+        "/images/madinah/baqi/1.svg",
+        "/images/madinah/baqi/2.svg",
+        "/images/madinah/baqi/3.svg",
+        "/images/madinah/baqi/4.svg",
+        "/images/madinah/baqi/5.svg"
       ]
     },
     {
       "id": "quba",
       "icon": "<svg viewBox='0 0 24 24'><path d='M4 20V10l8-6 8 6v10' stroke='currentColor' stroke-width='2' fill='none'/><path d='M4 20V10l8-6 8 6v10' fill='currentColor' opacity='0.15'/><path d='M8 20v-5h3v5M13 20v-5h3v5M12 4v-1' stroke='currentColor' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>",
       "images": [
-        "/images/madinah/quba/1.jpg",
-        "/images/madinah/quba/2.jpg",
-        "/images/madinah/quba/3.jpg",
-        "/images/madinah/quba/4.jpg",
-        "/images/madinah/quba/5.jpg",
-        "/images/madinah/quba/6.jpg"
+        "/images/madinah/quba/1.svg",
+        "/images/madinah/quba/2.svg",
+        "/images/madinah/quba/3.svg",
+        "/images/madinah/quba/4.svg",
+        "/images/madinah/quba/5.svg",
+        "/images/madinah/quba/6.svg"
       ]
     },
     {
       "id": "uhud",
       "icon": "<svg viewBox='0 0 24 24'><path d='M2 20l7-10 5 6 4-5 4 6V20H2z' fill='currentColor' opacity='0.3'/><path d='M2 20l7-10 5 6 4-5 4 6' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
       "images": [
-        "/images/madinah/uhud/1.jpg",
-        "/images/madinah/uhud/2.jpg",
-        "/images/madinah/uhud/3.jpg",
-        "/images/madinah/uhud/4.jpg",
-        "/images/madinah/uhud/5.jpg",
-        "/images/madinah/uhud/6.jpg",
-        "/images/madinah/uhud/7.jpg"
+        "/images/madinah/uhud/1.svg",
+        "/images/madinah/uhud/2.svg",
+        "/images/madinah/uhud/3.svg",
+        "/images/madinah/uhud/4.svg",
+        "/images/madinah/uhud/5.svg",
+        "/images/madinah/uhud/6.svg",
+        "/images/madinah/uhud/7.svg"
       ]
     },
     {
       "id": "qiblatayn",
       "icon": "<svg viewBox='0 0 24 24'><path d='M12 4v16M4 12h16' stroke='currentColor' stroke-width='1.5' fill='none' stroke-linecap='round'/><path d='M8 8l4-4 4 4M8 16l4 4 4-4' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='12' cy='12' r='3' fill='currentColor' opacity='0.2'/></svg>",
       "images": [
-        "/images/madinah/qiblatayn/1.jpg",
-        "/images/madinah/qiblatayn/2.jpg",
-        "/images/madinah/qiblatayn/3.jpg",
-        "/images/madinah/qiblatayn/4.jpg"
+        "/images/madinah/qiblatayn/1.svg",
+        "/images/madinah/qiblatayn/2.svg",
+        "/images/madinah/qiblatayn/3.svg",
+        "/images/madinah/qiblatayn/4.svg"
       ]
     },
     {
       "id": "sabah",
       "icon": "<svg viewBox='0 0 24 24'><path d='M3 20V10l3-2v12M7 20V8l3-2v14M11 20V6l3-2v16M15 20V8l3-2v14M19 20V10l3-2v12' stroke='currentColor' stroke-width='1.5' fill='none' stroke-linecap='round'/><path d='M3 20h19' stroke='currentColor' stroke-width='2' stroke-linecap='round'/></svg>",
       "images": [
-        "/images/madinah/sabah/1.jpg",
-        "/images/madinah/sabah/2.jpg",
-        "/images/madinah/sabah/3.jpg"
+        "/images/madinah/sabah/1.svg",
+        "/images/madinah/sabah/2.svg",
+        "/images/madinah/sabah/3.svg"
       ]
     },
     {
       "id": "khandaq",
       "icon": "<svg viewBox='0 0 24 24'><path d='M2 18l5-6 4 3 4-5 5 4' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M2 18l5-6 4 3 4-5 5 4V20H2z' fill='currentColor' opacity='0.2'/><path d='M2 20h20' stroke='currentColor' stroke-width='2' stroke-linecap='round'/></svg>",
       "images": [
-        "/images/madinah/khandaq/1.jpg",
-        "/images/madinah/khandaq/2.jpg",
-        "/images/madinah/khandaq/3.jpg",
-        "/images/madinah/khandaq/4.jpg"
+        "/images/madinah/khandaq/1.svg",
+        "/images/madinah/khandaq/2.svg",
+        "/images/madinah/khandaq/3.svg",
+        "/images/madinah/khandaq/4.svg"
       ]
     },
     {
       "id": "ghamamah",
       "icon": "<svg viewBox='0 0 24 24'><path d='M6 16a4 4 0 014-4 4 4 0 013.5 2 3 3 0 015.5 1 3 3 0 01-1 5.5H5.5A3.5 3.5 0 016 16z' fill='currentColor' opacity='0.3'/><path d='M6 16a4 4 0 014-4 4 4 0 013.5 2 3 3 0 015.5 1 3 3 0 01-1 5.5H5.5A3.5 3.5 0 016 16z' stroke='currentColor' stroke-width='2' fill='none'/></svg>",
       "images": [
-        "/images/madinah/ghamamah/1.jpg",
-        "/images/madinah/ghamamah/2.jpg",
-        "/images/madinah/ghamamah/3.jpg"
+        "/images/madinah/ghamamah/1.svg",
+        "/images/madinah/ghamamah/2.svg",
+        "/images/madinah/ghamamah/3.svg"
       ]
     },
     {
       "id": "ijabah",
       "icon": "<svg viewBox='0 0 24 24'><circle cx='12' cy='12' r='9' stroke='currentColor' stroke-width='2' fill='none'/><path d='M12 7v5l3 3' stroke='currentColor' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='12' cy='12' r='1.5' fill='currentColor'/></svg>",
       "images": [
-        "/images/madinah/ijabah/1.jpg",
-        "/images/madinah/ijabah/2.jpg",
-        "/images/madinah/ijabah/3.jpg"
+        "/images/madinah/ijabah/1.svg",
+        "/images/madinah/ijabah/2.svg",
+        "/images/madinah/ijabah/3.svg"
       ]
     },
     {
       "id": "miqat",
       "icon": "<svg viewBox='0 0 24 24'><path d='M4 20V8l8-5 8 5v12H4z' fill='currentColor' opacity='0.2'/><path d='M4 20V8l8-5 8 5v12' stroke='currentColor' stroke-width='2' fill='none'/><path d='M9 20v-4h6v4' stroke='currentColor' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>",
       "images": [
-        "/images/madinah/miqat/1.jpg",
-        "/images/madinah/miqat/2.jpg",
-        "/images/madinah/miqat/3.jpg",
-        "/images/madinah/miqat/4.jpg"
+        "/images/madinah/miqat/1.svg",
+        "/images/madinah/miqat/2.svg",
+        "/images/madinah/miqat/3.svg",
+        "/images/madinah/miqat/4.svg"
       ]
     },
     {
       "id": "jummah",
       "icon": "<svg viewBox='0 0 24 24'><path d='M12 3L4 8v12h16V8l-8-5z' fill='currentColor' opacity='0.2'/><path d='M12 3L4 8v12h16V8l-8-5z' stroke='currentColor' stroke-width='2' fill='none'/><path d='M8 20v-6h8v6M12 3v-1' stroke='currentColor' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>",
       "images": [
-        "/images/madinah/jummah/1.jpg",
-        "/images/madinah/jummah/2.jpg",
-        "/images/madinah/jummah/3.jpg"
+        "/images/madinah/jummah/1.svg",
+        "/images/madinah/jummah/2.svg",
+        "/images/madinah/jummah/3.svg"
       ]
     },
     {
       "id": "ambariyah",
       "icon": "<svg viewBox='0 0 24 24'><path d='M4 20V9l8-5 8 5v11H4z' fill='currentColor' opacity='0.2'/><path d='M4 20V9l8-5 8 5v11' stroke='currentColor' stroke-width='2' fill='none'/><path d='M10 20v-4h4v4M12 4V2M8 10h8' stroke='currentColor' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>",
       "images": [
-        "/images/madinah/ambariyah/1.jpg",
-        "/images/madinah/ambariyah/2.jpg",
-        "/images/madinah/ambariyah/3.jpg"
+        "/images/madinah/ambariyah/1.svg",
+        "/images/madinah/ambariyah/2.svg",
+        "/images/madinah/ambariyah/3.svg"
       ]
     }
   ]
