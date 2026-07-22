@@ -18,14 +18,18 @@ const PlaceMenu = (() => {
     if (!el) return;
     el.innerHTML = '';
 
+    const list = document.createElement('div');
+    list.className = 'pm-list';
+
     getPlaces().forEach((place, i) => {
       const btn = document.createElement('button');
       btn.className = 'pm-item';
       btn.textContent = getTitle(place);
       btn.addEventListener('click', () => select(i));
-      el.appendChild(btn);
+      list.appendChild(btn);
     });
 
+    el.appendChild(list);
     highlight();
     requestAnimationFrame(() => scrollToItem(currentPlaceIndex));
   }
@@ -61,8 +65,7 @@ const PlaceMenu = (() => {
 
   function scrollToItem(index) {
     if (!el) return;
-    const items = el.querySelectorAll('.pm-item');
-    const item = items[index];
+    const item = el.querySelectorAll('.pm-item')?.[index];
     if (!item) return;
 
     const scrollLeftTarget = item.offsetLeft - (el.offsetWidth / 2) + (item.offsetWidth / 2);
