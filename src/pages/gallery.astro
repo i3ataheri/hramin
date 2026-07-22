@@ -72,4 +72,116 @@ import '../styles/place-menu.scss';
     </div>
 
   </div>
+
+  <!-- Desktop QR overlay -->
+  <div class="desktop-qr-overlay" id="desktop-qr">
+    <div class="qr-content">
+      <!-- Decorative top -->
+      <svg class="qr-deco-top" viewBox="0 0 120 40" width="120" height="40">
+        <path d="M60 0 C60 0 45 15 30 20 C15 25 0 20 0 20" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <path d="M60 0 C60 0 75 15 90 20 C105 25 120 20 120 20" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <circle cx="60" cy="4" r="3" fill="#D4AF37"/>
+        <circle cx="30" cy="20" r="2" fill="#D4AF37" opacity="0.6"/>
+        <circle cx="90" cy="20" r="2" fill="#D4AF37" opacity="0.6"/>
+      </svg>
+
+      <h2 class="qr-title" id="qr-title"></h2>
+      <p class="qr-text" id="qr-text"></p>
+
+      <!-- QR frame -->
+      <div class="qr-frame">
+        <div class="qr-frame-corner qr-frame-tl"></div>
+        <div class="qr-frame-corner qr-frame-tr"></div>
+        <div class="qr-frame-corner qr-frame-bl"></div>
+        <div class="qr-frame-corner qr-frame-br"></div>
+        <div class="qr-svg" id="qr-svg"></div>
+      </div>
+
+      <p class="qr-hint" id="qr-hint"></p>
+
+      <!-- Decorative bottom -->
+      <svg class="qr-deco-bottom" viewBox="0 0 120 40" width="120" height="40">
+        <path d="M60 40 C60 40 45 25 30 20 C15 15 0 20 0 20" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <path d="M60 40 C60 40 75 25 90 20 C105 15 120 20 120 20" stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <circle cx="60" cy="36" r="3" fill="#D4AF37"/>
+        <circle cx="30" cy="20" r="2" fill="#D4AF37" opacity="0.6"/>
+        <circle cx="90" cy="20" r="2" fill="#D4AF37" opacity="0.6"/>
+      </svg>
+    </div>
+  </div>
+
 </Layout>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script is:inline>
+  (function() {
+    const isDesktop = window.innerWidth > 768;
+    if (!isDesktop) return;
+
+    const overlay = document.getElementById('desktop-qr');
+    overlay.classList.add('show');
+
+    const lang = localStorage.getItem('haramain_lang') || 'ar';
+    const messages = {
+      ar: { title: 'افتح على هاتفك', text: 'امسح رمز QR لفتح الموقع على هاتفك', hint: 'متوافق مع الهواتف فقط' },
+      fa: { title: 'در موبایل باز کنید', text: 'QR کد را اسکن کنید تا سایت در موبایل باز شود', hint: 'فقط قابل نمایش در موبایل' },
+      en: { title: 'Open on your phone', text: 'Scan the QR code to open on mobile', hint: 'Mobile only' },
+      ur: { title: 'اپنے فون پر کھولیں', text: 'موبائل پر کھولنے کے لیے QR کوڈ اسکین کریں', hint: 'صرف موبائل کے لیے' },
+      id: { title: 'Buka di ponsel Anda', text: 'Pindai kode QR untuk membuka di ponsel', hint: 'Hanya untuk ponsel' },
+      bn: { title: 'আপনার ফোনে খুলুন', text: 'মোবাইলে খুলতে QR কোড স্ক্যান করুন', hint: 'শুধুমাত্র মোবাইল' },
+      tr: { title: 'Telefonunuzda açın', text: 'Mobilde açmak için QR kodu taratın', hint: 'Yalnızca mobil' },
+      ms: { title: 'Buka di telefon anda', text: 'Imbas kod QR untuk membuka di mudah alih', hint: 'Untuk mudah alih sahaja' },
+      fr: { title: 'Ouvrez sur votre téléphone', text: 'Scannez le QR code pour ouvrir sur mobile', hint: 'Mobile uniquement' },
+      sw: { title: 'Fungua kwenye simu yako', text: 'Skani msimbo wa QR kufungua kwenye simu', hint: 'Kwa simu tu' },
+      ha: { title: 'Buɗa a wayar ka', text: 'Tsallake lambar QR don buɗe a wayar hannu', hint: 'Na wayar hannu kawai' },
+      ps: { title: 'په خپل ټلیفون و پیړئ', text: 'موبایل ته پیړئ لپاره QR کوډ اسکین وکړئ', hint: 'یوازې موبایل لپاره' },
+      uz: { title: 'Telefoningizda oching', text: 'Mobil ochish uchun QR kodni skanerlang', hint: 'Faqat mobil uchun' },
+      ru: { title: 'Откройте на телефоне', text: 'Отсканируйте QR-код для открытия на мобильном', hint: 'Только для мобильных' },
+      zh: { title: '在手机上打开', text: '扫描二维码在手机上打开', hint: '仅支持手机' },
+      az: { title: 'Telefonunuzda açın', text: 'Mobil açmaq üçün QR kodu tarayın', hint: 'Yalnız mobil üçün' },
+      ku: { title: 'Di telefonê de veke', text: 'Ji bo vekirin di mobile de QR koda sken bike', hint: 'Tenê ji bo mobile' },
+      so: { title: 'Ku fur moobilkaaga', text: 'Skan QR code si aad u furto moobiilka', hint: 'Moobilka kaliya' },
+      bs: { title: 'Otvorite na telefonu', text: 'Skenirajte QR kod za otvaranje na mobilnom', hint: 'Samo za mobilne' },
+      tg: { title: 'Дар телефон кушоед', text: 'Барои кушодан дар мобил QR кодро скан кунед', hint: 'Танҳо барои мобил' }
+    };
+
+    const msg = messages[lang] || messages['en'];
+    document.getElementById('qr-title').textContent = msg.title;
+    document.getElementById('qr-text').textContent = msg.text;
+    document.getElementById('qr-hint').textContent = msg.hint;
+
+    const fontMap = { ar: 'Vazirmatn', fa: 'Vazirmatn', ur: 'Gulzar', ps: 'Vazirmatn', bn: 'Noto Sans Bengali', zh: 'Noto Sans SC' };
+    const font = fontMap[lang] || 'Inter';
+    document.documentElement.style.setProperty('--page-font', `'${font}', sans-serif`);
+    document.documentElement.setAttribute('dir', lang === 'ar' || lang === 'fa' || lang === 'ur' || lang === 'ps' ? 'rtl' : 'ltr');
+
+    // Generate styled QR code
+    const url = window.location.href;
+    const qr = qrcode(0, 'M');
+    qr.addData(url);
+    qr.make();
+
+    const modules = qr.getModuleCount();
+    const cellSize = 6;
+    const gap = 2;
+    const size = modules * (cellSize + gap);
+    const radius = 2;
+
+    let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}">`;
+
+    for (let row = 0; row < modules; row++) {
+      for (let col = 0; col < modules; col++) {
+        if (qr.isDark(row, col)) {
+          const x = col * (cellSize + gap);
+          const y = row * (cellSize + gap);
+          svg += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="${radius}" ry="${radius}" fill="#1a1a2e"/>`;
+        }
+      }
+    }
+
+    svg += '</svg>';
+
+    const container = document.getElementById('qr-svg');
+    container.innerHTML = svg;
+  })();
+</script>
