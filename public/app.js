@@ -16,7 +16,7 @@ const allLangs = [
   { code: 'ar', label: 'AR', dir: 'rtl', font: 'Vazirmatn', native: 'العربية' },
   { code: 'fa', label: 'FA', dir: 'rtl', font: 'Vazirmatn', native: 'فارسی' },
   { code: 'en', label: 'EN', dir: 'ltr', font: 'Inter', native: 'English' },
-  { code: 'ur', label: 'UR', dir: 'rtl', font: 'Gulzar', native: 'اردو' },
+  { code: 'ur', label: 'UR', dir: 'rtl', font: 'Vazirmatn', native: 'اردو' },
   { code: 'id', label: 'ID', dir: 'ltr', font: 'Inter', native: 'Indonesia' },
   { code: 'bn', label: 'বা', dir: 'ltr', font: 'Noto Sans Bengali', native: 'বাংলা' },
   { code: 'tr', label: 'TR', dir: 'ltr', font: 'Inter', native: 'Türkçe' },

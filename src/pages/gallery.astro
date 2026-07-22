@@ -157,7 +157,7 @@ import '../styles/place-menu.scss';
     document.getElementById('qr-text').textContent = msg.text;
     document.getElementById('qr-hint').textContent = msg.hint;
 
-    const fontMap = { ar: 'Vazirmatn', fa: 'Vazirmatn', ur: 'Gulzar', ps: 'Vazirmatn', bn: 'Noto Sans Bengali', zh: 'Noto Sans SC' };
+    const fontMap = { ar: 'Vazirmatn', fa: 'Vazirmatn', ur: 'Vazirmatn', ps: 'Vazirmatn', bn: 'Noto Sans Bengali', zh: 'Noto Sans SC' };
     const font = fontMap[lang] || 'Inter';
     document.documentElement.style.setProperty('--page-font', `'${font}', sans-serif`);
     document.documentElement.setAttribute('dir', lang === 'ar' || lang === 'fa' || lang === 'ur' || lang === 'ps' ? 'rtl' : 'ltr');
