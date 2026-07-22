@@ -25,13 +25,19 @@ const PlaceMenu = (() => {
       const btn = document.createElement('button');
       btn.className = 'pm-item';
       btn.textContent = getTitle(place);
-      btn.addEventListener('click', () => select(i));
+      btn.addEventListener('click', () => {
+        currentPlaceIndex = i;
+        currentPhotoIndex = 0;
+        renderSlide();
+        highlight();
+        scrollToItem(i);
+      });
       list.appendChild(btn);
     });
 
     el.appendChild(list);
     highlight();
-    requestAnimationFrame(() => scrollToItem(currentPlaceIndex));
+    scrollToItem(currentPlaceIndex);
   }
 
   function update() {
@@ -55,21 +61,23 @@ const PlaceMenu = (() => {
     });
   }
 
-  function select(index) {
-    currentPlaceIndex = index;
-    currentPhotoIndex = 0;
-    renderSlide();
-    highlight();
-    scrollToItem(index);
-  }
-
   function scrollToItem(index) {
     if (!el) return;
     const item = el.querySelectorAll('.pm-item')?.[index];
     if (!item) return;
 
-    const scrollLeftTarget = item.offsetLeft - (el.offsetWidth / 2) + (item.offsetWidth / 2);
-    el.scrollTo({ left: Math.max(0, scrollLeftTarget), behavior: 'smooth' });
+    const list = el.querySelector('.pm-list');
+    if (!list) return;
+
+    const listRect = list.getBoundingClientRect();
+    const itemRect = item.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+
+    const itemCenter = itemRect.left + itemRect.width / 2;
+    const elCenter = elRect.left + elRect.width / 2;
+    const scrollTarget = el.scrollLeft + itemCenter - elCenter;
+
+    el.scrollTo({ left: Math.max(0, scrollTarget), behavior: 'smooth' });
   }
 
   return { build, update, highlight };
