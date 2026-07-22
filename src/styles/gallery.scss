@@ -400,7 +400,8 @@ html, body {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    padding: 6px 16px 10px;
+    padding-block: 6px 10px;
+    padding-inline: 16px;
     justify-content: flex-start;
     flex-wrap: nowrap;
 

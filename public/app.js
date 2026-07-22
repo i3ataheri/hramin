@@ -219,39 +219,28 @@ function prevPlace() {
   }
 }
 
+function scrollToActive() {
+  const inner = document.querySelector('.place-menu-inner');
+  const active = inner?.querySelector('.active');
+  if (!inner || !active) return;
+
+  if (inner.scrollWidth <= inner.clientWidth) return;
+
+  const itemCenter = active.offsetLeft + active.offsetWidth / 2;
+  const containerCenter = inner.clientWidth / 2;
+  let target = itemCenter - containerCenter;
+
+  const max = inner.scrollWidth - inner.clientWidth;
+  target = Math.max(0, Math.min(target, max));
+
+  inner.scrollLeft = target;
+}
+
 function goToPlace(index) {
   currentPlaceIndex = index;
   currentPhotoIndex = 0;
   renderSlide();
-
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      const inner = document.querySelector('.place-menu-inner');
-      const activeItem = inner?.querySelector('.active');
-      if (!inner || !activeItem) return;
-
-      const scrollWidth = inner.scrollWidth;
-      const clientWidth = inner.clientWidth;
-      if (scrollWidth <= clientWidth) return;
-
-      const innerRect = inner.getBoundingClientRect();
-      const itemRect = activeItem.getBoundingClientRect();
-      const relativeLeft = itemRect.left - innerRect.left + inner.scrollLeft;
-      const maxScroll = scrollWidth - clientWidth;
-
-      let target;
-      if (index === 0) {
-        target = 0;
-      } else if (index === getPlaces().length - 1) {
-        target = maxScroll;
-      } else {
-        target = relativeLeft - clientWidth * 0.3;
-        target = Math.max(0, Math.min(target, maxScroll));
-      }
-
-      inner.scrollLeft = target;
-    });
-  });
+  setTimeout(scrollToActive, 50);
 }
 
 /* ═══════ AUTO TIMER ═══════ */
