@@ -1,49 +1,47 @@
 $gold: #D4AF37;
-$gold-glow: rgba(212, 175, 55, 0.4);
+$gold-glow: rgba(212, 175, 55, 0.3);
 
 .place-menu {
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
+  bottom: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   z-index: 50;
   display: inline-flex;
-  gap: 8px;
+  gap: 10px;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  padding: 8px 16px;
+  padding: 12px 16px;
+  background: #ffffff;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.15);
 
   &::-webkit-scrollbar { display: none; }
 }
 
 .pm-item {
   flex-shrink: 0;
-  padding: 8px 18px;
-  border-radius: 20px;
+  padding: 10px 20px;
+  border-radius: 24px;
   font-size: 13px;
   font-weight: 600;
   font-family: var(--page-font, 'Inter', sans-serif);
-  color: rgba(255, 255, 255, 0.55);
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  color: #333;
+  background: #e9ecef;
+  border: none;
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
   user-select: none;
 
   &.active {
-    color: #000;
+    color: #fff;
     background: $gold;
-    border-color: $gold;
-    box-shadow: 0 0 12px $gold-glow;
+    box-shadow: 0 2px 8px $gold-glow;
   }
 
   &:not(.active):hover {
-    color: rgba(255, 255, 255, 0.85);
-    border-color: rgba(212, 175, 55, 0.4);
+    background: #dee2e6;
   }
 }
