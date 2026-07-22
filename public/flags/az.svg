@@ -1,11 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs><clipPath id="c"><circle cx="50" cy="50" r="50"/></clipPath></defs>
-  <g clip-path="url(#c)">
-    <rect width="100" height="33.3" fill="#00B5E2"/>
-    <rect y="33.3" width="100" height="33.4" fill="#E4002B"/>
-    <rect y="66.6" width="100" height="33.4" fill="#00A651"/>
-    <circle cx="52" cy="46" r="10" fill="white"/>
-    <circle cx="55" cy="46" r="7" fill="#E4002B"/>
-    <polygon points="58,40 59,43 62,43 60,45 61,48 58,46 55,48 56,45 54,43 57,43" fill="white"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600">
+<rect width="1200" height="600" fill="#509e2f"/>
+<rect width="1200" height="400" fill="#ef3340"/>
+<rect width="1200" height="200" fill="#00b5e2"/>
+<circle cx="570" cy="300" r="90" fill="#fff"/>
+<circle cx="590" cy="300" r="75" fill="#ef3340"/>
+<path d="M670 250l9.567 26.903 25.788-12.258-12.258 25.788L720 300l-26.903 9.567 12.258 25.788-25.788-12.258L670 350l-9.567-26.903-25.788 12.258 12.258-25.788L620 300l26.903-9.567-12.258-25.788 25.788 12.258z" fill="#fff"/>
 </svg>

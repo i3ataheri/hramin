@@ -1,9 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs><clipPath id="c"><circle cx="50" cy="50" r="50"/></clipPath></defs>
-  <g clip-path="url(#c)">
-    <rect width="100" height="33.3" fill="#CE1126"/>
-    <rect y="33.3" width="100" height="33.4" fill="white"/>
-    <rect y="66.6" width="100" height="33.4" fill="#000000"/>
-    <text x="50" y="55" text-anchor="middle" fill="#007A3D" font-family="serif" font-size="14" font-weight="bold">لا إله</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="900" height="600">
+  <rect width="3" height="2" fill="#CE1126"/>
+  <rect y="0.667" width="3" height="0.667" fill="#fff"/>
+  <rect y="1.333" width="3" height="0.667" fill="#000"/>
+  <text x="1.5" y="1.15" font-family="sans-serif" font-size="0.28" fill="#007A3D" text-anchor="middle" font-weight="bold">الله أكبر</text>
 </svg>
