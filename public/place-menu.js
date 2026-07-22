@@ -4,6 +4,7 @@
 
 const PlaceMenu = (() => {
   let el = null;
+  let track = null;
 
   function getPlaces() {
     return placesData[currentCity] || [];
@@ -18,20 +19,14 @@ const PlaceMenu = (() => {
     if (!el) return;
     el.innerHTML = '';
 
-    const track = document.createElement('div');
+    track = document.createElement('div');
     track.className = 'pm-track';
 
     getPlaces().forEach((place, i) => {
       const btn = document.createElement('button');
       btn.className = 'pm-item';
       btn.textContent = getTitle(place);
-      btn.addEventListener('click', () => {
-        currentPlaceIndex = i;
-        currentPhotoIndex = 0;
-        renderSlide();
-        update();
-        scrollToItem(i);
-      });
+      btn.addEventListener('click', () => select(i));
       track.appendChild(btn);
     });
 
@@ -60,19 +55,34 @@ const PlaceMenu = (() => {
     });
   }
 
-  function scrollToItem(index) {
-    const track = el?.querySelector('.pm-track');
-    const items = el?.querySelectorAll('.pm-item');
-    if (!track || !items || !items[index]) return;
-
-    const trackRect = track.getBoundingClientRect();
-    const itemRect = items[index].getBoundingClientRect();
-
-    const scrollTarget =
-      track.scrollLeft + itemRect.left - trackRect.left - (track.clientWidth / 2) + (itemRect.width / 2);
-
-    track.scrollTo({ left: Math.max(0, scrollTarget), behavior: 'smooth' });
+  function select(index) {
+    currentPlaceIndex = index;
+    currentPhotoIndex = 0;
+    renderSlide();
+    scrollTo(index);
   }
 
-  return { build, update, highlight, scrollToItem };
+  function scrollTo(index) {
+    if (!track) track = el?.querySelector('.pm-track');
+    if (!track) return;
+
+    const items = track.querySelectorAll('.pm-item');
+    const target = items[index];
+    if (!target) return;
+
+    if (track.scrollWidth <= track.clientWidth) return;
+
+    let left = 0;
+    const gap = 8;
+    for (let i = 0; i < index; i++) {
+      left += items[i].offsetWidth + gap;
+    }
+    left += target.offsetWidth / 2;
+    left -= track.clientWidth / 2;
+
+    const max = track.scrollWidth - track.clientWidth;
+    track.scrollLeft = Math.max(0, Math.min(left, max));
+  }
+
+  return { build, update, highlight, scrollTo };
 })();
