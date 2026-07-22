@@ -7,18 +7,13 @@ $gold-glow: rgba(212, 175, 55, 0.4);
   left: 0;
   right: 0;
   z-index: 50;
-  overflow: hidden;
-}
-
-.pm-track {
-  display: flex;
+  display: inline-flex;
   gap: 8px;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   padding: 8px 16px;
-  width: 100%;
 
   &::-webkit-scrollbar { display: none; }
 }

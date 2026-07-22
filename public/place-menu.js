@@ -18,24 +18,14 @@ const PlaceMenu = (() => {
     if (!el) return;
     el.innerHTML = '';
 
-    const track = document.createElement('div');
-    track.className = 'pm-track';
-
     getPlaces().forEach((place, i) => {
       const btn = document.createElement('button');
       btn.className = 'pm-item';
       btn.textContent = getTitle(place);
-      btn.addEventListener('click', () => {
-        currentPlaceIndex = i;
-        currentPhotoIndex = 0;
-        renderSlide();
-        highlight();
-        requestAnimationFrame(() => scrollToItem(i));
-      });
-      track.appendChild(btn);
+      btn.addEventListener('click', () => select(i));
+      el.appendChild(btn);
     });
 
-    el.appendChild(track);
     highlight();
     requestAnimationFrame(() => scrollToItem(currentPlaceIndex));
   }
@@ -61,20 +51,23 @@ const PlaceMenu = (() => {
     });
   }
 
-  function scrollToItem(index) {
-    const track = el?.querySelector('.pm-track');
-    const items = el?.querySelectorAll('.pm-item');
-    if (!track || !items || !items[index]) return;
-
-    const item = items[index];
-    const trackRect = track.getBoundingClientRect();
-    const itemRect = item.getBoundingClientRect();
-
-    const scrollTarget =
-      track.scrollLeft + itemRect.left - trackRect.left - (track.clientWidth * 0.3);
-
-    track.scrollTo({ left: Math.max(0, scrollTarget), behavior: 'smooth' });
+  function select(index) {
+    currentPlaceIndex = index;
+    currentPhotoIndex = 0;
+    renderSlide();
+    highlight();
+    scrollToItem(index);
   }
 
-  return { build, update, highlight, scrollToItem };
+  function scrollToItem(index) {
+    if (!el) return;
+    const items = el.querySelectorAll('.pm-item');
+    const item = items[index];
+    if (!item) return;
+
+    const scrollLeftTarget = item.offsetLeft - (el.offsetWidth / 2) + (item.offsetWidth / 2);
+    el.scrollTo({ left: Math.max(0, scrollLeftTarget), behavior: 'smooth' });
+  }
+
+  return { build, update, highlight };
 })();
