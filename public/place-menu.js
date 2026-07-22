@@ -37,6 +37,7 @@ const PlaceMenu = (() => {
 
     el.appendChild(track);
     highlight();
+    requestAnimationFrame(() => scrollToItem(currentPlaceIndex));
   }
 
   function update() {
