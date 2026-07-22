@@ -746,6 +746,27 @@ html, body {
   text-transform: uppercase;
 }
 
+.qr-home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  color: #D4AF37;
+  margin-bottom: 24px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(212, 175, 55, 0.15);
+    border-color: #D4AF37;
+    transform: scale(1.05);
+  }
+}
+
 @media (min-width: 768px) {
   .gallery {
     display: none;
