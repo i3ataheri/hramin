@@ -4,6 +4,7 @@
 
 const PlaceMenu = (() => {
   let el = null;
+  let pendingScroll = -1;
 
   function getPlaces() {
     return placesData[currentCity] || [];
@@ -28,16 +29,16 @@ const PlaceMenu = (() => {
       btn.addEventListener('click', () => {
         currentPlaceIndex = i;
         currentPhotoIndex = 0;
-        renderSlide();
         highlight();
-        scrollToItem(i);
+        pendingScroll = i;
+        renderSlide();
       });
       list.appendChild(btn);
     });
 
     el.appendChild(list);
     highlight();
-    scrollToItem(currentPlaceIndex);
+    requestAnimationFrame(() => doScroll(currentPlaceIndex));
   }
 
   function update() {
@@ -52,6 +53,12 @@ const PlaceMenu = (() => {
       item.textContent = getTitle(places[i]);
     });
     highlight();
+
+    if (pendingScroll >= 0) {
+      const idx = pendingScroll;
+      pendingScroll = -1;
+      requestAnimationFrame(() => doScroll(idx));
+    }
   }
 
   function highlight() {
@@ -61,21 +68,16 @@ const PlaceMenu = (() => {
     });
   }
 
-  function scrollToItem(index) {
+  function doScroll(index) {
     if (!el) return;
     const item = el.querySelectorAll('.pm-item')?.[index];
     if (!item) return;
 
-    const list = el.querySelector('.pm-list');
-    if (!list) return;
+    const itemLeft = item.offsetLeft;
+    const itemWidth = item.offsetWidth;
+    const containerWidth = el.clientWidth;
 
-    const listRect = list.getBoundingClientRect();
-    const itemRect = item.getBoundingClientRect();
-    const elRect = el.getBoundingClientRect();
-
-    const itemCenter = itemRect.left + itemRect.width / 2;
-    const elCenter = elRect.left + elRect.width / 2;
-    const scrollTarget = el.scrollLeft + itemCenter - elCenter;
+    const scrollTarget = itemLeft - (containerWidth / 2) + (itemWidth / 2);
 
     el.scrollTo({ left: Math.max(0, scrollTarget), behavior: 'smooth' });
   }
