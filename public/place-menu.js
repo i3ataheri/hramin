@@ -4,7 +4,6 @@
 
 const PlaceMenu = (() => {
   let el = null;
-  let pendingScroll = -1;
 
   function getPlaces() {
     return placesData[currentCity] || [];
@@ -30,35 +29,24 @@ const PlaceMenu = (() => {
         currentPlaceIndex = i;
         currentPhotoIndex = 0;
         highlight();
-        pendingScroll = i;
         renderSlide();
+        requestAnimationFrame(() => scrollToItem(i));
       });
       list.appendChild(btn);
     });
 
     el.appendChild(list);
     highlight();
-    requestAnimationFrame(() => doScroll(currentPlaceIndex));
+    requestAnimationFrame(() => scrollToItem(currentPlaceIndex));
   }
 
   function update() {
     if (!el) { build(); return; }
-
     const items = el.querySelectorAll('.pm-item');
     const places = getPlaces();
-
     if (items.length !== places.length) { build(); return; }
-
-    items.forEach((item, i) => {
-      item.textContent = getTitle(places[i]);
-    });
+    items.forEach((item, i) => { item.textContent = getTitle(places[i]); });
     highlight();
-
-    if (pendingScroll >= 0) {
-      const idx = pendingScroll;
-      pendingScroll = -1;
-      requestAnimationFrame(() => doScroll(idx));
-    }
   }
 
   function highlight() {
@@ -68,7 +56,7 @@ const PlaceMenu = (() => {
     });
   }
 
-  function doScroll(index) {
+  function scrollToItem(index) {
     if (!el) return;
     const item = el.querySelectorAll('.pm-item')?.[index];
     if (!item) return;
@@ -76,7 +64,6 @@ const PlaceMenu = (() => {
     const itemLeft = item.offsetLeft;
     const itemWidth = item.offsetWidth;
     const containerWidth = el.clientWidth;
-
     const scrollTarget = itemLeft - (containerWidth / 2) + (itemWidth / 2);
 
     el.scrollTo({ left: Math.max(0, scrollTarget), behavior: 'smooth' });
