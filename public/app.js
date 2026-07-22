@@ -234,7 +234,9 @@ function goToPlace(index) {
       const clientWidth = inner.clientWidth;
       if (scrollWidth <= clientWidth) return;
 
-      const itemLeft = activeItem.offsetLeft;
+      const innerRect = inner.getBoundingClientRect();
+      const itemRect = activeItem.getBoundingClientRect();
+      const relativeLeft = itemRect.left - innerRect.left + inner.scrollLeft;
       const maxScroll = scrollWidth - clientWidth;
 
       let target;
@@ -243,7 +245,7 @@ function goToPlace(index) {
       } else if (index === getPlaces().length - 1) {
         target = maxScroll;
       } else {
-        target = itemLeft - clientWidth * 0.3;
+        target = relativeLeft - clientWidth * 0.3;
         target = Math.max(0, Math.min(target, maxScroll));
       }
 
