@@ -4,6 +4,7 @@
 
 const PlaceMenu = (() => {
   let el = null;
+  let track = null;
 
   function getPlaces() {
     return placesData[currentCity] || [];
@@ -18,7 +19,7 @@ const PlaceMenu = (() => {
     if (!el) return;
     el.innerHTML = '';
 
-    const track = document.createElement('div');
+    track = document.createElement('div');
     track.className = 'pm-track';
 
     getPlaces().forEach((place, i) => {
@@ -62,15 +63,25 @@ const PlaceMenu = (() => {
   }
 
   function scrollTo(index) {
-    const track = el?.querySelector('.pm-track');
-    const item = track?.querySelectorAll('.pm-item')?.[index];
-    if (!track || !item) return;
+    if (!track) track = el?.querySelector('.pm-track');
+    if (!track) return;
+
+    const items = track.querySelectorAll('.pm-item');
+    const target = items[index];
+    if (!target) return;
 
     if (track.scrollWidth <= track.clientWidth) return;
 
-    const pos = item.offsetLeft - track.clientWidth / 2 + item.offsetWidth / 2;
+    let left = 0;
+    const gap = 8;
+    for (let i = 0; i < index; i++) {
+      left += items[i].offsetWidth + gap;
+    }
+    left += target.offsetWidth / 2;
+    left -= track.clientWidth / 2;
+
     const max = track.scrollWidth - track.clientWidth;
-    track.scrollLeft = Math.max(0, Math.min(pos, max));
+    track.scrollLeft = Math.max(0, Math.min(left, max));
   }
 
   return { build, update, highlight, scrollTo };
