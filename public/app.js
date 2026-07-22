@@ -44,6 +44,7 @@ async function init() {
     setupListeners();
     createTooltip();
     setFont();
+    PlaceMenu.init();
     renderSlide();
   } catch (e) {
     console.error('Init error:', e);
@@ -122,7 +123,7 @@ function renderSlide() {
     .join('');
 
   renderProgress();
-  renderPlaceMenu();
+  PlaceMenu.update();
   renderCityLabels();
   startAutoTimer();
 }
@@ -158,34 +159,6 @@ function renderCityLabels() {
   document.getElementById('btn-madinah').textContent = lang.ui.madinah_label || 'المدينة المنورة';
 }
 
-/* ═══════ PLACE MENU ═══════ */
-function renderPlaceMenu() {
-  const container = document.getElementById('place-menu');
-  const places = getPlaces();
-  const lang = translations[currentLang];
-
-  if (!container.querySelector('.place-menu-inner')) {
-    const inner = document.createElement('div');
-    inner.className = 'place-menu-inner';
-
-    places.forEach((place, i) => {
-      const item = document.createElement('button');
-      item.className = 'place-item';
-      const title = lang?.places?.[place.id]?.title || place.id;
-      item.textContent = title;
-      item.addEventListener('click', () => goToPlace(i));
-      inner.appendChild(item);
-    });
-
-    container.appendChild(inner);
-  }
-
-  const inner = container.querySelector('.place-menu-inner');
-  inner.querySelectorAll('.place-item').forEach((item, i) => {
-    item.classList.toggle('active', i === currentPlaceIndex);
-  });
-}
-
 /* ═══════ NAVIGATION ═══════ */
 function nextPhoto() {
   const count = getPhotoCount();
@@ -202,45 +175,25 @@ function prevPhoto() {
   }
 }
 
+function prevPlace() {
+  if (currentPlaceIndex > 0) {
+    currentPlaceIndex--;
+    currentPhotoIndex = 0;
+    renderSlide();
+    PlaceMenu.updateActive();
+    PlaceMenu.scrollTo(currentPlaceIndex);
+  }
+}
+
 function nextPlace() {
   const places = getPlaces();
   if (currentPlaceIndex < places.length - 1) {
     currentPlaceIndex++;
     currentPhotoIndex = 0;
     renderSlide();
+    PlaceMenu.updateActive();
+    PlaceMenu.scrollTo(currentPlaceIndex);
   }
-}
-
-function prevPlace() {
-  if (currentPlaceIndex > 0) {
-    currentPlaceIndex--;
-    currentPhotoIndex = 0;
-    renderSlide();
-  }
-}
-
-function scrollToActive() {
-  const inner = document.querySelector('.place-menu-inner');
-  const active = inner?.querySelector('.active');
-  if (!inner || !active) return;
-
-  if (inner.scrollWidth <= inner.clientWidth) return;
-
-  const itemCenter = active.offsetLeft + active.offsetWidth / 2;
-  const containerCenter = inner.clientWidth / 2;
-  let target = itemCenter - containerCenter;
-
-  const max = inner.scrollWidth - inner.clientWidth;
-  target = Math.max(0, Math.min(target, max));
-
-  inner.scrollLeft = target;
-}
-
-function goToPlace(index) {
-  currentPlaceIndex = index;
-  currentPhotoIndex = 0;
-  renderSlide();
-  setTimeout(scrollToActive, 50);
 }
 
 /* ═══════ AUTO TIMER ═══════ */
@@ -371,6 +324,7 @@ function switchCity(city) {
   document.getElementById('btn-makkah').classList.toggle('active', city === 'makkah');
   document.getElementById('btn-madinah').classList.toggle('active', city === 'madinah');
 
+  PlaceMenu.build();
   renderSlide();
 }
 

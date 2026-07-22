@@ -386,64 +386,6 @@ html, body {
 }
 
 /* ═══════ STORY DOTS ═══════ */
-.place-menu {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  z-index: 50;
-
-  &-inner {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    padding-block: 6px 10px;
-    padding-inline: 16px;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-
-    &::-webkit-scrollbar { display: none; }
-  }
-
-  .place-item {
-    flex-shrink: 0;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-    font-family: var(--page-font, 'Inter', sans-serif);
-    color: rgba(255, 255, 255, 0.55);
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1.5px solid rgba(255, 255, 255, 0.15);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-    user-select: none;
-
-    &.active {
-      color: #000;
-      background: $gold;
-      border-color: $gold;
-      box-shadow: 0 0 12px $gold-glow;
-    }
-
-    &:not(.active) {
-      border-right: 2px solid rgba(212, 175, 55, 0.4);
-
-      &:hover {
-        color: rgba(255, 255, 255, 0.85);
-        border-color: rgba(212, 175, 55, 0.5);
-        border-right-color: rgba(212, 175, 55, 0.5);
-      }
-    }
-  }
-}
-
 /* ═══════ DESCRIPTION PANEL ═══════ */
 .desc-panel {
   position: absolute;
