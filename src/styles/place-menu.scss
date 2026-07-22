@@ -11,8 +11,9 @@ $gold-glow: rgba(212, 175, 55, 0.3);
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  background: #ffffff;
-  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 
   &::-webkit-scrollbar { display: none; }
 }
@@ -30,8 +31,8 @@ $gold-glow: rgba(212, 175, 55, 0.3);
   font-size: 13px;
   font-weight: 600;
   font-family: var(--page-font, 'Inter', sans-serif);
-  color: #333;
-  background: #e9ecef;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.15);
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -45,6 +46,6 @@ $gold-glow: rgba(212, 175, 55, 0.3);
   }
 
   &:not(.active):hover {
-    background: #dee2e6;
+    background: rgba(255, 255, 255, 0.25);
   }
 }
