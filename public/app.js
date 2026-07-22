@@ -224,28 +224,32 @@ function goToPlace(index) {
   currentPhotoIndex = 0;
   renderSlide();
 
-  const inner = document.querySelector('.place-menu-inner');
-  const activeItem = inner?.querySelector('.active');
-  if (!inner || !activeItem) return;
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const inner = document.querySelector('.place-menu-inner');
+      const activeItem = inner?.querySelector('.active');
+      if (!inner || !activeItem) return;
 
-  const scrollWidth = inner.scrollWidth;
-  const clientWidth = inner.clientWidth;
-  if (scrollWidth <= clientWidth) return;
+      const scrollWidth = inner.scrollWidth;
+      const clientWidth = inner.clientWidth;
+      if (scrollWidth <= clientWidth) return;
 
-  const itemLeft = activeItem.offsetLeft;
-  const maxScroll = scrollWidth - clientWidth;
+      const itemLeft = activeItem.offsetLeft;
+      const maxScroll = scrollWidth - clientWidth;
 
-  let target;
-  if (index === 0) {
-    target = 0;
-  } else if (index === getPlaces().length - 1) {
-    target = maxScroll;
-  } else {
-    target = itemLeft - clientWidth * 0.3;
-    target = Math.max(0, Math.min(target, maxScroll));
-  }
+      let target;
+      if (index === 0) {
+        target = 0;
+      } else if (index === getPlaces().length - 1) {
+        target = maxScroll;
+      } else {
+        target = itemLeft - clientWidth * 0.3;
+        target = Math.max(0, Math.min(target, maxScroll));
+      }
 
-  inner.scrollLeft = target;
+      inner.scrollLeft = target;
+    });
+  });
 }
 
 /* ═══════ AUTO TIMER ═══════ */
