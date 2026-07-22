@@ -44,6 +44,7 @@ async function init() {
     setupListeners();
     createTooltip();
     setFont();
+    PlaceMenu.build();
     renderSlide();
   } catch (e) {
     console.error('Init error:', e);
@@ -122,6 +123,7 @@ function renderSlide() {
     .join('');
 
   renderProgress();
+  PlaceMenu.update();
   renderCityLabels();
   startAutoTimer();
 }
@@ -318,6 +320,7 @@ function switchCity(city) {
   document.getElementById('btn-makkah').classList.toggle('active', city === 'makkah');
   document.getElementById('btn-madinah').classList.toggle('active', city === 'madinah');
 
+  PlaceMenu.build();
   renderSlide();
 }
 
