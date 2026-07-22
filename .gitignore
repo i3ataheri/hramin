@@ -4,3 +4,4 @@ node_modules/
 *.log
 .pagefind/
 public/pagefind/
+DS_Store

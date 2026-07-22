@@ -28,25 +28,33 @@ const PlaceMenu = (() => {
       btn.addEventListener('click', () => {
         currentPlaceIndex = i;
         currentPhotoIndex = 0;
-        highlight();
         renderSlide();
-        requestAnimationFrame(() => scrollToItem(i));
+        highlight();
+        scrollToItem(i);
       });
       list.appendChild(btn);
     });
 
     el.appendChild(list);
     highlight();
-    requestAnimationFrame(() => scrollToItem(currentPlaceIndex));
+    scrollToItem(currentPlaceIndex);
   }
 
   function update() {
     if (!el) { build(); return; }
+
     const items = el.querySelectorAll('.pm-item');
     const places = getPlaces();
+
     if (items.length !== places.length) { build(); return; }
-    items.forEach((item, i) => { item.textContent = getTitle(places[i]); });
+
+    items.forEach((item, i) => {
+      item.textContent = getTitle(places[i]);
+    });
+    
     highlight();
+    // این خط اضافه شد تا در صورت تغییر خودکار مکان، منو هم اسکرول شود
+    scrollToItem(currentPlaceIndex); 
   }
 
   function highlight() {
@@ -61,12 +69,13 @@ const PlaceMenu = (() => {
     const item = el.querySelectorAll('.pm-item')?.[index];
     if (!item) return;
 
-    const itemLeft = item.offsetLeft;
-    const itemWidth = item.offsetWidth;
-    const containerWidth = el.clientWidth;
-    const scrollTarget = itemLeft - (containerWidth / 2) + (itemWidth / 2);
-
-    el.scrollTo({ left: Math.max(0, scrollTarget), behavior: 'smooth' });
+    // متد مدرن و نیتیو مرورگر که با صفحات RTL (راست‌چین) کاملاً سازگار است
+    // و آیتم را به نرمی دقیقاً در مرکز قرار می‌دهد
+    item.scrollIntoView({ 
+      behavior: 'smooth', 
+      inline: 'center', 
+      block: 'nearest' 
+    });
   }
 
   return { build, update, highlight };
