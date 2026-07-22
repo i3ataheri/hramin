@@ -70,7 +70,7 @@ const PlaceMenu = (() => {
     const itemRect = item.getBoundingClientRect();
 
     const scrollTarget =
-      track.scrollLeft + itemRect.left - trackRect.left - (track.clientWidth / 2) + (itemRect.width / 2);
+      track.scrollLeft + itemRect.left - trackRect.left - (track.clientWidth * 0.3);
 
     track.scrollTo({ left: Math.max(0, scrollTarget), behavior: 'smooth' });
   }
