@@ -29,8 +29,8 @@ const PlaceMenu = (() => {
         currentPlaceIndex = i;
         currentPhotoIndex = 0;
         renderSlide();
-        update();
-        scrollToItem(i);
+        highlight();
+        requestAnimationFrame(() => scrollToItem(i));
       });
       track.appendChild(btn);
     });
@@ -65,8 +65,9 @@ const PlaceMenu = (() => {
     const items = el?.querySelectorAll('.pm-item');
     if (!track || !items || !items[index]) return;
 
+    const item = items[index];
     const trackRect = track.getBoundingClientRect();
-    const itemRect = items[index].getBoundingClientRect();
+    const itemRect = item.getBoundingClientRect();
 
     const scrollTarget =
       track.scrollLeft + itemRect.left - trackRect.left - (track.clientWidth / 2) + (itemRect.width / 2);
