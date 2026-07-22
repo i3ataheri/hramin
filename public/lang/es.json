@@ -1,0 +1,156 @@
+{
+  "lang_name": "Español",
+  "dir": "ltr",
+  "ui": {
+    "site_title": "Sagrados Santuarios",
+    "site_short": "Meca y Medina",
+    "makkah": "La Meca",
+    "makkah_label": "La Meca",
+    "madinah": "Medina",
+    "madinah_label": "Medina",
+    "map": "Mapa",
+    "info": "Información"
+  },
+  "places": {
+    "haram": {
+      "title": "La Gran Mezquita",
+      "short": "El lugar más sagrado",
+      "full": "La Gran Mezquita (Haram) en La Meca es el lugar más sagrado del Islam."
+    },
+    "hira": {
+      "title": "Cueva de Hira",
+      "short": "Inicio de la revelación",
+      "full": "La Cueva de Hira es el lugar donde el Profeta ﷺ recibió la primera revelación, en La Meca."
+    },
+    "thawr": {
+      "title": "Cueva de Thawr",
+      "short": "Refugio durante la hégira",
+      "full": "La Cueva de Thawr es el lugar donde el Profeta ﷺ y Abu Bakr se refugiaron durante la hégira, en La Meca."
+    },
+    "arafat": {
+      "title": "Llanura de Arafat",
+      "short": "Lugar de estación de los peregrinos",
+      "full": "La Llanura de Arafat es el lugar donde los peregrinos permanecen durante el Hajj, en La Meca."
+    },
+    "mina": {
+      "title": "Zona de Mina",
+      "short": "Lapidación del diablo",
+      "full": "La Zona de Mina es el lugar de la lapidación del diablo durante el Hajj, en La Meca."
+    },
+    "muzdalifah": {
+      "title": "Muzdalifah",
+      "short": "Recolección de piedras",
+      "full": "Muzdalifah es el lugar donde los peregrinos recogen piedras, en La Meca."
+    },
+    "namirah": {
+      "title": "Mezquita de Namirah",
+      "short": "Mezquita de Arafat",
+      "full": "La Mezquita de Namirah está en Arafat, en La Meca."
+    },
+    "khayf": {
+      "title": "Mezquita de Khayf",
+      "short": "Mezquita del Profeta",
+      "full": "La Mezquita de Khayf es la mezquita del Profeta en Mina, en La Meca."
+    },
+    "birthplace": {
+      "title": "Lugar de nacimiento del Profeta ﷺ",
+      "short": "Alegría de la profecía",
+      "full": "El lugar de nacimiento del Profeta ﷺ es donde nació, en La Meca."
+    },
+    "jin_mosque": {
+      "title": "Mezquita de los Yinn",
+      "short": "Juramento de los yinn",
+      "full": "La Mezquita de los Yinn es el lugar donde los yinn juraron lealtad al Profeta ﷺ, en La Meca."
+    },
+    "nabawi": {
+      "title": "Mezquita del Profeta ﷺ",
+      "short": "Santuario del Profeta",
+      "full": "La Mezquita del Profeta (Nabawi) en Medina es la mezquita más sagrada después de la Kaaba."
+    },
+    "baqi": {
+      "title": "Al-Baqi",
+      "short": "Cementerio de los compañeros",
+      "full": "Al-Baqi es el cementerio de los compañeros y califas del Profeta ﷺ, en Medina."
+    },
+    "quba": {
+      "title": "Mezquita de Quba",
+      "short": "Primera mezquita del Islam",
+      "full": "La Mezquita de Quba es la primera mezquita del Islam, en Medina."
+    },
+    "uhud": {
+      "title": "Montaña de Uhud",
+      "short": "Mártires de Uhud",
+      "full": "La Montaña de Uhud es el lugar de la batalla de Uhud, en Medina."
+    },
+    "qiblatayn": {
+      "title": "Mezquita de Qiblatayn",
+      "short": "Cambio de la qibla",
+      "full": "La Mezquita de Qiblatayn es el lugar donde se cambió la dirección de la oración, en Medina."
+    },
+    "sabah": {
+      "title": "Siete Mezquitas",
+      "short": "Herencia de la batalla de la zanja",
+      "full": "Las Siete Mezquitas son la herencia de la batalla de la zanja, en Medina."
+    },
+    "khandaq": {
+      "title": "Batalla de la zanja",
+      "short": "Montaña de Sal'",
+      "full": "La Batalla de la zanja (Ahzab) tuvo lugar en Medina."
+    },
+    "ghamamah": {
+      "title": "Mezquita de Ghamamah",
+      "short": "Mezquita de las nubes",
+      "full": "La Mezquita de Ghamamah es la mezquita de las nubes, en Medina."
+    },
+    "ijabah": {
+      "title": "Mezquita de Ijabah",
+      "short": "Oración respondida",
+      "full": "La Mezquita de Ijabah es el lugar donde la oración fue respondida, en Medina."
+    },
+    "miqat": {
+      "title": "Miqat",
+      "short": "Ihram desde Medina",
+      "full": "El Miqat es el lugar donde los peregrinos se visten del ihram, en Medina."
+    },
+    "jummah": {
+      "title": "Mezquita del Viernes",
+      "short": "Primera oración del viernes",
+      "full": "La Mezquita del Viernes es el lugar de la primera oración del viernes, en Medina."
+    },
+    "ambariyah": {
+      "title": "Mezquita de Ambariyah",
+      "short": "Herencia otomana",
+      "full": "La Mezquita de Ambariyah es herencia otomana, en Medina."
+    }
+  },
+  "shop": {
+    "title": "Tienda",
+    "about_title": "Sobre los Productos",
+    "about_text": "Nuestros productos combinan belleza y tecnología. Cada producto tiene un chip NFC que abre el mundo de los Santos Lugares cuando tocas tu teléfono.",
+    "products_title": "Productos",
+    "product_keychain": "Llavero NFC",
+    "product_keychain_desc": "Diseño elegante con motivos islámicos, con chip NFC",
+    "product_card": "Tarjeta NFC",
+    "product_card_desc": "Tarjeta compacta con chip NFC para acceso directo",
+    "product_phone": "Funda NFC",
+    "product_phone_desc": "Funda compatible con chip NFC integrado",
+    "contact_title": "Contactar Vendedores",
+    "how_title": "Cómo Obtener el Producto",
+    "contacts": [
+      {
+        "label": "WhatsApp",
+        "value": "+966500000000"
+      },
+      {
+        "label": "Email",
+        "value": "info@haramain.com"
+      }
+    ],
+    "steps": [
+      "Elija el producto deseado en las tiendas autorizadas",
+      "Contacte al vendedor por WhatsApp o email",
+      "Elija el método de pago y envío",
+      "Reciba el producto y disfrute de una experiencia única"
+    ]
+  }
+}

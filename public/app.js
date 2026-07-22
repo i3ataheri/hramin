@@ -31,7 +31,7 @@ const allLangs = [
   { code: 'az', label: 'AZ', dir: 'ltr', font: 'Inter', native: 'Azərbaycan' },
   { code: 'ku', label: 'KU', dir: 'ltr', font: 'Inter', native: 'Kurdî' },
   { code: 'so', label: 'SO', dir: 'ltr', font: 'Inter', native: 'Soomaali' },
-  { code: 'bs', label: 'BS', dir: 'ltr', font: 'Inter', native: 'Bosanski' },
+  { code: 'es', label: 'ES', dir: 'ltr', font: 'Inter', native: 'Español' },
   { code: 'tg', label: 'ТЈ', dir: 'ltr', font: 'Inter', native: 'Тоҷикӣ' }
 ];
 
@@ -395,6 +395,13 @@ function setupListeners() {
   document.getElementById('desc-panel').addEventListener('touchstart', (e) => {
     e.stopPropagation();
   }, { passive: true });
+
+  document.getElementById('gallery').addEventListener('click', (e) => {
+    const panel = document.getElementById('desc-panel');
+    if (panel.classList.contains('active') && !panel.contains(e.target)) {
+      closeDesc();
+    }
+  });
 
   const changeLangBtn = document.getElementById('change-lang-btn');
   if (changeLangBtn) {
