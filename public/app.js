@@ -96,8 +96,38 @@ function getPhotoCount() {
   return place ? place.images.length : 0;
 }
 
+/* ═══════ IMAGE CACHE ═══════ */
+const CACHE_NAME = 'haramain-images-v1';
+
+async function getCachedImage(url) {
+  try {
+    const cache = await caches.open(CACHE_NAME);
+    const cached = await cache.match(url);
+    if (cached) return URL.createObjectURL(await cached.blob());
+    const res = await fetch(url);
+    if (res.ok) cache.put(url, res.clone());
+    return URL.createObjectURL(await res.blob());
+  } catch { return url; }
+}
+
+function preloadNextImages() {
+  const place = getCurrentPlace();
+  if (!place) return;
+  for (let i = 1; i <= 2; i++) {
+    const idx = currentPhotoIndex + i;
+    if (idx < place.images.length) {
+      const url = place.images[idx];
+      caches.open(CACHE_NAME).then(cache => {
+        cache.match(url).then(cached => {
+          if (!cached) fetch(url).then(r => { if (r.ok) cache.put(url, r); });
+        });
+      });
+    }
+  }
+}
+
 /* ═══════ RENDER SLIDE ═══════ */
-function renderSlide() {
+async function renderSlide() {
   const place = getCurrentPlace();
   const info = getTranslation();
   if (!place || !info) return;
@@ -107,9 +137,10 @@ function renderSlide() {
   const viewport = document.getElementById('stories-viewport');
   viewport.innerHTML = '';
 
+  const imgSrc = await getCachedImage(place.images[currentPhotoIndex]);
   const slide = document.createElement('div');
   slide.className = 'story-slide active';
-  slide.innerHTML = `<img src="${place.images[currentPhotoIndex]}" alt="${info.title}" draggable="false">`;
+  slide.innerHTML = `<img src="${imgSrc}" alt="${info.title}" draggable="false">`;
   viewport.appendChild(slide);
 
   document.getElementById('story-title').textContent = info.title;
@@ -125,6 +156,7 @@ function renderSlide() {
   renderProgress();
   PlaceMenu.update();
   renderCityLabels();
+  preloadNextImages();
   startAutoTimer();
 }
 
